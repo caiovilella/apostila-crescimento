@@ -42,7 +42,7 @@ Ao chegar no mercado no final de semana, a demanda pelo propduto supera suas exp
 Agora, o empresário voltará para sua fábrica e ajsutará suas expectativas de curto prazo. Ele vai, por exemplo, passar a produzir 12 unidades, planejando vender 10 e acumular 2 unidades como estoque.
 
 :::callout-important
-Repare que neste exemplo, a oferta está se ajustando à demanda. Temo o princípio da dmenada efetiva revertendo a lei de Say.
+Repare que neste exemplo, a oferta está se ajustando à demanda. Temos o princípio da dmenada efetiva revertendo a lei de Say.
 :::
 
 O estado estacionário ocorrerá no nível em que a demanda efetiva satisfazer as expectativas de curto prazo do empresário. Vamos supor que ele chege ao mercado novamente e se depare com uma demanda efetiva por seu produto de 10 unidades, acumulando 2 unidades de estoque, tal como planejado. Agora, ele não terá incentivos para reajustar sua produção, já que o efetivo e o planejado estão coincidindo.

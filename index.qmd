@@ -2,6 +2,6 @@
 
 Esta apostila está em construção
 
-Esta apostila está sendo feita com base nos manuais de teorias de crescimento liderado pela demanda. As principais referências utilizadas são Hein (2014), Blecker e Setterfield (2019), Lavoie (2022) e apostilas do Frankling Serrano junto com Fabio Freitas e Gustaco Bhering, todas de circulação interna para as disciplinas destes. Como de costume, as apresentações são de minha total responsabilidade, assim como os eventuais erros remanescentes.
+Esta apostila está sendo feita com base nos manuais de teorias de crescimento liderado pela demanda. As principais referências utilizadas são Hein (2014), Blecker e Setterfield (2019), Lavoie (2022) e apostilas do Frankling Serrano junto com Fabio Freitas e Gustavo Bhering, todas de circulação interna para as disciplinas da UFRJ. Como de costume, as apresentações são de minha total responsabilidade, assim como os eventuais erros remanescentes.
 
 Se notar alguma imprecisão que queira corrigir, por favor escreva para caiovilella@id.uff.br.
