@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Caio Vilella">
+
+<title>1&nbsp; A Contabilidade do Crescimento e a Distribuição de Renda – Apostila de Crescimento</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./harrod.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./contabilidade.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Contabilidade do Crescimento e a Distribuição de Renda</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Apostila de Crescimento</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contabilidade.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Contabilidade do Crescimento e a Distribuição de Renda</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./harrod.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modelo_kaleckiano.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Modelo Kaleckiano Canônico</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modelo_bm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modelo Neo-Kaleckiano (Bhaduri e Marglin)</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">1.1</span> Introdução</a></li>
+  <li><a href="#a-distribuição-da-renda-conceitos-fundamentais" id="toc-a-distribuição-da-renda-conceitos-fundamentais" class="nav-link" data-scroll-target="#a-distribuição-da-renda-conceitos-fundamentais"><span class="header-section-number">1.2</span> A Distribuição da Renda: Conceitos Fundamentais</a>
+  <ul class="collapse">
+  <li><a href="#a-visão-neoclássica" id="toc-a-visão-neoclássica" class="nav-link" data-scroll-target="#a-visão-neoclássica"><span class="header-section-number">1.2.1</span> A Visão Neoclássica</a></li>
+  <li><a href="#a-visão-heterodoxa-e-pós-keynesiana" id="toc-a-visão-heterodoxa-e-pós-keynesiana" class="nav-link" data-scroll-target="#a-visão-heterodoxa-e-pós-keynesiana"><span class="header-section-number">1.2.2</span> A Visão Heterodoxa e Pós-Keynesiana</a></li>
+  </ul></li>
+  <li><a href="#sec-contabildiade" id="toc-sec-contabildiade" class="nav-link" data-scroll-target="#sec-contabildiade"><span class="header-section-number">1.3</span> Contabilidade do Crescimento e Modelos Liderados pela Demanda</a></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão"><span class="header-section-number">1.4</span> Conclusão</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-contabilidade" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Contabilidade do Crescimento e a Distribuição de Renda</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Caio Vilella </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introdução" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introdução"><span class="header-section-number">1.1</span> Introdução</h2>
+<p>O debate sobre o <strong>crescimento econômico</strong> e a <strong>distribuição de renda</strong> tem sido central na economia, ganhando renovada atenção, especialmente após eventos como a Grande Recessão de 2008-09. A questão fundamental que permeia este campo de estudo é: os resultados dos modelos de determinação da renda de curto prazo podem ser extrapolados para o longo prazo? E, mais crucialmente, o que explica o diferencial de renda entre os países e como a distribuição da renda afeta a dinâmica do crescimento?</p>
+<p>Este capítulo explora a <strong>contabilidade do crescimento</strong> sob a ótica da distribuição de renda, contrastando as abordagens neoclássica e heterodoxa. Nosso objetivo é compreender como a forma pela qual o excedente gerado na economia é distribuído entre capital e trabalho influencia a acumulação e o ritmo de expansão econômica. Aprofundaremos nas diferentes perspectivas teóricas, desde os clássicos até os modelos pós-keynesianos de segunda geração, que servem de base para os modelos de crescimento liderados pela demanda.</p>
+</section>
+<section id="a-distribuição-da-renda-conceitos-fundamentais" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="a-distribuição-da-renda-conceitos-fundamentais"><span class="header-section-number">1.2</span> A Distribuição da Renda: Conceitos Fundamentais</h2>
+<p>Para entender a relação entre distribuição e crescimento, é essencial distinguir os diferentes níveis de análise da distribuição de renda:</p>
+<ul>
+<li><p><strong>Distribuição Primária da Renda:</strong> Refere-se à forma como a riqueza é inicialmente apropriada pelos fatores de produção (capital e trabalho) no processo produtivo. É a divisão do produto social entre lucros e salários, determinada pelas forças de mercado e pelas relações de poder. Em termos simples, quem se apropria do excedente gerado? Se considerarmos a renda total (<span class="math inline">\(Y\)</span>) como a soma dos lucros (<span class="math inline">\(\Pi\)</span>) e dos salários (<span class="math inline">\(W\)</span>), temos <span class="math inline">\(Y = \Pi + W\)</span>. Dividindo por <span class="math inline">\(Y\)</span>, obtemos a participação de cada fator na renda: <span class="math inline">\(\frac{\Pi}{Y} + \frac{W}{Y} = 1\)</span>.</p></li>
+<li><p><strong>Distribuição Secundária da Renda:</strong> Diz respeito à redistribuição da renda disponível após a intervenção do Estado, por meio de políticas fiscais (impostos) e sociais (transferências e benefícios). Esta etapa afeta a distribuição entre classes sociais e indivíduos, moldando a renda disponível para consumo e poupança.</p></li>
+</ul>
+<p>A forma como a distribuição de renda é tratada varia significativamente entre as diferentes escolas de pensamento econômico. Essa distinção é crucial para entender as implicações sobre o crescimento.</p>
+<section id="a-visão-neoclássica" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="a-visão-neoclássica"><span class="header-section-number">1.2.1</span> A Visão Neoclássica</h3>
+<p>Na abordagem neoclássica, a distribuição de renda é determinada pela <strong>contribuição relativa de cada fator de produção</strong> para a produção agregada, mediada pelos seus preços relativos. A produtividade marginal dos fatores (capital e trabalho) define suas remunerações.</p>
+<p>Consideremos <span class="math inline">\(L\)</span> como sendo a quantidade de trabalho e <span class="math inline">\(K\)</span> a quantidade física de capital. O sobrescrito <span class="math inline">\(D\)</span> representa a variável de demanda, enquanto o sobrescrito <span class="math inline">\(S\)</span>,a de oferta. Por exemplo: <span class="math inline">\(L^D\)</span> seria a quanitdade demandada de trabalho e assim por diante. Além disso, vamos representar a taxa de lucro por <span class="math inline">\(r\)</span> e a a taxa de salários reais por <span class="math inline">\(w\)</span>. Se a oferta deve equivaler a demanda no estado estacionário então teremos que:</p>
+<p><span class="math display">\[
+\begin{aligned}
+rK^S + wL^S = rK^D + w L^D\\
+r (K^S - K^D) = w (L^D - L^S)\\
+\frac{r}{w} = \frac{L^D - L^S}{K^S - K^D}
+\end{aligned}
+\]</span></p>
+<p>Em um mercado competitivo, a taxa de lucro (preço do capital) e o salário (preço do trabalho) se ajustam para igualar a oferta e a demanda por esses fatores. A ideia central é que, se a demanda por trabalho aumentar, deveria haver algum mecanismo (a substituição de trabalho por capital) para levar à queda do salário em relação ao lucro para reequilibrar o mercado. Da mesma forma, se o capital se torna abundante, sua taxa de retorno (lucro) deveria cair em relação ao salário.</p>
+<p>Nesses modelos, o crescimento econômico é frequentemente explicado por fatores exógenos, como o progresso tecnológico e o crescimento populacional. A poupança, embora importante para o nível de capital, não teria um impacto duradouro sobre a taxa de crescimento de <em>steady state</em> em modelos mais antigos. Versões mais recentes, como a teoria do crescimento endógeno, incorporam o capital humano e a inovação, permitindo que a poupança e o investimento tenham um efeito mais direto na taxa de crescimento de longo prazo, mas a distribuição de renda ainda é vista como um resultado da tecnologia e das preferências, e não como um determinante ativo do crescimento.</p>
+</section>
+<section id="a-visão-heterodoxa-e-pós-keynesiana" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="a-visão-heterodoxa-e-pós-keynesiana"><span class="header-section-number">1.2.2</span> A Visão Heterodoxa e Pós-Keynesiana</h3>
+<p>Em contraste, a teoria de crescimento heterodoxa, e em particular a tradição pós-keynesiana, resgata o <strong>elo causal entre distribuição e crescimento</strong>. Nesta abordagem, a distribuição da renda não é um mero resultado da tecnologia ou da escassez relativa dos fatores, mas sim um fator ativo que influencia a taxa de crescimento da economia. O fato de os preços relativos não determinarem unicamente a distribuição de renda confere maior liberdade aos modelos pós-keynesianos, permitindo que a <strong>luta de classes</strong> e as relações de poder desempenhem um papel predominante na determinação da distribuição.</p>
+<p>Autores clássicos como David Ricardo e Karl Marx já abordavam a distribuição de renda a partir de fatores socioinstitucionais. A <strong>lei de ferro dos salários</strong> de Ricardo, por exemplo, postulava que os salários tenderiam ao nível de subsistência do trabalhador, deixando a taxa de lucro como um resíduo do excedente produzido. A acumulação de capital (<span class="math inline">\(g\)</span>) era então determinada pela propensão a poupar dos capitalistas (<span class="math inline">\(s_\Pi\)</span>) e pela taxa de lucro (<span class="math inline">\(r\)</span>), ou seja, <span id="eq-gs"><span class="math display">\[g_s = s_r r \tag{1.1}\]</span></span></p>
+<p>No entanto, essa visão ainda pressupunha a validade da Lei de Say, onde a poupança se converteria automaticamente em investimento, explicando o crescimento pelo lado da oferta.</p>
+<p>Os clássicos também identificaram limites exógenos à acumulação: Ricardo apontava para os rendimentos decrescentes do fator terra, enquanto Marx elaborou a lei da tendência à queda da taxa de lucro devido ao aumento da composição orgânica do capital. Ambos, de diferentes formas, buscavam explicar o desemprego e os limites ao crescimento em pontos anteriores ao pleno emprego.</p>
+<p>A <strong>primeira geração de modelos pós-keynesianos</strong>, desenvolvida por autores como Nicholas Kaldor e Joan Robinson, inverteu a causalidade clássica. Baseando-se no Princípio da Demanda Efetiva de Keynes, eles argumentaram que as decisões de investimento das firmas e a acumulação de capital determinam a distribuição funcional da renda. A taxa de lucro (<span class="math inline">\(r\)</span>) passou a ser vista como dependente da taxa de acumulação (<span class="math inline">\(g\)</span>) e da propensão a poupar dos capitalistas (<span class="math inline">\(s_r\)</span>): <span class="math inline">\(r = g/s_r\)</span>.</p>
+<p>Assim,a distribuição de renda é um <em>resultado</em> da acumulação de capital, e não uma pré-condição. Conforme muda a taxa de acumulação, a distribuição de renda se altera e muda também a taxa de poupança.</p>
+<p>A <strong>segunda geração de modelos pós-keynesianos</strong>, inspirada nos trabalhos de Michal Kalecki e Josef Steindl, aprofundou essa perspectiva. Nesses modelos, a taxa de lucro dos capitalistas (<span class="math inline">\(r\)</span>) é determinada pela <strong>participação dos lucros na renda</strong> (<span class="math inline">\(\pi\)</span>), pelo <strong>grau de utilização da capacidade instalada</strong> (<span class="math inline">\(u\)</span>) e pela <strong>relação capital-produto</strong> (<span class="math inline">\(v\)</span>). A relação pode ser expressa como:</p>
+<p><span id="eq-r"><span class="math display">\[r = \frac{\pi u}{v} \tag{1.2}\]</span></span></p>
+<p>Nesta formulação, a <strong>demanda agregada</strong> passa a afetar a lucratividade por meio do grau de utilização da capacidade. Isso significa que variações na demanda podem levar a mudanças no grau de utilização, que por sua vez impactam a taxa de lucro, mas não necessariamente a distribuição de renda.</p>
+<p>Essa é uma característica fundamental dos modelos de crescimento liderados pela demanda, onde o <strong>Princípio da Demanda Efetiva permanece válido no longo prazo</strong>. A distirbuição de renda é dada pelo grau de competição dos mercados, mas mudanças no nível de demanda agregada podem afetar a taxa de lucro do capital por meio do grau de utilização.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O Princípio da Demanda Efetiva no Longo Prazo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nos modelos pós-keynesianos de segunda geração, o Princípio da Demanda Efetiva gera alguns resultados que serão ressaltados ao logno da apostila:</p>
+<ul>
+<li><strong>Efeito multiplicador da renda:</strong> Um aumento no investimento ou em outros componentes autônomos da demanda gera um aumento maior na renda.</li>
+<li><strong>Investimento gera poupança:</strong> Diferente da visão clássica, o investimento não é limitado pela poupança pré-existente; ele cria a poupança necessária para financiá-lo.</li>
+<li><strong>Caráter dual do investimento:</strong> O investimento não apenas adiciona à capacidade produtiva, mas também gera demanda.</li>
+<li><strong>Oferta se ajusta à demanda:</strong> A produção se ajusta para atender à demanda agregada, e não o contrário.</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-contabildiade" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="sec-contabildiade"><span class="header-section-number">1.3</span> Contabilidade do Crescimento e Modelos Liderados pela Demanda</h2>
+<p>Na Teoria Geral do Emprego do Juro e da Moeda, Keynes (1926) assumiu que o consumo seria uma função da renda <span class="math inline">\((C= cY)\)</span> para garantir que ajustes no nível da renda equilibraram o mercado de bens, pois:</p>
+<p><span class="math display">\[
+\begin{aligned}
+Y= C+I\\
+Y = cY+I \\
+Y-cY=I \\
+Y(1-c)=I\\
+Y=\frac{I}{1-c}
+\end{aligned}
+\]</span></p>
+<p>onde: <span class="math inline">\(Y\)</span> é a renda; <span class="math inline">\(I\)</span> é o investimento agregado; <span class="math inline">\(C\)</span> é o consumo agregado; <span class="math inline">\(c\)</span> é a propensão marginal a consumir.</p>
+<p>Em que a propensão a consumir seria uma parcela (uma porcentagem) da renda. Isso quer dizer que se <span class="math inline">\(c=0,8\)</span>, a comunidade analisada cosumiria 80% de cada unidade monetária obtida de renda. Logo, podemos ver que o denominador da renda de equilíbrio <span class="math inline">\((1-c)\)</span> é a porcentagem poupada <span class="math inline">\((1-0,8=0,2)\)</span>. Chamemos, portanto, <span class="math inline">\(s\)</span> de a propensão a poupar de determinada sociedade para expressar a equação do <strong>nível</strong> da renda como:</p>
+<p><span id="eq-Y"><span class="math display">\[Y=\frac{I}{s} \tag{1.3}\]</span></span></p>
+<p>Este é o <strong>nível</strong> de renda que equilibra o mercado de bens, igualando o <strong>nível</strong> de poupança <span class="math inline">\((S)\)</span> com o nível de investimento <span class="math inline">\((I)\)</span>, isto é: <span class="math inline">\(I=S\)</span>. Agora vamos partir desta identidade contábil e dividir os dois lados pelo estoque de capital para ter uma representação dinâmica do modelo de Keynes:</p>
+<p><span id="eq-IK"><span class="math display">\[
+\frac{I}{K}=\frac{S}{K}
+\tag{1.4}\]</span></span></p>
+<p>Eu me referi como “dinâmica” pelo fato de o lado esquerdo da equação <a href="#eq-IK" class="quarto-xref">Equação&nbsp;<span>1.4</span></a> ser a taxa (porcentagem) de crescimento do estoque de capital. Isso fica fácil de ver se você pensar no investimento como a variação do estoque de capital e notar que <span class="math inline">\(\Delta K = I\)</span>; Portanto: <span class="math inline">\(I/K = \Delta K / K = g_K\)</span>.</p>
+<p>Agora vamos seguir esta análise assumindo que a poupança é determinada pela propensão a poupar da renda (assim como Keynes fez em sua análise estática):</p>
+<p><span id="eq-gk-cont"><span class="math display">\[\begin{aligned}
+\frac{I}{K} &amp;= \frac{s Y}{K}\\
+g_K &amp;= s \frac{Y}{K}
+\end{aligned} \tag{1.5}\]</span></span></p>
+<p>Este já poderia ser o nosso “resutlado final” algébrico, mas traria pouca informação do ponto de vista econômico. Assim, vamos ter que fazer algumas manipulações importantíssimas para entender a intuição econômica.</p>
+<p>Primeiro vamos multiplicar a <a href="#eq-gk-cont" class="quarto-xref">Equação&nbsp;<span>1.5</span></a> por 1. Mas não qualquer “1”, vamos escolher um número “1” especial, que apesar de não mudar o resutlado matemático, trará intuição econômica para a análise. Vamos chamar o produto máximo que a economia é capaz de produzir de <span class="math inline">\(Y_K\)</span> e então multiplicar a <a href="#eq-gk-cont" class="quarto-xref">Equação&nbsp;<span>1.5</span></a> por <span class="math inline">\(Y_K / Y_K\)</span>:</p>
+<p><span id="eq-gk-cont2"><span class="math display">\[
+\begin{aligned}
+g_K = s \frac{Y}{K} \frac{Y_K}{Y_K}\\
+g_K = s \frac{Y}{Y_K} \frac{Y_K}{K}
+\end{aligned} \tag{1.6}\]</span></span> Aqui precisamos ir com calma e entender cada termo, propositalente escrito separado, desta equação.</p>
+<p>Repare que <span class="math inline">\(\frac{Y}{Y_K}\)</span> é a divisão do produto corrente (pense em PIB se achar que facilita a intuição) pelo seu nível máximo. Se este resultado for 80%, por exemplo, significaria que a economia está operando a 80% de sua capacidade instalada. De agora em diante chamaremos isso de <strong>grau de utilização da capacidade Instalada</strong> representado pela letra <span class="math inline">\(u\)</span>.</p>
+<p>O termo seguinte vamos ler de cabeça para baixo: <span class="math inline">\(\frac{K}{Y_K}\)</span>. Esta é uma relação que dívide a quantidade de capital existente pela produção máxima. Intuitivamente, esta razão mostrará o quanto de produto cada máquina existente é capaz de produzir, se utilizada em sua plena capacidade. De agora em diante chamaremos isso de <strong>relação capital-produto</strong> represnetando-a pela letra <span class="math inline">\(v\)</span>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Definições
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Grau de utilização da capacidade instalada</strong> <span class="math inline">\(\rightarrow\)</span> mede o grau de aquecimento do mercado de bens e serviços. <span class="math display">\[ u=\frac{Y}{Y_K} \]</span></p>
+<p><strong>Relação capital-produto</strong> <span class="math inline">\(\rightarrow\)</span> representa o coeficiente técnico da produção, medindo quantos produtos cada capital consegue produzir em sua plena utilização. <span class="math display">\[ v = \frac{K}{Y_K}\]</span></p>
+</div>
+</div>
+<p>Retornando à <a href="#eq-gk-cont2" class="quarto-xref">Equação&nbsp;<span>1.6</span></a> podemos reescreve-la como: <span id="eq-g-equilibrio"><span class="math display">\[
+\begin{aligned}
+g_K &amp;= s u \frac{1}{v} \\
+&amp;ou\\
+g_K &amp;=\frac{s}{v} u
+\end{aligned}
+\tag{1.7}\]</span></span></p>
+<p>Em modelos que partem da lei de Say, o produto tende a não ser afetado pelo nível de demanda, aqui representado por <span class="math inline">\(u\)</span>. Portanto, podemos considerar que o produto é dado pelo lado da oferta e sempre compatível com seu nível potencial, de tal forma que <span class="math inline">\(u=1\)</span> e, simplesmente: <span class="math display">\[g=\frac{s}{v}\]</span> Representação adotada, por exemplo, pelo famoso modelo neoclássico de Solow-Swan, que veremos adiante.</p>
+<p>A integração dos conceitos de distribuição de renda com a dinâmica do crescimento econômico é o cerne da perspectiva pós-keynesiana. Modelos da família de Kaldor-Robinson, por exemplo, garantem o ajuste entre <span class="math inline">\(g, s, v\)</span> e <span class="math inline">\(u\)</span> a partir dos efeitos que o crescimento gera na distribuição de renda e, consequentemente, na propensão a poupar. Sempre mantendo o <span class="math inline">\(u\)</span> constante.</p>
+<p>Já os modelos do tipo Kalecki-Steindl, tratados no <a href="modelo_kaleckiano.html" class="quarto-xref"><span>Capítulo 3</span></a>, garantem o ajuste entre estas mesmas variáveis por meio de variações do grau de utilização <span class="math inline">\(u\)</span>. A partir da garantia da estabildiade através do mecanismo de ajuste, nascem algumas variações de modelagem comportamental, as quais incorporaremos nesta “família” de modelos que, apesar de mudarem o “fechamento”, compartilham estruturas semelhantes.</p>
+<p>Modelos como o de Bhaduri e Marglin, que analisaremos mais a frente, são exemplos proeminentes dessa abordagem. Eles demonstram, dentro de uma estrutura de modelos kaleckianos, como a sensibilidade do investimento à participação dos lucros na renda (efeito lucratividade) e ao grau de utilização da capacidade (efeito acelerador) pode levar a diferentes <strong>regimes de demanda</strong> (<em>wage-led</em> ou <em>profit-led</em>) e <strong>regimes de crescimento</strong> (<em>wage-led</em> ou <em>profit-led</em>).</p>
+<p>Nesses modelos, a distribuição de renda não é um fator passivo, mas um motor ativo do crescimento. Diferentes regimes podem explicar, na prática, o por que de algumas escominas permanecerem estagnadas e com alto nível de conflito distributivo, enquanto outras conseguem crescer e superar o conflito interno entre trabalhadores e capitalistas.</p>
+<p>Uma redistribuição em favor dos salários pode estimular o consumo e, consequentemente, o grau de utilização da capacidade, impulsionando o investimento via efeito acelerador. Por outro lado, uma redistribuição em favor dos lucros pode estimular o investimento diretamente via efeito lucratividade. O resultado líquido sobre o crescimento dependerá da magnitude relativa desses efeitos, como explorado em detalhe no modelo Bhaduri-Marglin no <a href="modelo_bm.html" class="quarto-xref"><span>Capítulo 4</span></a>.</p>
+<p>Já modelos como o supermultiplicador Sraffiano mescla um pouco destes dois mecanismos de ajustes ao incorporar o efeito dos gastos autônomos sobre a geração de poupança. Nesta formulação, a taxa de crescimento do estado estacionário converge para a taxa de crescimento dos gastos autônomos, como a taxa de gastos públicos, por exemplo.</p>
+</section>
+<section id="conclusão" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="conclusão"><span class="header-section-number">1.4</span> Conclusão</h2>
+<p>A contabilidade do crescimento, sob a ótica da distribuição de renda, oferece uma compreensão mais rica e complexa da dinâmica econômica. Ao reconhecer o papel ativo da demanda efetiva e da distribuição na determinação do crescimento, os modelos pós-keynesianos fornecem ferramentas essenciais para analisar as interações entre fatores sociais, institucionais e econômicos. Esta perspectiva é fundamental para o estudo dos modelos de crescimento liderados pela demanda, onde a forma como a renda é distribuída não apenas reflete, mas também molda o futuro da economia.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./harrod.html" class="pagination-link" aria-label="O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
