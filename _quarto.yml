@@ -31,8 +31,8 @@ format:
     toc-depth: 3
     number-sections: true
 
-  pdf:
-    documentclass: scrreprt
-    number-sections: true
+  # pdf:
+    # documentclass: scrreprt
+    # number-sections: true
 
 editor: visual
