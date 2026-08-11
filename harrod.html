@@ -8,7 +8,7 @@
 
 <meta name="author" content="Caio Vilella">
 
-<title>2&nbsp; O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento – Apostila de Crescimento</title>
+<title>3&nbsp; O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento – Apostila de Crescimento</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -118,7 +118,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./harrod.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./harrod.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -146,31 +146,31 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Notas do autor</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./contabilidade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Contabilidade do Crescimento e a Distribuição de Renda</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Contabilidade do Crescimento e a Distribuição de Renda</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./harrod.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./modelo_kaleckiano.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Modelo Kaleckiano Canônico</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modelo Kaleckiano Canônico</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./modelo_bm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modelo Neo-Kaleckiano (Bhaduri e Marglin)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Neo-Kaleckiano (Bhaduri e Marglin)</span></span></a>
   </div>
 </li>
     </ul>
@@ -183,16 +183,16 @@ window.Quarto = {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#sec-introducao-harrod" id="toc-sec-introducao-harrod" class="nav-link active" data-scroll-target="#sec-introducao-harrod"><span class="header-section-number">2.1</span> Introdução</a></li>
-  <li><a href="#sec-estatico-harrod" id="toc-sec-estatico-harrod" class="nav-link" data-scroll-target="#sec-estatico-harrod"><span class="header-section-number">2.2</span> O equilíbrio estático como ponto de partida</a></li>
-  <li><a href="#sec-dinamica-harrod" id="toc-sec-dinamica-harrod" class="nav-link" data-scroll-target="#sec-dinamica-harrod"><span class="header-section-number">2.3</span> A transição para a dinâmica: o problema do investimento recorrente</a></li>
-  <li><a href="#sec-efetiva-harrod" id="toc-sec-efetiva-harrod" class="nav-link" data-scroll-target="#sec-efetiva-harrod"><span class="header-section-number">2.4</span> A taxa efetiva de crescimento</a></li>
-  <li><a href="#sec-garantida-harrod" id="toc-sec-garantida-harrod" class="nav-link" data-scroll-target="#sec-garantida-harrod"><span class="header-section-number">2.5</span> A taxa desejada (ou garantida) de crescimento</a></li>
-  <li><a href="#sec-natural-harrod" id="toc-sec-natural-harrod" class="nav-link" data-scroll-target="#sec-natural-harrod"><span class="header-section-number">2.6</span> A taxa natural de crescimento</a></li>
-  <li><a href="#sec-primeiro-problema-harrod" id="toc-sec-primeiro-problema-harrod" class="nav-link" data-scroll-target="#sec-primeiro-problema-harrod"><span class="header-section-number">2.7</span> O primeiro problema de Harrod: a instabilidade da taxa garantida</a>
+  <li><a href="#sec-introducao-harrod" id="toc-sec-introducao-harrod" class="nav-link active" data-scroll-target="#sec-introducao-harrod"><span class="header-section-number">3.1</span> Introdução</a></li>
+  <li><a href="#sec-estatico-harrod" id="toc-sec-estatico-harrod" class="nav-link" data-scroll-target="#sec-estatico-harrod"><span class="header-section-number">3.2</span> O equilíbrio estático como ponto de partida</a></li>
+  <li><a href="#sec-dinamica-harrod" id="toc-sec-dinamica-harrod" class="nav-link" data-scroll-target="#sec-dinamica-harrod"><span class="header-section-number">3.3</span> A transição para a dinâmica: o problema do investimento recorrente</a></li>
+  <li><a href="#sec-efetiva-harrod" id="toc-sec-efetiva-harrod" class="nav-link" data-scroll-target="#sec-efetiva-harrod"><span class="header-section-number">3.4</span> A taxa efetiva de crescimento</a></li>
+  <li><a href="#sec-garantida-harrod" id="toc-sec-garantida-harrod" class="nav-link" data-scroll-target="#sec-garantida-harrod"><span class="header-section-number">3.5</span> A taxa desejada (ou garantida) de crescimento</a></li>
+  <li><a href="#sec-natural-harrod" id="toc-sec-natural-harrod" class="nav-link" data-scroll-target="#sec-natural-harrod"><span class="header-section-number">3.6</span> A taxa natural de crescimento</a></li>
+  <li><a href="#sec-primeiro-problema-harrod" id="toc-sec-primeiro-problema-harrod" class="nav-link" data-scroll-target="#sec-primeiro-problema-harrod"><span class="header-section-number">3.7</span> O primeiro problema de Harrod: a instabilidade da taxa garantida</a>
   <ul class="collapse">
-  <li><a href="#o-mecanismo-da-instabilidade" id="toc-o-mecanismo-da-instabilidade" class="nav-link" data-scroll-target="#o-mecanismo-da-instabilidade"><span class="header-section-number">2.7.1</span> O mecanismo da instabilidade</a></li>
-  <li><a href="#representação-gráfica-da-instabilidade" id="toc-representação-gráfica-da-instabilidade" class="nav-link" data-scroll-target="#representação-gráfica-da-instabilidade"><span class="header-section-number">2.7.2</span> Representação gráfica da instabilidade</a></li>
+  <li><a href="#o-mecanismo-da-instabilidade" id="toc-o-mecanismo-da-instabilidade" class="nav-link" data-scroll-target="#o-mecanismo-da-instabilidade"><span class="header-section-number">3.7.1</span> O mecanismo da instabilidade</a></li>
+  <li><a href="#representação-gráfica-da-instabilidade" id="toc-representação-gráfica-da-instabilidade" class="nav-link" data-scroll-target="#representação-gráfica-da-instabilidade"><span class="header-section-number">3.7.2</span> Representação gráfica da instabilidade</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -202,7 +202,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-modelo-harrod" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></span></h1>
+<h1 class="title"><span id="sec-modelo-harrod" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></span></h1>
 </div>
 
 
@@ -225,14 +225,14 @@ window.Quarto = {
 </header>
 
 
-<section id="sec-introducao-harrod" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="sec-introducao-harrod"><span class="header-section-number">2.1</span> Introdução</h2>
+<section id="sec-introducao-harrod" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-introducao-harrod"><span class="header-section-number">3.1</span> Introdução</h2>
 <p>A <em>Teoria Geral do Emprego, do Juro e da Moeda</em> de Keynes representou um avanço fundamental ao demonstrar que a economia capitalista não possui mecanismos automáticos de ajuste em direção ao pleno emprego. No entanto, a análise de Keynes concentrou-se no curto prazo e no nível de renda, deixando em aberto a questão de como sua teoria poderia ser estendida para o longo prazo e para o estudo das taxas de crescimento.</p>
 <p>Foi Roy Harrod (1939) em um trabalho intitulado “An Essay in Dynamic Theory”, quem deu os primeiros passos nessa direção. Harrod tinha como objetivo transpor a análise estática da <em>Teoria Geral</em> para uma teoria dinâmica, ou seja, uma teoria preocupada não com os <em>níveis</em> das variáveis econômicas, mas com suas <em>taxas de crescimento</em>.</p>
 <p>O modelo de Harrod, embora não tenha se consolidado como uma teoria completa de crescimento e distribuição, estabeleceu as bases para o desenvolvimento de toda uma tradição de pensamento econômico. A intenção de Harrod não era bem estudar as causas do crescimento econômico, mas mostrar como o sistema capitalista é inerentemente instável mesmo no longo prazo.</p>
 </section>
-<section id="sec-estatico-harrod" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="sec-estatico-harrod"><span class="header-section-number">2.2</span> O equilíbrio estático como ponto de partida</h2>
+<section id="sec-estatico-harrod" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-estatico-harrod"><span class="header-section-number">3.2</span> O equilíbrio estático como ponto de partida</h2>
 <p>Keynes elabora sobre o princípio da demanda efetiva separando sua análise em elementos <em>ex-ante</em> e <em>ex-post</em>. Sendo que a produção e o emprego são determinados <em>ex-ante</em> a partir de expectativas de demanda sobre a venda que só se materializará no futuro. Paul Davidson resume esta análise expondo que a “produção leva tempo”.</p>
 <p>Para evitar jargões como <em>ex-ante</em> e <em>ex-post</em>, no box abaixo vamos explicar esta análise imaginando um produtor que passa a semana produzindo e no final de semana vai ao mercado vender o que produziu em sua fábrica. Chamaremos a semana de “período de produção” e o final de semana de “período de mercado”.</p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -281,10 +281,10 @@ Importante
 </div>
 </div>
 <p>Os economistas pós-keynesianos expressam a relação explicada acima dizendo que em uma economia monetária da produção, a condição de maximização dos lucros monetários pode ocorrer ainda que o salário permaneça abaixo da produtividade marginal do trabalho. Afinal, pode não compensar para o empresário demandar mais trabalho se não ele não espera vender a produção extra do trabalho a ser contratado.</p>
-<p>Juntando esta abrodagem de expectativas com o que foi apresentado na <a href="contabilidade.html" class="quarto-xref"><span>Capítulo 1</span></a> e, principalmente com o que vimos na <a href="contabilidade.html#eq-Y" class="quarto-xref">Equação&nbsp;<span>1.3</span></a> e na <a href="contabilidade.html#eq-g-equilibrio" class="quarto-xref">Equação&nbsp;<span>1.7</span></a>, vamos nos debruçar sobre o exercício de Harrod.</p>
+<p>Juntando esta abrodagem de expectativas com o que foi apresentado na <a href="contabilidade.html" class="quarto-xref"><span>Capítulo 2</span></a> e, principalmente com o que vimos na <a href="contabilidade.html#eq-Y" class="quarto-xref">Equação&nbsp;<span>2.3</span></a> e na <a href="contabilidade.html#eq-g-equilibrio" class="quarto-xref">Equação&nbsp;<span>2.7</span></a>, vamos nos debruçar sobre o exercício de Harrod.</p>
 </section>
-<section id="sec-dinamica-harrod" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="sec-dinamica-harrod"><span class="header-section-number">2.3</span> A transição para a dinâmica: o problema do investimento recorrente</h2>
+<section id="sec-dinamica-harrod" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-dinamica-harrod"><span class="header-section-number">3.3</span> A transição para a dinâmica: o problema do investimento recorrente</h2>
 <p>A questão que Harrod se colocou foi a seguinte: se o investimento varia constantemente ao longo do tempo, como podemos preservar o resultado de equilíbrio estático em um contexto dinâmico? Em outras palavras, o que é necessário para que a igualdade <span class="math inline">\(I = S\)</span> se mantenha em cada período?</p>
 <p>A resposta de Harrod envolve a consideração de que, no longo prazo, o investimento tem um efeito duplo:</p>
 <ol type="1">
@@ -306,14 +306,14 @@ S &amp;= sY
 <p>Sabendo que a relação capital-produto efetiva é <span class="math inline">\(v = K/Y\)</span>, temos que <span class="math inline">\(Y/K = u/v\)</span>, onde <span class="math inline">\(u\)</span> é o grau de utilização da capacidade produtiva. Assim:</p>
 <p><span class="math display">\[\frac{sY}{K} = \frac{s u}{v}\]</span></p>
 <p>Portanto, a condição de equilíbrio dinâmico pode ser expressa como:</p>
-<p><span id="eq-gs-harrod"><span class="math display">\[\boxed{g_K = g_S = \frac{s u}{v}} \tag{2.1}\]</span></span></p>
+<p><span id="eq-gs-harrod"><span class="math display">\[\boxed{g_K = g_S = \frac{s u}{v}} \tag{3.1}\]</span></span></p>
 <p>onde <span class="math inline">\(g_S\)</span> é a taxa de crescimento da poupança (ou a taxa de poupança normalizada pelo estoque de capital).</p>
 </section>
-<section id="sec-efetiva-harrod" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="sec-efetiva-harrod"><span class="header-section-number">2.4</span> A taxa efetiva de crescimento</h2>
+<section id="sec-efetiva-harrod" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-efetiva-harrod"><span class="header-section-number">3.4</span> A taxa efetiva de crescimento</h2>
 <p>Se o estoque de capital e a renda crescem à mesma taxa no equilíbrio, temos que a taxa efetiva de crescimento da renda (<span class="math inline">\(g_Y\)</span>) é igual à taxa de crescimento do estoque de capital (<span class="math inline">\(g_K\)</span>):</p>
-<p><span id="eq-gy-harrod"><span class="math display">\[\boxed{g_Y = g_K = g_S = \frac{s u}{v}} \tag{2.2}\]</span></span></p>
-<p>A <a href="#eq-gy-harrod" class="quarto-xref">Equação&nbsp;<span>2.2</span></a> nos mostra que a taxa efetiva de crescimento da economia é determinada por três fatores:</p>
+<p><span id="eq-gy-harrod"><span class="math display">\[\boxed{g_Y = g_K = g_S = \frac{s u}{v}} \tag{3.2}\]</span></span></p>
+<p>A <a href="#eq-gy-harrod" class="quarto-xref">Equação&nbsp;<span>3.2</span></a> nos mostra que a taxa efetiva de crescimento da economia é determinada por três fatores:</p>
 <ol type="1">
 <li>a propensão a poupar (<span class="math inline">\(s\)</span>);</li>
 <li>o grau de utilização da capacidade produtiva do período (<span class="math inline">\(u\)</span>);</li>
@@ -346,17 +346,17 @@ Y_K v = K
 <p>Pegando o diferencial dos dois lados e considerando que <span class="math inline">\(\Delta K = I\)</span>: <span class="math display">\[\Delta Y_K v = I\]</span> Aqui fica nítido que o <span class="math inline">\(v\)</span> está medindo a magnitude do impacto do investimento sobre a capacidade produtiva da economia, refletindo a questão do investimento se convertendo em oferta no futuro.</p>
 <p>O caráter dual do investimento vem do fato de ele ser demanda hoje (o efeito multiplicador captura isso) e oferta no futuro (o efeito acelerador considera isso).</p>
 </section>
-<section id="sec-garantida-harrod" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="sec-garantida-harrod"><span class="header-section-number">2.5</span> A taxa desejada (ou garantida) de crescimento</h2>
+<section id="sec-garantida-harrod" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-garantida-harrod"><span class="header-section-number">3.5</span> A taxa desejada (ou garantida) de crescimento</h2>
 <p>Harrod introduziu um conceito fundamental: a <em>taxa desejada de crescimento</em> (<span class="math inline">\(g_W\)</span>). Esta é a taxa de crescimento que, se ocorrer, deixará todos os agentes satisfeitos por terem produzido exatamente a quantidade certa. Em suas próprias palavras:</p>
 <blockquote class="blockquote">
 <p>“The line of output traced by the warranted rate of growth is a moving equilibrium, in the sense that it represents the one level of output at which producers will feel in the upshot that they have done the right thing, and which will induce them to continue in the same line of advance.” (Harrod 1939, p.&nbsp;22)</p>
 </blockquote>
 <p>A taxa garantida é aquela compatível com as expectativas de curto-prazo dos empresários. Ela ocorre quando o grau de utilização efetivo (<span class="math inline">\(u\)</span>) é igual ao grau de utilização desejado ou normal (<span class="math inline">\(u_n\)</span>), ou seja, aquele nível de utilização que as firmas consideram adequado para suas decisões de investimento.</p>
-<p>Aqui é impossível deixar de fazer analogia com o que foi discutido no box da <a href="#sec-estatico-harrod" class="quarto-xref"><span>Seção 2.2</span></a>. Conforme apresentamos no exemplo didático, a estabildiade das expectativas dos agentes está relacionada com o fato de a demanda efetiva coincidir com a variação planejada dos estoques. Passando da análise de nível da renda para a análise da taxa de crescimento, temos que a estabilidade do sistema ocorre quando a taxa efetiva do grau de utilização iguala à taxa planejada, àquela em que as expectativas dos agentes estariam sendo satisfeitas.</p>
+<p>Aqui é impossível deixar de fazer analogia com o que foi discutido no box da <a href="#sec-estatico-harrod" class="quarto-xref"><span>Seção 3.2</span></a>. Conforme apresentamos no exemplo didático, a estabildiade das expectativas dos agentes está relacionada com o fato de a demanda efetiva coincidir com a variação planejada dos estoques. Passando da análise de nível da renda para a análise da taxa de crescimento, temos que a estabilidade do sistema ocorre quando a taxa efetiva do grau de utilização iguala à taxa planejada, àquela em que as expectativas dos agentes estariam sendo satisfeitas.</p>
 <p>Particularmente, eu acho estranho os economistas chamarem esta taxa de “normal”, mas podemos facilmente enxergar o que Harrod tinha em mente se pensarmos que seu objetivo era passar a teoria estática de Keynes para uma análise dinâmica. Neste caso, em vez de falar em nível de demanda esperado no período de produção em relação ao período de mercado, podemos falar em um grau de utilização da capacidade instalada planejado <span class="math inline">\((u_n)\)</span>.</p>
-<p>Substituindo <span class="math inline">\(u = u_n\)</span> na <a href="#eq-gy-harrod" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>, obtemos:</p>
-<p><span id="eq-gw-harrod"><span class="math display">\[\boxed{g_W = \frac{s u_n}{v}} \tag{2.3}\]</span></span></p>
+<p>Substituindo <span class="math inline">\(u = u_n\)</span> na <a href="#eq-gy-harrod" class="quarto-xref">Equação&nbsp;<span>3.2</span></a>, obtemos:</p>
+<p><span id="eq-gw-harrod"><span class="math display">\[\boxed{g_W = \frac{s u_n}{v}} \tag{3.3}\]</span></span></p>
 <p>onde:</p>
 <ul>
 <li><span class="math inline">\(s\)</span> é a propensão a poupar (efeito multiplicador);</li>
@@ -387,7 +387,7 @@ Y_K v = K
 <img src="figuras/equilibrio_harrod.png" class="img-fluid figure-img" style="width:75.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-equilibrio-harrod-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;2.1: Equilíbrio no modelo de Harrod: interseção entre poupança e investimento.
+Figura&nbsp;3.1: Equilíbrio no modelo de Harrod: interseção entre poupança e investimento.
 </figcaption>
 </figure>
 </div>
@@ -404,8 +404,8 @@ Y &amp;= Y_n
 \end{aligned}\]</span></p>
 <p>Ou seja, que o nível de demanda efetiva convirja para o nível esperado, tal como discutido nas expectativas de curto-prazo.</p>
 </section>
-<section id="sec-natural-harrod" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="sec-natural-harrod"><span class="header-section-number">2.6</span> A taxa natural de crescimento</h2>
+<section id="sec-natural-harrod" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="sec-natural-harrod"><span class="header-section-number">3.6</span> A taxa natural de crescimento</h2>
 <p>Além da taxa efetiva e da taxa desejada, Harrod introduziu uma terceira taxa: a <em>taxa natural de crescimento</em> (<span class="math inline">\(g_n\)</span>). Esta taxa representa o limite máximo de crescimento imposto pelo lado da oferta, ou seja, pelas condições de disponibilidade de fatores de produção.</p>
 <p>Imagine uma pequena aldeia. Sua capacidade produtiva dependerá fundamentalmente de duas coisas:</p>
 <ol type="1">
@@ -413,7 +413,7 @@ Y &amp;= Y_n
 <li><strong>Da tecnologia utilizada na produção</strong>: melhores técnicas produtivas aumentam a produtividade do trabalho.</li>
 </ol>
 <p>Portanto, o crescimento da capacidade produtiva desta aldeia dependerá do crescimento populacional e do desenvolvimento tecnológico. Formalmente:</p>
-<p><span id="eq-gn-harrod"><span class="math display">\[\boxed{g_n = g_L + g_A} \tag{2.4}\]</span></span></p>
+<p><span id="eq-gn-harrod"><span class="math display">\[\boxed{g_n = g_L + g_A} \tag{3.4}\]</span></span></p>
 <p>onde:</p>
 <ul>
 <li><span class="math inline">\(g_L\)</span> é a taxa de crescimento da força de trabalho (população);</li>
@@ -426,14 +426,14 @@ Y &amp;= Y_n
 <li>o produto cresce proporcionalmente ao crescimento tecnológico.</li>
 </ol>
 </section>
-<section id="sec-primeiro-problema-harrod" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="sec-primeiro-problema-harrod"><span class="header-section-number">2.7</span> O primeiro problema de Harrod: a instabilidade da taxa garantida</h2>
+<section id="sec-primeiro-problema-harrod" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="sec-primeiro-problema-harrod"><span class="header-section-number">3.7</span> O primeiro problema de Harrod: a instabilidade da taxa garantida</h2>
 <p>O modelo de Harrod apresenta o que a literatura convencional chama de “primeiro problema”: a instabilidade da taxa garantida de crescimento.</p>
 <p>O problema pode ser enunciado da seguinte forma: o ponto de equilíbrio definido pela igualdade <span class="math inline">\(g_Y = g_W\)</span> é estável? A resposta de Harrod é negativa. Sempre que a taxa efetiva de crescimento se desvia da taxa garantida, forças centrífugas atuam para ampliar o desvio, e não para corrigi-lo.</p>
-<section id="o-mecanismo-da-instabilidade" class="level3" data-number="2.7.1">
-<h3 data-number="2.7.1" class="anchored" data-anchor-id="o-mecanismo-da-instabilidade"><span class="header-section-number">2.7.1</span> O mecanismo da instabilidade</h3>
+<section id="o-mecanismo-da-instabilidade" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="o-mecanismo-da-instabilidade"><span class="header-section-number">3.7.1</span> O mecanismo da instabilidade</h3>
 <p>Para entender a instabilidade, precisamos incorporar ao modelo o <em>princípio do acelerador</em>. Harrod propôs uma função de investimento em que a taxa efetiva de crescimento depende da diferença entre o grau de utilização efetivo e o grau de utilização normal:</p>
-<p><span id="eq-acelerador-harrod"><span class="math display">\[g_Y = \gamma_0 + \gamma_u (u - u_n), \quad \gamma_0, \gamma_u &gt; 0 \tag{2.5}\]</span></span></p>
+<p><span id="eq-acelerador-harrod"><span class="math display">\[g_Y = \gamma_0 + \gamma_u (u - u_n), \quad \gamma_0, \gamma_u &gt; 0 \tag{3.5}\]</span></span></p>
 <p>onde:</p>
 <ul>
 <li><span class="math inline">\(\gamma_0\)</span> é a taxa de crescimento autônoma (ou componente de expectativas representando o “espírito animal”);</li>
@@ -441,7 +441,7 @@ Y &amp;= Y_n
 <li><span class="math inline">\((u - u_n)\)</span> é o desvio do grau de utilização.</li>
 </ul>
 <p>Além disso, Harrod assumiu que as expectativas se ajustam de acordo com o desvio observado:</p>
-<p><span id="eq-ajuste-expectativas"><span class="math display">\[\Delta \gamma_0 = v (u - u_n) \tag{2.6}\]</span></span></p>
+<p><span id="eq-ajuste-expectativas"><span class="math display">\[\Delta \gamma_0 = v (u - u_n) \tag{3.6}\]</span></span></p>
 <p>A intuição por trás desse mecanismo é a seguinte:</p>
 <ol type="1">
 <li>Se <span class="math inline">\(u &gt; u_n\)</span> (economia operando acima da capacidade planejada), as firmas observam que estão vendendo mais do que o planejado, verificando variações não desjeadas de seus estoques.</li>
@@ -466,8 +466,8 @@ Y &amp;= Y_n
 </div>
 </div>
 </section>
-<section id="representação-gráfica-da-instabilidade" class="level3" data-number="2.7.2">
-<h3 data-number="2.7.2" class="anchored"><span class="header-section-number">2.7.2</span> Representação gráfica da instabilidade</h3>
+<section id="representação-gráfica-da-instabilidade" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored"><span class="header-section-number">3.7.2</span> Representação gráfica da instabilidade</h3>
 <p>Graficamente, o primeiro problema de Harrod pode ser representado da seguinte forma:</p>
 <div class="columns">
 <div class="column" style="width:35%;">
@@ -477,7 +477,7 @@ Y &amp;= Y_n
 <img src="figuras/instabilidade_harrod.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-instabilidade-harrod-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;2.2: Instabilidade do modelo de Harrod.
+Figura&nbsp;3.2: Instabilidade do modelo de Harrod.
 </figcaption>
 </figure>
 </div>
@@ -488,21 +488,21 @@ Figura&nbsp;2.2: Instabilidade do modelo de Harrod.
 <p>Em seu ensaio, Harrod resume este resultado da seguinte forma:</p>
 </div><blockquote class="blockquote">
 <p>“The dynamic theory so far stated may be summed up in two propositions. (i) A unique warranted line of growth is determined jointly by the propensity to save and the quantity of capital required by technological and other considerations per unit increment of total output. Only if producers keep to this line will they find that on balance their production in each period has been neither excessive nor deficient. (ii) On either side of this line is a ‘field’ in which centrifugal forces operate, the magnitude of which varies directly as the distance of any point in it from the warranted line. Departure from the warranted line sets up an inducement to depart farther from it. The moving equilibrium of advance is thus a highly unstable one.” (Harrod 1939, p.&nbsp;23)</p>
-</blockquote><p>Representando a dinâmica por um diagrama de fases, temos a <a href="#fig-fases-harrod" class="quarto-xref">Figura&nbsp;<span>2.3</span></a>.</p><div id="fig-fases-harrod" class="quarto-float quarto-figure quarto-figure-center anchored">
+</blockquote><p>Representando a dinâmica por um diagrama de fases, temos a <a href="#fig-fases-harrod" class="quarto-xref">Figura&nbsp;<span>3.3</span></a>.</p><div id="fig-fases-harrod" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fases-harrod-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figuras/fases_harrod.png" class="img-fluid figure-img" style="width:75.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fases-harrod-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;2.3: Instabilidade do modelo de Harrod.
+Figura&nbsp;3.3: Instabilidade do modelo de Harrod.
 </figcaption>
 </figure>
-</div><p>Em que notamos que qualqeur ponto inicial em que a demanda efetiva não seja compatível com as expectativas dos agentes conduz a economia para um processo explosivo. Portanto, é possível transpor a teoria estática de Keynes para uma teoria dinâmica e estável? sim, mas só se você assumir que o equilíbrio do curto prazo esteja ocorrendo. Pois, qualquer ponto de partida distinto desse conduziria a economia para um estado de euforia ou para uma dperessão profunda.</p><section id="sec-segundo-problema-harrod" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="sec-segundo-problema-harrod"><span class="header-section-number">2.8</span> O segundo problema de Harrod: a divergência entre a taxa garantida e a taxa natural</h2>
+</div><p>Em que notamos que qualqeur ponto inicial em que a demanda efetiva não seja compatível com as expectativas dos agentes conduz a economia para um processo explosivo. Portanto, é possível transpor a teoria estática de Keynes para uma teoria dinâmica e estável? sim, mas só se você assumir que o equilíbrio do curto prazo esteja ocorrendo. Pois, qualquer ponto de partida distinto desse conduziria a economia para um estado de euforia ou para uma dperessão profunda.</p><section id="sec-segundo-problema-harrod" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="sec-segundo-problema-harrod"><span class="header-section-number">3.8</span> O segundo problema de Harrod: a divergência entre a taxa garantida e a taxa natural</h2>
 <p>Mesmo que a economia consiga, por algum acaso, se manter sobre a trajetória de crescimento garantido, ainda assim o equilíbrio pode não ser sustentável. Este é o chamado “segundo problema” de Harrod: a possível divergência entre a taxa garantida (<span class="math inline">\(g_W\)</span>) e a taxa natural (<span class="math inline">\(g_n\)</span>).</p>
 <p><span class="math display">\[g_y= g_W \neq g_n\]</span></p>
-<section id="caso-1-a-taxa-natural-supera-a-taxa-garantida" class="level3" data-number="2.8.1">
-<h3 data-number="2.8.1" class="anchored"><span class="header-section-number">2.8.1</span> Caso 1: A taxa natural supera a taxa garantida</h3>
+<section id="caso-1-a-taxa-natural-supera-a-taxa-garantida" class="level3" data-number="3.8.1">
+<h3 data-number="3.8.1" class="anchored"><span class="header-section-number">3.8.1</span> Caso 1: A taxa natural supera a taxa garantida</h3>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div id="fig-harrod-caso1" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -511,15 +511,15 @@ Figura&nbsp;2.3: Instabilidade do modelo de Harrod.
 <img src="figuras/harrod_caso1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-harrod-caso1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;2.4: Taxa garantida abaixo da taxa natural.
+Figura&nbsp;3.4: Taxa garantida abaixo da taxa natural.
 </figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:60%;">
 <p>Se <span class="math inline">\(g_n &gt; g_W\)</span>, a economia cresce a uma taxa inferior ao seu potencial máximo. Por simplicidade, podemos assumir que <span class="math inline">\(g_A=0\)</span> e que o crescimento natural é dado apenas pelo crescimento populacional.</p>
 <p>Este caso implica que a taxa de crescimento populacional é mais rápida do que a taxa de expansão da demanda efetiva. Significa que a taxa de pessoas entrando na força de trabalho está maior do que a taxa que faz com que as firmas contratem novas pessoas.</p>
-</div><p>Neste caso, a economia tenderá a operar com desemprego crescente ao longo do tempo. Mesmo que, por acaso, a taxa efetiva se iguale à garantida, a economia não será capaz de absorver toda a força de trabalho disponível.</p><section id="caso-2-a-taxa-natural-é-inferior-à-taxa-garantida" class="level3" data-number="2.8.2">
-<h3 data-number="2.8.2" class="anchored"><span class="header-section-number">2.8.2</span> Caso 2: A taxa natural é inferior à taxa garantida</h3>
+</div><p>Neste caso, a economia tenderá a operar com desemprego crescente ao longo do tempo. Mesmo que, por acaso, a taxa efetiva se iguale à garantida, a economia não será capaz de absorver toda a força de trabalho disponível.</p><section id="caso-2-a-taxa-natural-é-inferior-à-taxa-garantida" class="level3" data-number="3.8.2">
+<h3 data-number="3.8.2" class="anchored"><span class="header-section-number">3.8.2</span> Caso 2: A taxa natural é inferior à taxa garantida</h3>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div id="fig-harrod-caso2" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -528,7 +528,7 @@ Figura&nbsp;2.4: Taxa garantida abaixo da taxa natural.
 <img src="figuras/harrod_caso2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-harrod-caso2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;2.5: Taxa garantida acima da taxa natural.
+Figura&nbsp;3.5: Taxa garantida acima da taxa natural.
 </figcaption>
 </figure>
 </div>
@@ -538,15 +538,15 @@ Figura&nbsp;2.5: Taxa garantida acima da taxa natural.
 </div><p>Neste caso, a taxa de estado estacionário encontrará um limite na mão-de-obra disponível em algum momento. Quando isso acontecer, a demanda cairá, reduzindo o grau de utilização da capacidade.</p><p>O problema aqui é duplo:</p><ol type="1">
 <li>A economia eventualmente esbarra no limite imposto pela oferta de trabalho.</li>
 <li>Quando isso ocorre, o grau de utilização cai abaixo do normal, o que ativa o mecanismo do primeiro problema de Harrod: a instabilidade.</li>
-</ol><p>Ou seja, o segundo problema não é independente do primeiro. Uma vez que a taxa garantida supera a natural, a economia está fadada a colidir com o limite da oferta, gerando uma crise que a joga para baixo da trajetória de equilíbrio.</p><section id="sec-dupla-condicao" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="sec-dupla-condicao"><span class="header-section-number">2.9</span> A dupla condição de equilíbrio</h2>
+</ol><p>Ou seja, o segundo problema não é independente do primeiro. Uma vez que a taxa garantida supera a natural, a economia está fadada a colidir com o limite da oferta, gerando uma crise que a joga para baixo da trajetória de equilíbrio.</p><section id="sec-dupla-condicao" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="sec-dupla-condicao"><span class="header-section-number">3.9</span> A dupla condição de equilíbrio</h2>
 <p>Para que o modelo de Harrod apresente um equilíbrio dinâmico estável, duas condições precisariam ser satisfeitas simultaneamente:</p>
 <ol type="1">
 <li><span class="math inline">\(g_Y = g_W\)</span> (a taxa efetiva deve igualar a desejada)</li>
 <li><span class="math inline">\(g_W = g_n\)</span> (a taxa desejada deve igualar a natural)</li>
 </ol>
 <p>Ou, de forma combinada:</p>
-<p><span id="eq-dupla-condicao"><span class="math display">\[g_L + g_A = g_W = g_Y = \frac{s u}{v} = \frac{s u_n}{v} \tag{2.7}\]</span></span></p>
+<p><span id="eq-dupla-condicao"><span class="math display">\[g_L + g_A = g_W = g_Y = \frac{s u}{v} = \frac{s u_n}{v} \tag{3.7}\]</span></span></p>
 <p>O que garante que essas duas condições sejam satisfeitas? A resposta de Harrod é: <em>nada</em>. Não há mecanismo automático que assegure a coincidência entre a taxa desejada e a natural.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -566,11 +566,11 @@ Figura&nbsp;2.5: Taxa garantida acima da taxa natural.
 <p>A probabilidade de que ambas as condições sejam atendidas simultaneamente é extremamente baixa.</p>
 </div>
 </div>
-</section><section id="sec-avaliacao-harrod" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="sec-avaliacao-harrod"><span class="header-section-number">2.10</span> Avaliação do modelo de Harrod</h2>
+</section><section id="sec-avaliacao-harrod" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="sec-avaliacao-harrod"><span class="header-section-number">3.10</span> Avaliação do modelo de Harrod</h2>
 <p>O modelo de Harrod foi objeto de inúmeras críticas e interpretações. A avaliação mais amplamente aceita é que Harrod não apresentou uma teoria completa de crescimento e distribuição, mas sim um arcabouço metodológico fundamental.</p>
-<section id="as-limitações-do-modelo" class="level3" data-number="2.10.1">
-<h3 data-number="2.10.1" class="anchored" data-anchor-id="as-limitações-do-modelo"><span class="header-section-number">2.10.1</span> As limitações do modelo</h3>
+<section id="as-limitações-do-modelo" class="level3" data-number="3.10.1">
+<h3 data-number="3.10.1" class="anchored" data-anchor-id="as-limitações-do-modelo"><span class="header-section-number">3.10.1</span> As limitações do modelo</h3>
 <p>Autores como Kregel (1971), Asimakopulos (1991) e Besomi (2001) apontaram as seguintes limitações:</p>
 <ol type="1">
 <li><strong>Ausência de uma teoria da distribuição</strong>: a distribuição funcional da renda é tratada como dada, não explicada pelo modelo.</li>
@@ -580,8 +580,8 @@ Figura&nbsp;2.5: Taxa garantida acima da taxa natural.
 <li><strong>Tratamento da relação capital-produto como constante</strong>: Harrod assume que <span class="math inline">\(v\)</span> é fixo, o que exclui a possibilidade de mudanças técnicas que alterem essa relação.</li>
 </ol>
 </section>
-<section id="a-contribuição-de-harrod" class="level3" data-number="2.10.2">
-<h3 data-number="2.10.2" class="anchored" data-anchor-id="a-contribuição-de-harrod"><span class="header-section-number">2.10.2</span> A contribuição de Harrod</h3>
+<section id="a-contribuição-de-harrod" class="level3" data-number="3.10.2">
+<h3 data-number="3.10.2" class="anchored" data-anchor-id="a-contribuição-de-harrod"><span class="header-section-number">3.10.2</span> A contribuição de Harrod</h3>
 <p>Apesar dessas limitações, a contribuição de Harrod foi fundamental para o desenvolvimento da teoria econômica pós-keynesiana:</p>
 <ol type="1">
 <li><strong>Estabeleceu a distinção entre três taxas de crescimento</strong>: efetiva, garantida e natural.</li>
@@ -597,21 +597,21 @@ Figura&nbsp;2.5: Taxa garantida acima da taxa natural.
 <p>Este último obejtivo nunca cehgou a ser alcançado por Harrod, mas foi desenvolvido por outros autores, como veremos ao longo desta apostila.</p>
 <p>Por fim, para quem pensa que o objetivo e Harrod era montar um modelo de crescimento para explicar ume stado estacinário de longo prazo, de fato o modelo carrega sérios problemas. Contudo, se o objetivo do modelo de Harrod fosse de fato explicar como a economia capitalista é inerentemente instável, a sua contribuição foi mostrar que a estabildiade da economia depende de uma variável tão fugaz quanto as expectativas empresariais.</p>
 </section>
-</section><section id="sec-conexao-harrod" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="sec-conexao-harrod"><span class="header-section-number">2.11</span> Conexão com os modelos subsequentes</h2>
+</section><section id="sec-conexao-harrod" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="sec-conexao-harrod"><span class="header-section-number">3.11</span> Conexão com os modelos subsequentes</h2>
 <p>O modelo de Harrod estabeleceu as bases para o desenvolvimento de outras tradições teóricas:</p>
-<section id="o-modelo-neoclássico-de-solow" class="level3" data-number="2.11.1">
-<h3 data-number="2.11.1" class="anchored" data-anchor-id="o-modelo-neoclássico-de-solow"><span class="header-section-number">2.11.1</span> O modelo neoclássico de Solow</h3>
+<section id="o-modelo-neoclássico-de-solow" class="level3" data-number="3.11.1">
+<h3 data-number="3.11.1" class="anchored" data-anchor-id="o-modelo-neoclássico-de-solow"><span class="header-section-number">3.11.1</span> O modelo neoclássico de Solow</h3>
 <p>Solow (1956) interpretou o problema de Harrod como resultado da hipótese de proporções fixas na produção (<span class="math inline">\(v\)</span> constante). Ao permitir a substituição entre capital e trabalho, Solow mostrou que a economia poderia convergir para um estado estacionário com pleno emprego, independentemente da taxa garantida.</p>
 <p>Essa interpretação, no entanto, foi criticada por autores pós-keynesianos por assumir que a substituição entre fatores ocorreria de forma automática, sem considerar a incerteza fundamental e a rigidez dos preços relativos.</p>
 </section>
-<section id="o-modelo-kaleckiano-de-crescimento" class="level3" data-number="2.11.2">
-<h3 data-number="2.11.2" class="anchored" data-anchor-id="o-modelo-kaleckiano-de-crescimento"><span class="header-section-number">2.11.2</span> O modelo Kaleckiano de crescimento</h3>
-<p>O modelo Kaleckiano (discutido no <a href="modelo_kaleckiano.html" class="quarto-xref"><span>Capítulo 3</span></a>) partiu da mesma crítica de Harrod em relação à instabilidade, mas propôs uma solução diferente: a endogeneidade do grau de utilização de equilíbrio.</p>
-<p>No modelo Kaleckiano, a taxa de crescimento não é determinada por uma “faca de dois gumes”, mas pela interação entre a demanda efetiva e a distribuição funcional da renda. Este modelo será aprofundado no <a href="modelo_kaleckiano.html" class="quarto-xref"><span>Capítulo 3</span></a>.</p>
+<section id="o-modelo-kaleckiano-de-crescimento" class="level3" data-number="3.11.2">
+<h3 data-number="3.11.2" class="anchored" data-anchor-id="o-modelo-kaleckiano-de-crescimento"><span class="header-section-number">3.11.2</span> O modelo Kaleckiano de crescimento</h3>
+<p>O modelo Kaleckiano (discutido no <a href="modelo_kaleckiano.html" class="quarto-xref"><span>Capítulo 4</span></a>) partiu da mesma crítica de Harrod em relação à instabilidade, mas propôs uma solução diferente: a endogeneidade do grau de utilização de equilíbrio.</p>
+<p>No modelo Kaleckiano, a taxa de crescimento não é determinada por uma “faca de dois gumes”, mas pela interação entre a demanda efetiva e a distribuição funcional da renda. Este modelo será aprofundado no <a href="modelo_kaleckiano.html" class="quarto-xref"><span>Capítulo 4</span></a>.</p>
 </section>
-<section id="o-modelo-kaldor-robinson" class="level3" data-number="2.11.3">
-<h3 data-number="2.11.3" class="anchored" data-anchor-id="o-modelo-kaldor-robinson"><span class="header-section-number">2.11.3</span> O modelo Kaldor-Robinson</h3>
+<section id="o-modelo-kaldor-robinson" class="level3" data-number="3.11.3">
+<h3 data-number="3.11.3" class="anchored" data-anchor-id="o-modelo-kaldor-robinson"><span class="header-section-number">3.11.3</span> O modelo Kaldor-Robinson</h3>
 <p>O modelo Kaldor-Robinson, por sua vez, adotou a solução de ajuste pela distribuição funcional da renda, desenvolvendo uma teoria em que a participação dos lucros na renda se ajusta para garantir a igualdade entre poupança e investimento na taxa natural.</p>
 
 
@@ -1030,12 +1030,12 @@ Figura&nbsp;2.5: Taxa garantida acima da taxa natural.
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./contabilidade.html" class="pagination-link" aria-label="A Contabilidade do Crescimento e a Distribuição de Renda">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Contabilidade do Crescimento e a Distribuição de Renda</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Contabilidade do Crescimento e a Distribuição de Renda</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./modelo_kaleckiano.html" class="pagination-link" aria-label="Modelo Kaleckiano Canônico">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Modelo Kaleckiano Canônico</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modelo Kaleckiano Canônico</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
