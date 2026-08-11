@@ -1,0 +1,38 @@
+project:
+  type: book
+
+book:
+  title: "Apostila de Crescimento"
+  author: "Caio Vilella"
+
+  chapters:
+    - index.qmd
+    - contabilidade.qmd
+    - harrod.qmd
+    - modelo_kaleckiano.qmd
+    - modelo_bm.qmd
+
+bibliography: references.bib
+
+lang: pt-BR
+
+execute:
+  freeze: auto
+
+crossref:
+  chapters: true
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    toc: true
+    toc-depth: 3
+    number-sections: true
+
+  pdf:
+    documentclass: scrreprt
+    number-sections: true
+
+editor: visual

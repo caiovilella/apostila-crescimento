@@ -1,0 +1,272 @@
+---
+author: "Caio Vilella"
+format: html
+editor: visual
+lang: pt-BR
+editor_options:
+  chunk_output_type: inline
+---
+# A Contabilidade do Crescimento e a Distribuição de Renda {#sec-contabilidade}
+
+## Introdução
+
+O debate sobre o **crescimento econômico** e a **distribuição de renda**
+tem sido central na economia, ganhando renovada atenção, especialmente
+após eventos como a Grande Recessão de 2008-09. A questão fundamental
+que permeia este campo de estudo é: os resultados dos modelos de
+determinação da renda de curto prazo podem ser extrapolados para o longo
+prazo? E, mais crucialmente, o que explica o diferencial de renda entre
+os países e como a distribuição da renda afeta a dinâmica do
+crescimento?
+
+Este capítulo explora a **contabilidade do crescimento** sob a ótica da
+distribuição de renda, contrastando as abordagens neoclássica e
+heterodoxa. Nosso objetivo é compreender como a forma pela qual o
+excedente gerado na economia é distribuído entre capital e trabalho
+influencia a acumulação e o ritmo de expansão econômica. Aprofundaremos
+nas diferentes perspectivas teóricas, desde os clássicos até os modelos
+pós-keynesianos de segunda geração, que servem de base para os modelos
+de crescimento liderados pela demanda.
+
+## A Distribuição da Renda: Conceitos Fundamentais
+
+Para entender a relação entre distribuição e crescimento, é essencial
+distinguir os diferentes níveis de análise da distribuição de renda:
+
+- **Distribuição Primária da Renda:** Refere-se à forma como a riqueza é
+  inicialmente apropriada pelos fatores de produção (capital e trabalho)
+  no processo produtivo. É a divisão do produto social entre lucros e
+  salários, determinada pelas forças de mercado e pelas relações de
+  poder. Em termos simples, quem se apropria do excedente gerado? Se
+  considerarmos a renda total ($Y$) como a soma dos lucros ($\Pi$) e dos
+  salários ($W$), temos $Y = \Pi + W$. Dividindo por $Y$, obtemos a
+  participação de cada fator na renda: $\frac{\Pi}{Y} + \frac{W}{Y} = 1$.
+
+- **Distribuição Secundária da Renda:** Diz respeito à redistribuição da
+  renda disponível após a intervenção do Estado, por meio de políticas
+  fiscais (impostos) e sociais (transferências e benefícios). Esta etapa
+  afeta a distribuição entre classes sociais e indivíduos, moldando a
+  renda disponível para consumo e poupança.
+
+
+A forma como a distribuição de renda é tratada varia significativamente
+entre as diferentes escolas de pensamento econômico. Essa distinção é
+crucial para entender as implicações sobre o crescimento.
+
+### A Visão Neoclássica
+
+Na abordagem neoclássica, a distribuição de renda é determinada pela
+**contribuição relativa de cada fator de produção** para a produção
+agregada, mediada pelos seus preços relativos. A produtividade marginal
+dos fatores (capital e trabalho) define suas remunerações.
+
+Consideremos $L$ como sendo a quantidade de trabalho e $K$ a quantidade
+física de capital. O sobrescrito $D$ representa a variável de demanda,
+enquanto o sobrescrito $S$,a de oferta. Por exemplo: $L^D$ seria a
+quanitdade demandada de trabalho e assim por diante. Além disso, vamos representar a taxa
+de lucro por $r$ e a a taxa de salários reais por $w$. Se a oferta deve
+equivaler a demanda no estado estacionário então teremos que:
+
+$$
+\begin{aligned}
+rK^S + wL^S = rK^D + w L^D\\
+r (K^S - K^D) = w (L^D - L^S)\\
+\frac{r}{w} = \frac{L^D - L^S}{K^S - K^D}
+\end{aligned}
+$$
+
+Em um mercado competitivo, a taxa de lucro (preço do capital) e o
+salário (preço do trabalho) se ajustam para igualar a oferta e a demanda
+por esses fatores. A ideia central é que, se a demanda por trabalho
+aumentar, deveria haver algum mecanismo (a substituição de trabalho por
+capital) para levar à queda do salário em relação ao lucro para
+reequilibrar o mercado. Da mesma forma, se o capital se torna abundante,
+sua taxa de retorno (lucro) deveria cair em relação ao salário.
+
+Nesses modelos, o crescimento econômico é frequentemente explicado por
+fatores exógenos, como o progresso tecnológico e o crescimento
+populacional. A poupança, embora importante para o nível de capital, não
+teria um impacto duradouro sobre a taxa de crescimento de *steady state*
+em modelos mais antigos. Versões mais recentes, como a teoria do
+crescimento endógeno, incorporam o capital humano e a inovação,
+permitindo que a poupança e o investimento tenham um efeito mais direto
+na taxa de crescimento de longo prazo, mas a distribuição de renda ainda
+é vista como um resultado da tecnologia e das preferências, e não como
+um determinante ativo do crescimento.
+
+### A Visão Heterodoxa e Pós-Keynesiana
+
+Em contraste, a teoria de crescimento heterodoxa, e em particular a
+tradição pós-keynesiana, resgata o **elo causal entre distribuição e
+crescimento**. Nesta abordagem, a distribuição da renda não é um mero
+resultado da tecnologia ou da escassez relativa dos fatores, mas sim um
+fator ativo que influencia a taxa de crescimento da economia. O fato de
+os preços relativos não determinarem unicamente a distribuição de renda
+confere maior liberdade aos modelos pós-keynesianos, permitindo que a
+**luta de classes** e as relações de poder desempenhem um papel
+predominante na determinação da distribuição.
+
+Autores clássicos como David Ricardo e Karl Marx já abordavam a
+distribuição de renda a partir de fatores socioinstitucionais. A **lei
+de ferro dos salários** de Ricardo, por exemplo, postulava que os
+salários tenderiam ao nível de subsistência do trabalhador, deixando a
+taxa de lucro como um resíduo do excedente produzido. A acumulação de
+capital ($g$) era então determinada pela propensão a poupar dos
+capitalistas ($s_\Pi$) e pela taxa de lucro ($r$), ou seja,
+$$g_s = s_r r$$ {#eq-gs}
+
+No entanto, essa visão ainda pressupunha a validade da Lei de Say, onde
+a poupança se converteria automaticamente em investimento, explicando o
+crescimento pelo lado da oferta.
+
+Os clássicos também identificaram limites exógenos à acumulação: Ricardo
+apontava para os rendimentos decrescentes do fator terra, enquanto Marx
+elaborou a lei da tendência à queda da taxa de lucro devido ao aumento
+da composição orgânica do capital. Ambos, de diferentes formas, buscavam
+explicar o desemprego e os limites ao crescimento em pontos anteriores
+ao pleno emprego.
+
+A **primeira geração de modelos pós-keynesianos**, desenvolvida por
+autores como Nicholas Kaldor e Joan Robinson, inverteu a causalidade
+clássica. Baseando-se no Princípio da Demanda Efetiva de Keynes, eles
+argumentaram que as decisões de investimento das firmas e a acumulação
+de capital determinam a distribuição funcional da renda. A taxa de lucro
+($r$) passou a ser vista como dependente da taxa de acumulação ($g$) e
+da propensão a poupar dos capitalistas ($s_r$): $r = g/s_r$.
+
+Assim,a distribuição de renda é um *resultado* da acumulação de capital,
+e não uma pré-condição. Conforme muda a taxa de acumulação, a
+distribuição de renda se altera e muda também a taxa de poupança.
+
+A **segunda geração de modelos pós-keynesianos**, inspirada nos
+trabalhos de Michal Kalecki e Josef Steindl, aprofundou essa
+perspectiva. Nesses modelos, a taxa de lucro dos capitalistas ($r$) é
+determinada pela **participação dos lucros na renda** ($\pi$), pelo
+**grau de utilização da capacidade instalada** ($u$) e pela **relação
+capital-produto** ($v$). A relação pode ser expressa como:
+
+$$r = \frac{\pi u}{v}$$ {#eq-r}
+
+Nesta formulação, a **demanda agregada** passa a afetar a lucratividade
+por meio do grau de utilização da capacidade. Isso significa que
+variações na demanda podem levar a mudanças no grau de utilização, que
+por sua vez impactam a taxa de lucro, mas não necessariamente a
+distribuição de renda.
+
+Essa é uma característica fundamental dos modelos de crescimento
+liderados pela demanda, onde o **Princípio da Demanda Efetiva permanece
+válido no longo prazo**. A distirbuição de renda é dada pelo grau de
+competição dos mercados, mas mudanças no nível de demanda agregada podem
+afetar a taxa de lucro do capital por meio do grau de utilização.
+
+::: callout-note
+### O Princípio da Demanda Efetiva no Longo Prazo
+
+Nos modelos pós-keynesianos de segunda geração, o Princípio da Demanda
+Efetiva gera alguns resultados que serão ressaltados ao logno da
+apostila:
+
+- **Efeito multiplicador da renda:** Um aumento no investimento ou em
+  outros componentes autônomos da demanda gera um aumento maior na
+  renda.
+- **Investimento gera poupança:** Diferente da visão clássica, o
+  investimento não é limitado pela poupança pré-existente; ele cria a
+  poupança necessária para financiá-lo.
+- **Caráter dual do investimento:** O investimento não apenas adiciona à
+  capacidade produtiva, mas também gera demanda.
+- **Oferta se ajusta à demanda:** A produção se ajusta para atender à
+  demanda agregada, e não o contrário.
+:::
+
+## Contabilidade do Crescimento e Modelos Liderados pela Demanda {#sec-contabildiade}
+
+Na Teoria Geral do Emprego do Juro e da Moeda, Keynes (1926) assumiu que o consumo seria uma função da renda $(C= cY)$ para garantir que ajustes no nível da renda equilibraram o mercado de bens, pois:
+
+$$
+\begin{aligned}
+Y= C+I\\
+Y = cY+I \\
+Y-cY=I \\
+Y(1-c)=I\\
+Y=\frac{I}{1-c}
+\end{aligned}
+$$
+
+onde:
+$Y$ é a renda;
+$I$ é o investimento agregado;
+$C$ é o consumo agregado;
+$c$ é a propensão marginal a consumir.
+
+Em que a propensão a consumir seria uma parcela (uma porcentagem) da renda. Isso quer dizer que se $c=0,8$, a comunidade analisada cosumiria 80% de cada unidade monetária obtida de renda. Logo, podemos ver que o denominador da renda de equilíbrio $(1-c)$ é a porcentagem poupada $(1-0,8=0,2)$. Chamemos, portanto, $s$ de a propensão a poupar de determinada sociedade para expressar a equação do **nível** da renda como:
+
+$$Y=\frac{I}{s}$$ {#eq-Y}
+
+Este é o **nível** de renda que equilibra o mercado de bens, igualando o **nível** de poupança $(S)$ com o nível de investimento $(I)$, isto é: $I=S$. Agora vamos partir desta identidade contábil e dividir os dois lados pelo estoque de capital para ter uma representação dinâmica do modelo de Keynes:
+
+$$
+\frac{I}{K}=\frac{S}{K}
+$$ {#eq-IK}
+
+Eu me referi como "dinâmica" pelo fato de o lado esquerdo da equação @eq-IK ser a taxa (porcentagem) de crescimento do estoque de capital. Isso fica fácil de ver se você pensar no investimento como a variação do estoque de capital e notar que $\Delta K = I$; Portanto: $I/K = \Delta K / K = g_K$.
+
+Agora vamos seguir esta análise assumindo que a poupança é determinada pela propensão a poupar da renda (assim como Keynes fez em sua análise estática):
+
+$$\begin{aligned}
+\frac{I}{K} &= \frac{s Y}{K}\\
+g_K &= s \frac{Y}{K}
+\end{aligned}$$ {#eq-gk-cont}
+
+Este já poderia ser o nosso "resutlado final" algébrico, mas traria pouca informação do ponto de vista econômico. Assim, vamos ter que fazer algumas manipulações importantíssimas para entender a intuição econômica.
+
+Primeiro vamos multiplicar a @eq-gk-cont por 1. Mas não qualquer "1", vamos escolher um número "1" especial, que apesar de não mudar o resutlado matemático, trará intuição econômica para a análise. Vamos chamar o produto máximo que a economia é capaz de produzir de $Y_K$ e então multiplicar a @eq-gk-cont por $Y_K / Y_K$:
+
+$$
+\begin{aligned}
+g_K = s \frac{Y}{K} \frac{Y_K}{Y_K}\\
+g_K = s \frac{Y}{Y_K} \frac{Y_K}{K}
+\end{aligned}$$ {#eq-gk-cont2}
+Aqui precisamos ir com calma e entender cada termo, propositalente escrito separado, desta equação.
+
+Repare que $\frac{Y}{Y_K}$ é a divisão do produto corrente (pense em PIB se achar que facilita a intuição) pelo seu nível máximo. Se este resultado for 80%, por exemplo, significaria que a economia está operando a 80% de sua capacidade instalada. De agora em diante chamaremos isso de **grau de utilização da capacidade Instalada** representado pela letra $u$.
+
+O termo seguinte vamos ler de cabeça para baixo: $\frac{K}{Y_K}$. Esta é uma relação que dívide a quantidade de capital existente pela produção máxima. Intuitivamente, esta razão mostrará o quanto de produto cada máquina existente é capaz de produzir, se utilizada em sua plena capacidade. De agora em diante chamaremos isso de **relação capital-produto** represnetando-a pela letra $v$.
+
+:::{.callout-warning}
+## Definições
+
+**Grau de utilização da capacidade instalada** $\rightarrow$ mede o grau de aquecimento do mercado de bens e serviços.
+$$ u=\frac{Y}{Y_K} $$
+
+**Relação capital-produto** $\rightarrow$ representa o coeficiente técnico da produção, medindo quantos produtos cada capital consegue produzir em sua plena utilização.
+$$ v = \frac{K}{Y_K}$$
+:::
+
+Retornando à @eq-gk-cont2 podemos reescreve-la como:
+$$
+\begin{aligned}
+g_K &= s u \frac{1}{v} \\
+&ou\\
+g_K &=\frac{s}{v} u
+\end{aligned}
+$$ {#eq-g-equilibrio}
+
+Em modelos que partem da lei de Say, o produto tende a não ser afetado pelo nível de demanda, aqui representado por $u$. Portanto, podemos considerar que o produto é dado pelo lado da oferta e sempre compatível com seu nível potencial, de tal forma que $u=1$ e, simplesmente:
+$$g=\frac{s}{v}$$
+Representação adotada, por exemplo, pelo famoso modelo neoclássico de Solow-Swan, que veremos adiante.
+
+A integração dos conceitos de distribuição de renda com a dinâmica do crescimento econômico é o cerne da perspectiva pós-keynesiana. Modelos da família de Kaldor-Robinson, por exemplo, garantem o ajuste entre $g, s, v$ e $u$ a partir dos efeitos que o crescimento gera na distribuição de renda e, consequentemente, na propensão a poupar. Sempre mantendo o $u$ constante.
+
+Já os modelos do tipo Kalecki-Steindl, tratados no @sec-modelo-kal, garantem o ajuste entre estas mesmas variáveis por meio de variações do grau de utilização $u$. A partir da garantia da estabildiade através do mecanismo de ajuste, nascem algumas variações de modelagem comportamental, as quais incorporaremos nesta "família" de modelos que, apesar de mudarem o "fechamento", compartilham estruturas semelhantes.
+
+Modelos como o de Bhaduri e Marglin, que analisaremos mais a frente, são exemplos proeminentes dessa abordagem. Eles demonstram, dentro de uma estrutura de modelos kaleckianos, como a sensibilidade do investimento à participação dos lucros na renda (efeito lucratividade) e ao grau de utilização da capacidade (efeito acelerador) pode levar a diferentes **regimes de demanda** (*wage-led* ou *profit-led*) e **regimes de crescimento** (*wage-led* ou *profit-led*).
+
+Nesses modelos, a distribuição de renda não é um fator passivo, mas um motor ativo do crescimento. Diferentes regimes podem explicar, na prática, o por que de algumas escominas permanecerem estagnadas e com alto nível de conflito distributivo, enquanto outras conseguem crescer e superar o conflito interno entre trabalhadores e capitalistas.
+
+Uma redistribuição em favor dos salários pode estimular o consumo e, consequentemente, o grau de utilização da capacidade, impulsionando o investimento via efeito acelerador. Por outro lado, uma redistribuição em favor dos lucros pode estimular o investimento diretamente via efeito lucratividade. O resultado líquido sobre o crescimento dependerá da magnitude relativa desses efeitos, como explorado em detalhe no modelo Bhaduri-Marglin no @sec-modelo-bm.
+
+Já modelos como o supermultiplicador Sraffiano mescla um pouco destes dois mecanismos de ajustes ao incorporar o efeito dos gastos autônomos sobre a geração de poupança. Nesta formulação, a taxa de crescimento do estado estacionário converge para a taxa de crescimento dos gastos autônomos, como a taxa de gastos públicos, por exemplo.
+
+## Conclusão
+
+A contabilidade do crescimento, sob a ótica da distribuição de renda, oferece uma compreensão mais rica e complexa da dinâmica econômica. Ao reconhecer o papel ativo da demanda efetiva e da distribuição na determinação do crescimento, os modelos pós-keynesianos fornecem ferramentas essenciais para analisar as interações entre fatores sociais, institucionais e econômicos. Esta perspectiva é fundamental para o estudo dos modelos de crescimento liderados pela demanda, onde a forma como a renda é distribuída não apenas reflete, mas também molda o futuro da economia.
