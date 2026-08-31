@@ -1,3 +1,5 @@
+![](cover.png){fig-align="center" width="80%"}
+
 # Notas do autor
 
 Esta apostila está em construção
