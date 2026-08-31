@@ -243,8 +243,9 @@ em que
 - $w$ é a taxa de salário nominal;
 - $a$ corresponde ao requisito unitário de trabalho;
 - $wa$ representa o custo unitário do trabalho;
-- $m$ representa os custos intermediários por unidade produzida;
-- $j$ é a margem de *mark-up*.
+- $p_\mu$ representa o preço dos custos intermediários por unidade produzida;
+- $\mu$ é a parcela dos custos unitários que entram na produção do bem;
+- $\tau$ é a margem de *mark-up*.
 
 Para estudar a relação entre a teoria de preços de Kalecki e a
 distribuição de renda podemos manipular a equação acima multiplicando-a
