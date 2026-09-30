@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3d497cff885f6278d37568d0ef0763f8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -185,6 +185,39 @@ window.Quarto = {
   <ul>
   <li><a href="#sec-renda" id="toc-sec-renda" class="nav-link active" data-scroll-target="#sec-renda"><span class="header-section-number">4.1</span> A Determinação dos Lucros e da Renda Nacional em Kalecki</a></li>
   <li><a href="#sec-formacao-precos" id="toc-sec-formacao-precos" class="nav-link" data-scroll-target="#sec-formacao-precos"><span class="header-section-number">4.2</span> A Formação de preços e distribuição de renda</a></li>
+  <li><a href="#sec-poupanca" id="toc-sec-poupanca" class="nav-link" data-scroll-target="#sec-poupanca"><span class="header-section-number">4.3</span> A Função de Poupança</a></li>
+  <li><a href="#sec-investimento" id="toc-sec-investimento" class="nav-link" data-scroll-target="#sec-investimento"><span class="header-section-number">4.4</span> A Função de Investimento</a>
+  <ul class="collapse">
+  <li><a href="#a-contribuição-de-kalecki" id="toc-a-contribuição-de-kalecki" class="nav-link" data-scroll-target="#a-contribuição-de-kalecki"><span class="header-section-number">4.4.1</span> A Contribuição de Kalecki</a></li>
+  <li><a href="#parâmetros-da-função-de-investimento" id="toc-parâmetros-da-função-de-investimento" class="nav-link" data-scroll-target="#parâmetros-da-função-de-investimento"><span class="header-section-number">4.4.2</span> Parâmetros da Função de Investimento</a></li>
+  <li><a href="#representação-gráfica" id="toc-representação-gráfica" class="nav-link" data-scroll-target="#representação-gráfica"><span class="header-section-number">4.4.3</span> Representação Gráfica</a></li>
+  </ul></li>
+  <li><a href="#sec-equilibrio-kanonico" id="toc-sec-equilibrio-kanonico" class="nav-link" data-scroll-target="#sec-equilibrio-kanonico"><span class="header-section-number">4.5</span> O Equilíbrio do Modelo</a>
+  <ul class="collapse">
+  <li><a href="#condição-de-equilíbrio" id="toc-condição-de-equilíbrio" class="nav-link" data-scroll-target="#condição-de-equilíbrio"><span class="header-section-number">4.5.1</span> Condição de Equilíbrio</a></li>
+  <li><a href="#determinação-do-grau-de-utilização-de-equilíbrio" id="toc-determinação-do-grau-de-utilização-de-equilíbrio" class="nav-link" data-scroll-target="#determinação-do-grau-de-utilização-de-equilíbrio"><span class="header-section-number">4.5.2</span> Determinação do Grau de Utilização de Equilíbrio</a></li>
+  <li><a href="#condição-de-estabilidade" id="toc-condição-de-estabilidade" class="nav-link" data-scroll-target="#condição-de-estabilidade"><span class="header-section-number">4.5.3</span> Condição de Estabilidade</a></li>
+  <li><a href="#taxa-de-crescimento-de-equilíbrio" id="toc-taxa-de-crescimento-de-equilíbrio" class="nav-link" data-scroll-target="#taxa-de-crescimento-de-equilíbrio"><span class="header-section-number">4.5.4</span> Taxa de Crescimento de Equilíbrio</a></li>
+  <li><a href="#dinâmica-do-grau-de-utilização" id="toc-dinâmica-do-grau-de-utilização" class="nav-link" data-scroll-target="#dinâmica-do-grau-de-utilização"><span class="header-section-number">4.5.5</span> Dinâmica do Grau de Utilização</a></li>
+  </ul></li>
+  <li><a href="#sec-paradoxos-kal" id="toc-sec-paradoxos-kal" class="nav-link" data-scroll-target="#sec-paradoxos-kal"><span class="header-section-number">4.6</span> Os Paradoxos do Modelo Kaleckiano</a>
+  <ul class="collapse">
+  <li><a href="#o-paradoxo-da-parcimônia-thrift-paradox" id="toc-o-paradoxo-da-parcimônia-thrift-paradox" class="nav-link" data-scroll-target="#o-paradoxo-da-parcimônia-thrift-paradox"><span class="header-section-number">4.6.1</span> O Paradoxo da Parcimônia (<em>Thrift Paradox</em>)</a></li>
+  <li><a href="#o-paradoxo-dos-custos-cost-paradox" id="toc-o-paradoxo-dos-custos-cost-paradox" class="nav-link" data-scroll-target="#o-paradoxo-dos-custos-cost-paradox"><span class="header-section-number">4.6.2</span> O Paradoxo dos Custos (<em>Cost Paradox</em>)</a></li>
+  <li><a href="#a-representação-gráfica-do-equilíbrio" id="toc-a-representação-gráfica-do-equilíbrio" class="nav-link" data-scroll-target="#a-representação-gráfica-do-equilíbrio"><span class="header-section-number">4.6.3</span> A Representação Gráfica do Equilíbrio</a></li>
+  </ul></li>
+  <li><a href="#sec-variantes" id="toc-sec-variantes" class="nav-link" data-scroll-target="#sec-variantes"><span class="header-section-number">4.7</span> Variantes do Modelo Canônico</a>
+  <ul class="collapse">
+  <li><a href="#poupança-dos-trabalhadores" id="toc-poupança-dos-trabalhadores" class="nav-link" data-scroll-target="#poupança-dos-trabalhadores"><span class="header-section-number">4.7.1</span> Poupança dos Trabalhadores</a></li>
+  </ul></li>
+  <li><a href="#sec-exercicios-kanonico" id="toc-sec-exercicios-kanonico" class="nav-link" data-scroll-target="#sec-exercicios-kanonico"><span class="header-section-number">4.8</span> Exercícios</a>
+  <ul class="collapse">
+  <li><a href="#exercício-1-análise-de-estabilidade" id="toc-exercício-1-análise-de-estabilidade" class="nav-link" data-scroll-target="#exercício-1-análise-de-estabilidade"><span class="header-section-number">4.8.1</span> Exercício 1: Análise de Estabilidade</a></li>
+  <li><a href="#exercício-2-o-paradoxo-da-parcimônia" id="toc-exercício-2-o-paradoxo-da-parcimônia" class="nav-link" data-scroll-target="#exercício-2-o-paradoxo-da-parcimônia"><span class="header-section-number">4.8.2</span> Exercício 2: O Paradoxo da Parcimônia</a></li>
+  <li><a href="#exercício-3-o-paradoxo-dos-custos" id="toc-exercício-3-o-paradoxo-dos-custos" class="nav-link" data-scroll-target="#exercício-3-o-paradoxo-dos-custos"><span class="header-section-number">4.8.3</span> Exercício 3: O Paradoxo dos Custos</a></li>
+  <li><a href="#exercício-4-simulação-numérica" id="toc-exercício-4-simulação-numérica" class="nav-link" data-scroll-target="#exercício-4-simulação-numérica"><span class="header-section-number">4.8.4</span> Exercício 4: Simulação Numérica</a></li>
+  </ul></li>
+  <li><a href="#sec-resumo-kanonico" id="toc-sec-resumo-kanonico" class="nav-link" data-scroll-target="#sec-resumo-kanonico"><span class="header-section-number">4.9</span> Resumo</a></li>
   </ul>
 </nav>
     </div>
@@ -281,16 +314,16 @@ window.Quarto = {
 <p>Esta expressão corresponde ao <strong>primeiro multiplicador kaleckiano</strong>. Quanto menor for a propensão a poupar dos capitalistas, maior será o volume de lucros gerado para um mesmo nível de investimento (os capitalistas ganham o que gastam).</p>
 <p>Dividindo os lucros pela renda, obtém-se uma aproximação da participação dos lucros na renda (<em>profit-share</em>), o que pode ser expressa como <span class="math inline">\(\pi=\frac{\Pi}{Y}\)</span>. Substituindo essa definição na expressão anterior,</p>
 <p><span class="math display">\[\begin{aligned}
-\pi=\frac{I}{Ys_\pi} \\
-\pi Y s_\pi = I\\
-Y=\frac{I}{s_\pi \pi}
+\pi=\frac{I}{Ys_r} \\
+\pi Y s_r = I\\
+Y=\frac{I}{s_r \pi}
 \end{aligned}\]</span></p>
 <p>Também é possível obter esse resultado partindo da identidade macroeconômica</p>
 <p><span class="math display">\[I=S,\]</span></p>
 <p>e assumindo que toda a poupança provém dos lucros,</p>
-<p><span class="math display">\[I=s_\pi\Pi=s_\pi\pi Y\]</span></p>
+<p><span class="math display">\[I=s_r\Pi=s_r\pi Y\]</span></p>
 <p>Logo,</p>
-<p><span id="eq-multrenda"><span class="math display">\[Y=\frac{I}{s_\pi\pi}. \tag{4.3}\]</span></span></p>
+<p><span id="eq-multrenda"><span class="math display">\[Y=\frac{I}{s_r\pi}. \tag{4.3}\]</span></span></p>
 <p>Esta expressão representa o <strong>multiplicador da renda kaleckiano</strong>, mostrando como o investimento determina o nível de renda de equilíbrio.</p>
 <p>O paradoxo da parcimônia (<em>Paradox of Thrift</em>) permanece válido. Caso os capitalistas aumentem sua propensão a poupar, o multiplicador diminui, reduzindo a renda e os próprios lucros.</p>
 <p>Kalecki também argumentou que, quando o investimento é financiado por crédito bancário, o próprio processo de gasto gera os depósitos necessários para liquidar posteriormente esse crédito. Dessa forma, o investimento cria a poupança correspondente (<em>investment finances itself</em>), antecipando ideias posteriormente desenvolvidas pela teoria pós-keynesiana do circuito monetário.</p>
@@ -421,6 +454,451 @@ p=(1+\tau)(wa(1+j))
 <li>o poder de barganha dos sindicatos.</li>
 </ul>
 <p>Esses fatores serão tratados como exógenos ao longo do desenvolvimento do modelo kaleckiano de crescimento, de modo que a distribuição funcional da renda será considerada previamente determinada pelo processo de formação de preços.</p>
+</section>
+<section id="sec-poupanca" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-poupanca"><span class="header-section-number">4.3</span> A Função de Poupança</h2>
+<p>Um cientista macroeconômico formula modelos na tentativa de criar uma réplica sintética do mundo real, onde ele possa realizar seus experimentos. Para um cientista do campo da quimíca, é mais fácil realizar experimentos em seu laboratório controlado. Ao misturar o líquido azul com o amarelo, o líquido resultante pode ir mudando de coloração, deixando a tonalidade azul até estabilizar na cor verde. Quando a cor do líquido resultante deixa de mudar, o cientista sabe que o resultado de seu experimento terminou e sua conclusão é de que ao misturar o líquido amarelo no líquido azul, terá um novo líquido verde, tudo o mais constante. Mas como um economista sabe que chegou em um resultado final de seu experimento?</p>
+<p>Bom, para um macroeconomista, as identidades contábeis funcionam como um norte para onde as equações comportamentais nos levam. Assim, a velha identidade entre poupança e investimento serve para nos informar que o ciclo da renda chegou ao fim e o seu modelo produziu (ou não) o resultado final a ser observado do experimento realizado.</p>
+<p>Mas para modelos de longo-prazo, como este, dizer que <span class="math inline">\(I=S\)</span> acrescenta pouca informação. Por isso, usaremos um artificio de “normalizar” pelo estoque de capital, o que significa “dividir todo mundo” por <span class="math inline">\(K\)</span>. Repare que <span class="math inline">\(I=\Delta K\)</span>, portanto, dividí-lo por <span class="math inline">\(K\)</span> significa estudá-lo em termos percentuais <span class="math inline">\(\frac{I}{K}=\frac{\Delta K}{K}\)</span>. Dizer o quanto que o investimento subiu em termos percentuais nos traz muito mais informações do que tratá-lo em nível.</p>
+<p>Baseados no sistema de contas nacionais, o equilíbrio do nosso modelo será obtido quando a taxa de crescimento do investimento igualar a taxa de crescimento do estoque de capital. Esta identidade nos permitirá estudar se as equações comportamentais assumidas conduzem a uma situação de estabilidade e sob quais condições.</p>
+<p>Portanto:</p>
+<p><span class="math display">\[\begin{aligned}
+\frac{I}{K} &amp;= \frac{S}{K} \\
+g_K &amp;= g_s
+\end{aligned}\]</span></p>
+<p>O próximo passo agora é assumir hipóteses comportamentais para construirmos o modelo com equações comportamentais.</p>
+<p>O modelo kaleckiano canônico adota a hipótese tradicional pós-keynesiana de que:</p>
+<ol type="1">
+<li><strong>Toda a poupança é oriunda dos lucros</strong> retidos pelas empresas ou dos capitalistas;</li>
+<li><strong>Os trabalhadores não poupam</strong>, consumindo toda a sua renda salarial.</li>
+</ol>
+<p>Esta hipótese, embora forte, reflete a visão de que os capitalistas são os agentes que efetivamente realizam a poupança e o investimento na economia, enquanto os trabalhadores têm propensão a consumir próxima da unidade.</p>
+<p>A poupança agregada é, portanto, uma fração dos lucros:</p>
+<p><span class="math display">\[S = s_r \Pi\]</span></p>
+<p>Normalizando pelo estoque de capital, obtemos a taxa de crescimento da poupança:</p>
+<p><span class="math display">\[g_s = \frac{S}{K} = \frac{s_r  \Pi}{K}\]</span></p>
+<p><span id="eq-gsr-kal"><span class="math display">\[g_s= s_r r  \tag{4.7}\]</span></span></p>
+<p>Intuitivamente, esta equação nos diz que a poupança crescerá a uma taxa <span class="math inline">\((g_s)\)</span>, que corresponderá a uma parcela <span class="math inline">\((s_r)\)</span> da taxa de lucro <span class="math inline">\((r)\)</span> obtida pelos capitalistas.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Exemplo numérico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Se os capitalistas poupam 20% da sua renda <span class="math inline">\((s_r = 0,2)\)</span>, obtida a partir de uma taxa de lucro de 50% sobre o capital investido <span class="math inline">\((r=0,5)\)</span>, temos que a poupança, logicamente, crescerá 20% destes 50% de renda do capitalista, portanto, crescerá 10% <span class="math inline">\((g_s=0,2 \times 0,5 = 0,1)\)</span>.</p>
+</div>
+</div>
+<p>Substituindo a definição da taxa de lucro (<a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>), chegamos à forma final da função de poupança:</p>
+<p><span id="eq-gs-kal"><span class="math display">\[g_s = s_r \frac{ \pi u}{v} \tag{4.8}\]</span></span></p>
+<p>A <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a> revela que a taxa de crescimento da poupança é: - <strong>Positivamente relacionada</strong> ao grau de utilização da capacidade (<span class="math inline">\(u\)</span>); - <strong>Positivamente relacionada</strong> à participação dos lucros na renda (<span class="math inline">\(\pi\)</span>); - <strong>Positivamente relacionada</strong> à propensão a poupar dos capitalistas (<span class="math inline">\(s_r\)</span>).</p>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div id="fig-gskal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gskal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/gs-kal.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gskal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.2: Representação gráfica do modelo.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:65%;">
+<p>Lembremos, no entanto, que conforme discutido na <a href="#sec-formacao-precos" class="quarto-xref"><span>Seção 4.2</span></a>, a distribuição de renda é dada exogenamente neste modelo. Assim, tomando que a propensão a poupar também seja um parâmtero fixo, temos uma relação direta do grau de utilização sobre a taxa de lucro e outra relação direta e positiva da taxa de lucro sobre a taxa de crescimento da poupança.</p>
+<p>Graficamente, a função de poupança é representada como uma reta crescente no espaço <span class="math inline">\((u, g)\)</span>, com inclinação determinada por <span class="math inline">\(s_r \pi / v\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Interpretação econômica
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Quando o grau de utilização aumenta, a taxa de lucro se eleva (para dado <span class="math inline">\(\pi\)</span>), gerando maiores lucros e, consequentemente, maior poupança. A inclinação da curva reflete a sensibilidade da poupança a variações na utilização da capacidade.</p>
+</div>
+</div>
+<p>Algebricamente, repare que até agora temos um modelo linear simples de duas equações e duas variáveis. A <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a> é a primeira equação linear e a <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> é a segunda equação. Como método algébrico, optamos pela substitução daquela nesta para obter a equação <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a>. Cujo coeficiente linear é zero e o coeficiente angular é dado por todos parâmteros e variável exógena que multiplicam o grau de utilização <span class="math inline">\((\frac{s_r \pi}{v})\)</span>, como representado no gráfico acima.</p>
+</section>
+<section id="sec-investimento" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-investimento"><span class="header-section-number">4.4</span> A Função de Investimento</h2>
+<section id="a-contribuição-de-kalecki" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="a-contribuição-de-kalecki"><span class="header-section-number">4.4.1</span> A Contribuição de Kalecki</h3>
+<p>Kalecki definiu o investimento como função de três determinantes principais:</p>
+<p><span class="math display">\[I = \gamma_0 K + \gamma_r rK + \gamma_Y Y\]</span> em que:</p>
+<ul>
+<li><p><span class="math inline">\(\gamma_0 K\)</span> representa o componente autônomo do investimento (animal spirits);</p></li>
+<li><p><span class="math inline">\(\gamma_r rK\)</span> captura o efeito da lucratividade sobre o investimento;</p></li>
+<li><p><span class="math inline">\(\gamma_Y Y\)</span> representa a sensibilidade do investimento ao nível de produto.</p></li>
+</ul>
+<p>Na teoria de Kalecki, o primeiro componente da função de investimento representaria o componente autônomo do investimento. Aqui representado pelo nível dos estoques de capital previamente acumulados. O segundo componente é o produto da taxa de lucro pelo estoque de capital, o que denota o lucro empresarial. Esta variável é uma proxy do que Kalecki tentou representar pela poupança. Em sua obra “Teoria da Dinâmica Econômica”, Kalecki coloca a poupança como uma das variáveis determinantes do investimento. A partir de um outro texto do mesmo autor, chamado “o princícpio do risco crescente”, a literatura costuma interpretar esta variável como uma restrição e não como um determinante em si. Isto é, nesta leitura, não é que a poupança determine o investimento, mas um maior nível de poupança facilitaria o acesso a linhas de crédito mais acessíveis. Assim, se houver demanda suficiente, menor será a restrição que o crédito imporá sobre o investimento, quanto maior for a quantidade de recursos próprios da empresa. Portanto, os autores kaleckianos costumam representar esta ideia colocando o lucro como uma variável na função de investimento (vide o segundo termo da equação acima).</p>
+<p>Por fim, o terceiro, e mais importante termo da equação de investimento, refere-se ao efeito da demanda efetiva sobre o investimento. Quanto mais aquecida for a demanda agregada da economia, mais os empresários investirão para aumentar sua capacidade produtiva e atender esta demanda.</p>
+<p>Normalizando esta equação pelo estoque de capital, obtemos a função de investimento na forma de taxas de crescimento: <span class="math display">\[\begin{aligned}
+\frac{I}{K} &amp;= \gamma_0 \frac{K}{K} + \gamma_r r \frac{K}{K} + \gamma_Y \frac{Y}{K} \\
+\frac{I}{K} &amp;= \gamma_0 \frac{K}{K} + \gamma_r r \frac{K}{K} + \gamma_Y \frac{Y}{K} \frac{Y_K}{Y_K} \\
+\frac{I}{K} &amp;= \gamma_0 + \gamma_r r + \gamma_Y \frac{u}{v}
+\end{aligned}\]</span></p>
+<p>O <span class="math inline">\(\gamma_Y\)</span> representa a sensibilidade do investimento em relação a demanda, enquanto o <span class="math inline">\(v\)</span> é a nosso conhecido efeito acelerador, que demonstra o quanto a capacidade produtiva aumenta para um dado aumento do investimento <span class="math inline">\((v=\frac{K}{Y_K} \rightarrow Y_K v = K \rightarrow \Delta Y_K v = \Delta K)\)</span>. Como ambos são parâmteros deste modelo, podemos incorporar um ao outro, chamando-o simplesmente de efeito acelerador <span class="math inline">\((\gamma_u = \gamma_Y / v)\)</span>.</p>
+<p><span id="eq-gk-kal"><span class="math display">\[g_K = \gamma_0 + \gamma_r r + \gamma_u u \tag{4.9}\]</span></span></p>
+</section>
+<section id="parâmetros-da-função-de-investimento" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="parâmetros-da-função-de-investimento"><span class="header-section-number">4.4.2</span> Parâmetros da Função de Investimento</h3>
+<p>A <span class="quarto-unresolved-ref">?eq-gk</span> contém três parâmetros com interpretações econômicas distintas:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 36%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Parâmetro</th>
+<th style="text-align: left;">Interpretação</th>
+<th style="text-align: center;">Sinal esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\gamma_0\)</span></td>
+<td style="text-align: left;">Animal spirits (otimismo empresarial autônomo)</td>
+<td style="text-align: center;"><span class="math inline">\(&gt; 0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\gamma_r\)</span></td>
+<td style="text-align: left;">Efeito lucratividade: sensibilidade do investimento à taxa de lucro</td>
+<td style="text-align: center;"><span class="math inline">\(&gt; 0\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\gamma_u\)</span></td>
+<td style="text-align: left;">Efeito acelerador: sensibilidade do investimento ao grau de utilização</td>
+<td style="text-align: center;"><span class="math inline">\(&gt; 0\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>A hipótese crítica
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O modelo canônico assume que <span class="math inline">\(\gamma_u\)</span> é sempre positivo. Isso significa que, tudo o mais constante, o aumento do grau de utilização leva a um aumento do investimento.</p>
+<p>No entanto, a expressão “<em>tudo o mais constante</em>” esconde uma relação implícita importante: manter a taxa de lucro constante após o aumento de <span class="math inline">\(u\)</span> requer uma queda proporcional em <span class="math inline">\(\pi\)</span> (ver <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>). Isso sugere que o modelo canônico pressupõe que as firmas podem observar uma redução em sua participação nos lucros e, ainda assim, aumentar o investimento devido ao aquecimento da demanda.</p>
+</div>
+</div>
+</section>
+<section id="representação-gráfica" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="representação-gráfica"><span class="header-section-number">4.4.3</span> Representação Gráfica</h3>
+<p>Substituindo a definição da taxa de lucro (<a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>) na <span class="quarto-unresolved-ref">?eq-gk</span>, podemos reescrever a função de investimento como:</p>
+<p><span class="math display">\[g_K = \gamma_0 + \left(\gamma_r \frac{\pi}{v} + \gamma_u\right) u\]</span></p>
+<p>Esta equação mostra que a função de investimento é linear no grau de utilização, com intercepto <span class="math inline">\(\gamma_0\)</span> e inclinação <span class="math inline">\(\gamma_r \pi/v + \gamma_u\)</span>.</p>
+</section>
+</section>
+<section id="sec-equilibrio-kanonico" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-equilibrio-kanonico"><span class="header-section-number">4.5</span> O Equilíbrio do Modelo</h2>
+<section id="condição-de-equilíbrio" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="condição-de-equilíbrio"><span class="header-section-number">4.5.1</span> Condição de Equilíbrio</h3>
+<p>No equilíbrio de longo prazo, a taxa de crescimento da poupança deve igualar a taxa de crescimento do investimento:</p>
+<p><span class="math display">\[g_s = g_K\]</span> Como no equilíbrio temos que as taxas de crescimento da poupança e do investimento devem ser iguais, digamos “<span class="math inline">\(g\)</span>”, temos um modelo de três equações e três variáveis.</p>
+<p><span class="math display">\[\begin{aligned}
+r &amp;= \frac{\pi u}{v} \\
+g_s &amp;= s_r r \\
+g_K &amp;= \gamma_0 + \gamma_r r + \gamma_u u
+\end{aligned}\]</span></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variáveis endógenas</th>
+<th style="text-align: center;">Variáveis exógenas</th>
+<th style="text-align: center;">parâmetros</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(r\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\pi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\gamma_0\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(g\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(v\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\gamma_r\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(u\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(s_r\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\gamma_u\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Apesar de as variáveis exógenas e os parâmetros serem valores fixos neste modelo, aquelas estão baseadas em hipóteses teóricas. A parcela dos lucros na renda, por exemplo, é considerada uma variável exógena pois depende do grau de markup das firmas, como teorizado no início deste capítulo. Já os parâmetros, por sua vez, são coeficientes técnicos que medem a sensibilidade de uma variável em relação a outra.</p>
+</section>
+<section id="determinação-do-grau-de-utilização-de-equilíbrio" class="level3" data-number="4.5.2">
+<h3 data-number="4.5.2" class="anchored" data-anchor-id="determinação-do-grau-de-utilização-de-equilíbrio"><span class="header-section-number">4.5.2</span> Determinação do Grau de Utilização de Equilíbrio</h3>
+<p>Igualando a taxa de crescimento do investimento (<a href="#eq-gk-kal" class="quarto-xref">Equação&nbsp;<span>4.9</span></a>) com a taxa de crescimento da poupança (<a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a>), temos: <span class="math display">\[s_r r = \gamma_0 + \gamma_r r + \gamma_u u\]</span> A priori poderíamos dizer que a taxa de lucro é a variável endógena responsável por igualar os dois lados desta equação (poupança com investimento) e isso não estaria totalmente errado. Mas, se lembrarmos da <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>, podemos notar que a taxa de lucro,a o fim e ao cabo, responde à mudanças no grau de utilização, de tal forma que podemos escrever:</p>
+<p><span id="eq-equilibrio-passo1"><span class="math display">\[\frac{s_r \pi u}{v} = \gamma_0 + \gamma_r \frac{\pi u}{v} + \gamma_u u \tag{4.10}\]</span></span></p>
+<p>Agora fica nítida a importância do grau de utilização neste modelo. É esta a variável responsável por igualar a taxa de crescimento da poupança à taxa de crescimento do investimento. Portanto, se no modelo estático de Keynes, mudanças no nível do investimento causam mudanças no nível de renda até mudar o nível da poupança de acordo com o novo nivel de investimento, na dinâmica kaleckiana este mecanismo se repete a partir de mudanças na taxa de crescimento do investimento mudando o grau de utilização até provocar mudanças proporcionais na taxa de lucro e, consequentemente, na taxa de crescimento da poupança.</p>
+<p>Isolando o grau de utilização <span class="math inline">\(u\)</span>, obtemos:</p>
+<p><span id="eq-u-estrela"><span class="math display">\[u^{*} = \frac{\gamma_0}{\frac{\pi}{v}(s_r - \gamma_r) - \gamma_u} \tag{4.11}\]</span></span></p>
+<p>Algebircamente, o que estamos fazendo é resolver o nosso sistema linear de três equações pelo método da substituição.</p>
+</section>
+<section id="condição-de-estabilidade" class="level3" data-number="4.5.3">
+<h3 data-number="4.5.3" class="anchored" data-anchor-id="condição-de-estabilidade"><span class="header-section-number">4.5.3</span> Condição de Estabilidade</h3>
+<p>Para que o equilíbrio seja estável, é necessário que o denominador da <a href="#eq-u-estrela" class="quarto-xref">Equação&nbsp;<span>4.11</span></a> seja positivo:</p>
+<p><span class="math display">\[\frac{\pi}{v}(s_r - \gamma_r) &gt; \gamma_u\]</span></p>
+<p>ou, equivalentemente:</p>
+<p><span class="math display">\[s_r &gt; \gamma_r + \frac{\gamma_u v}{\pi}\]</span></p>
+<p>Esta condição significa que a <strong>poupança responde mais intensamente a mudanças na utilização da capacidade do que o investimento</strong>. Intuitivamente, se o investimento reagir muito fortemente à demanda, o sistema pode se tornar instável.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Interpretação da estabilidade
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A condição de estabilidade garante que, quando o grau de utilização se desvia do equilíbrio, as forças do mercado atuam para trazê-lo de volta.</p>
+<p>Se <span class="math inline">\(g_K &gt; g_s\)</span> (investimento maior que poupança), a demanda agregada cresce acima da capacidade de financiamento, elevando <span class="math inline">\(u\)</span> e, por sua vez, a poupança, até que o equilíbrio seja restabelecido.</p>
+</div>
+</div>
+</section>
+<section id="taxa-de-crescimento-de-equilíbrio" class="level3" data-number="4.5.4">
+<h3 data-number="4.5.4" class="anchored" data-anchor-id="taxa-de-crescimento-de-equilíbrio"><span class="header-section-number">4.5.4</span> Taxa de Crescimento de Equilíbrio</h3>
+<p>Uma vez determinado o grau de utilização de equilíbrio, podemos obter a taxa de crescimento de equilíbrio substituindo <a href="#eq-u-estrela" class="quarto-xref">Equação&nbsp;<span>4.11</span></a> na função de poupança:</p>
+<p><span class="math display">\[g^{*} = \frac{s_r \pi}{v} u^{*}\]</span></p>
+<p><span id="eq-g-estrela"><span class="math display">\[g^{*}= \frac{s_r \pi \gamma_0}{\pi(s_r - \gamma_r) - v\gamma_u} \tag{4.12}\]</span></span></p>
+</section>
+<section id="dinâmica-do-grau-de-utilização" class="level3" data-number="4.5.5">
+<h3 data-number="4.5.5" class="anchored" data-anchor-id="dinâmica-do-grau-de-utilização"><span class="header-section-number">4.5.5</span> Dinâmica do Grau de Utilização</h3>
+<p>O processo de ajustamento do modelo pode ser representado pela seguinte equação dinâmica:</p>
+<p><span id="eq-dinamica-u"><span class="math display">\[\frac{\Delta u}{u} = \mu(g_K - g_s) \tag{4.13}\]</span></span></p>
+<p>em que <span class="math inline">\(\mu &gt; 0\)</span> é um parâmetro de velocidade de ajustamento.</p>
+<p>Sempre que <span class="math inline">\(g_K &gt; g_s\)</span>, o grau de utilização tende a aumentar, e vice-versa. O equilíbrio é atingido quando ambas as taxas de crescimento se igualam.</p>
+</section>
+</section>
+<section id="sec-paradoxos-kal" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="sec-paradoxos-kal"><span class="header-section-number">4.6</span> Os Paradoxos do Modelo Kaleckiano</h2>
+<p>O modelo kaleckiano canônico gera dois resultados contraintuitivos que desafiam a sabedoria convencional: o paradoxo da parcimônia (<em>thrift</em>) e o paradoxo dos custos. Ambos decorrem da interação entre distribuição de renda, demanda efetiva e acumulação de capital.</p>
+<section id="o-paradoxo-da-parcimônia-thrift-paradox" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1" class="anchored" data-anchor-id="o-paradoxo-da-parcimônia-thrift-paradox"><span class="header-section-number">4.6.1</span> O Paradoxo da Parcimônia (<em>Thrift Paradox</em>)</h3>
+<p>O paradoxo de Thrifit afirma que <strong>um aumento da propensão a poupar dos capitalistas</strong> (<span class="math inline">\(s_r\)</span>) reduz a taxa de crescimento da poupança. Este paradoxo já havia sido demonstrado pelo efeito multiplicador de Keynes para uma análise estática do nível da renda. Keynes mostrou que se a propensão marginal a poupar de uma sociedade aumentar, a demanda agregada cai, reduzindo a renda e, consequentemente, o nível de poupança macroeconômica (ver <a href="#eq-multrenda" class="quarto-xref">Equação&nbsp;<span>4.3</span></a>).</p>
+<p>A questão a se investigar, então, é se este resultado seguiria válido em uma análise dinâmica em termos de taxa. Isto é, o aumento da propensão a poupar das pessoas leva a uma queda da taxa de crescimento da renda e da poupança?</p>
+<p>Analisando a <a href="#eq-u-estrela" class="quarto-xref">Equação&nbsp;<span>4.11</span></a>, notamos que <span class="math inline">\(s_r\)</span> aparece no denominador. Portanto:</p>
+<p><span class="math display">\[\frac{\partial u^{*}}{\partial s_r} = \frac{- \gamma_0 \frac{\pi} {v}}{  \left(\frac{\pi}{v}(s_r - \gamma_r) - \gamma_u \right)^2} &lt; 0\]</span></p>
+<p>Como o denominador desta derivada é um termo quadrático e o numerador tem de ser negativo, a razão é inequivocamente negativa. Isto sugere que um aumento de <span class="math inline">\(s_r\)</span> reduz o grau de utilização de equilíbrio.</p>
+<p>Como a taxa de crescimento é positivamente relacionada a <span class="math inline">\(u\)</span> (ver <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a>), temos que:</p>
+<p><span class="math display">\[\frac{\partial g^{*}}{\partial s_r} = \frac{\pi}{v} \frac{\partial u^{*}}{\partial s_r} &lt; 0\]</span></p>
+<p>O mecanismo por trás do paradoxo é o seguinte:</p>
+<ol type="1">
+<li><p>Um aumento da propensão a poupar dos capitalistas reduz o consumo agregado, pois uma fração maior da renda é retida como poupança.</p></li>
+<li><p>A queda no consumo reduz a demanda efetiva, levando as firmas a operarem com menor grau de utilização da capacidade.</p></li>
+<li><p>Com menor demanda, o investimento induzido (via efeito acelerador) também se reduz.</p></li>
+<li><p>A economia converge para um novo equilíbrio com menor taxa de crescimento e menor taxa de lucro.</p></li>
+</ol>
+<p><span class="math display">\[ s_r \uparrow \rightarrow Y \downarrow \rightarrow u \downarrow \rightarrow r \downarrow \rightarrow g_K \downarrow \rightarrow g_s \downarrow\]</span></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>A lógica do paradoxo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O paradoxo da parcimônia revela que, em uma economia com capacidade ociosa, a tentativa de poupar mais pode ser frustrada: o aumento da poupança desejada leva a uma redução da renda e, consequentemente, a uma redução da poupança efetiva. Ao tentar cortar reduzir a taxa de crescimento dos gastos para aumetnar a taxa de crescimento da poupança, os agentes reduzem também a taxa de crescimento da renda recebida que, quando abatida da nova taxa de crescimento do consumo (mesmo que menor), resulta em menor taxa de crescimento da poupança.</p>
+<p><strong>Economia</strong>: poupar mais <span class="math inline">\(\rightarrow\)</span> consumir menos <span class="math inline">\(\rightarrow\)</span> demanda cai <span class="math inline">\(\rightarrow\)</span> produção cai <span class="math inline">\(\rightarrow\)</span> poupança efetiva não aumenta.</p>
+</div>
+</div>
+</section>
+<section id="o-paradoxo-dos-custos-cost-paradox" class="level3" data-number="4.6.2">
+<h3 data-number="4.6.2" class="anchored" data-anchor-id="o-paradoxo-dos-custos-cost-paradox"><span class="header-section-number">4.6.2</span> O Paradoxo dos Custos (<em>Cost Paradox</em>)</h3>
+<p>O paradoxo dos custos, também conhecido como paradoxo de Rowthorn, afirma que <strong>um aumento da participação dos salários na renda (queda de</strong> <span class="math inline">\(\pi\)</span>) pode elevar a taxa de lucro de equilíbrio. Ainda que do ponto de vista individual da firma pagar salários maiores reduza seu lucro, do ponto de vista agregado, Kalecki mostrou que uma maior parcela dos salários na renda é compatível com um maior nível de renda (ver <span class="quarto-unresolved-ref">?eq-multirenda</span>) e, consequentemente, com maior nível de lucro agregado.</p>
+<p>Para analisar o paradoxo dos custos no longo prazo, precisamos examinar como a taxa de lucro de equilíbrio responde a mudanças na participação dos lucros na renda.</p>
+<p>A taxa de lucro de equilíbrio é dada pela substituição do <span class="math inline">\(u^{*}\)</span> na <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>:</p>
+<p><span id="eq-r-estrela"><span class="math display">\[r^{*} = \frac{\pi u^{*}}{v} = \frac{\pi \gamma_0}{\pi(s_r - \gamma_r) - v\gamma_u} \tag{4.14}\]</span></span></p>
+<p>A derivada da taxa de lucro em relação à participação dos lucros é:</p>
+<p><span class="math display">\[\frac{\partial r^{*}}{\partial \pi} = \frac{-\gamma_0 \gamma_u}{\left(\frac{\pi}{v}(s_r - \gamma_r) - \gamma_u\right)^2} &lt; 0\]</span></p>
+<p>Como o numerador é negativo e o denominador é uma expressão quadrática, portanto, invariavelmente positiva, a razão tem de ser negativa. Isso significa que quedas na parcela dos lucros na renda, ou seja, aumentos salarias, levam a aumentos na taxa de lucro.</p>
+<p>O paradoxo dos custos opera através do seguinte mecanismo:</p>
+<ol type="1">
+<li><p>Uma redução na participação dos lucros (aumento dos salários) eleva a renda dos trabalhadores, que têm maior propensão a consumir.</p></li>
+<li><p>O aumento do consumo eleva a demanda efetiva e, consequentemente, o grau de utilização da capacidade.</p></li>
+<li><p>O aumento de <span class="math inline">\(u\)</span> pode ser tão grande que, mesmo com <span class="math inline">\(\pi\)</span> menor, a taxa de lucro <span class="math inline">\(r = \frac{\pi u}{v}\)</span> se eleva.</p></li>
+<li><p>Com maior taxa de lucro, o investimento também pode aumentar, gerando um círculo virtuoso de crescimento.</p></li>
+</ol>
+<p><span class="math display">\[\pi \downarrow \rightarrow Y \uparrow \rightarrow u \uparrow \uparrow \rightarrow r \uparrow\]</span></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>A lógica do paradoxo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O paradoxo dos custos revela que, em uma economia com capacidade ociosa, aumentos salariais estimulam a demanda via efeito multiplicador e acelerador, elevando o grau de utilização mais que proporcionalemente à queda da parcela dos lucros na renda, fato que garante o aumento da taxa de lucro.</p>
+<p><strong>Economia</strong>: aumentam salários <span class="math inline">\(\rightarrow\)</span> consumo aumenta <span class="math inline">\(\rightarrow\)</span> demanda aumenta <span class="math inline">\(\rightarrow\)</span> utilização aumenta <span class="math inline">\(\rightarrow\)</span> investimento aumenta <span class="math inline">\(\rightarrow\)</span> taxa de lucro aumenta.</p>
+</div>
+</div>
+<p>Repare que algébricamente nós resolvemos um modelo linear de três equações seguindo os seguintes passos lógicos:</p>
+<ul>
+<li>Igualamos <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> à <a href="#eq-gk-kal" class="quarto-xref">Equação&nbsp;<span>4.9</span></a>;</li>
+<li>Substituimos, nesta igualdade, o valor de <span class="math inline">\(r\)</span> conforme a <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a> ;</li>
+<li>Encontramos o valor de <span class="math inline">\(u\)</span> que garante com que o investimento cresça a mesma taxa da poupança;</li>
+<li>Substituimos o valor de <span class="math inline">\(u\)</span> encontrado na <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a> para encontrar a taxa de crescimento do estado estacionário ;</li>
+<li>Usamos o mesmo valor de <span class="math inline">\(u\)</span> para encontrar a taxa de lucro compatível (<a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>) com o estado estacionário.</li>
+</ul>
+<p>Assim, temos explícito que o equilíbrio no modelo canônico acontece por ajustes no grau de utilização da capacidade instalada até que esta variável ajuste a taxa de lucro, de forma garantir que a taxa de crescimento da poupança se adeque à nova taxa de crescimento do investimento.</p>
+<p>Um ponto importante a esta altura é entender que podemos ter duas taxas de lucro se manifestand simultaneamente. De um lado temos a taxa de lucro da “Curva de Phillips”, isto é, a taxa de lucro que equilibraria a distribuição de renda conforme o planejado pelas firmas. Esta taxa pode ser representada por:</p>
+<p><span id="eq-rpc-kal"><span class="math display">\[ r_{PC} = \frac{{\pi}u_n}{s_r} \tag{4.15}\]</span></span></p>
+<p>Esta taxa é aquela manifestada quando a parcela dos lucros na renda se ajusta ao nível compátivel com o grau de utilização planejado pelas firmas. Esta é a taxa de lucro que os empresários esperavam ex-ante.</p>
+<p>Por outro lado, se olharmos para a <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a>, podemos notar que há uma outra taxa de lucro possível de acordo com a demanda efetiva da economia:</p>
+<p><span class="math display">\[r_{ED} = \frac{g}{s_r}\]</span></p>
+<p><span class="math display">\[r_{ED} = \frac{\gamma_0 + \gamma_r r + \gamma_u u}{s_r}\]</span></p>
+<p>Desta forma, sempre que a taxa de lucro eferivada pelo grau de demanda efetiva (ex-post) superar a taxa de lucro esperada ex-ante, o empresário aumentará a taxa de investimento e o contrário também é verdade. Assim, quando a taxa de lucro de equilíbrio pode ser relacionada com aquela em que temos o grau de utilização efetivo igualando ao grau planejado. Ou seja, existirá um grua de utilização que igualará estas taxas de lucro, retirando qualquer incentivo do capitalista aletar sua taxa de investimento.</p>
+</section>
+<section id="a-representação-gráfica-do-equilíbrio" class="level3" data-number="4.6.3">
+<h3 data-number="4.6.3" class="anchored" data-anchor-id="a-representação-gráfica-do-equilíbrio"><span class="header-section-number">4.6.3</span> A Representação Gráfica do Equilíbrio</h3>
+<p>O equilíbrio do modelo kaleckiano canônico pode ser representado graficamente em dois quadrantes:</p>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div id="fig-eqkanonico" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/equilibrio_kaleckiano.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.3: Representação gráfica do modelo kaleckiano canônico
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:65%;">
+<p>No quadrante superior, temos:</p>
+<ul>
+<li><p>A curva de poupança (<span class="math inline">\(g_s\)</span>): reta crescente com intercepto zero.</p></li>
+<li><p>A curva de investimento (<span class="math inline">\(g_K\)</span>): reta crescente com intercepto <span class="math inline">\(\gamma_0 &gt; 0\)</span>.</p></li>
+</ul>
+<p>A interseção das duas curvas determina o equilíbrio <span class="math inline">\((u^{*}, g^{*})\)</span>.</p>
+<p>No quadrante inferior, temos:</p>
+<ul>
+<li><p>A curva PC (<em>Profit Curve</em> ou Curva de Lucro): <span class="math inline">\(r = \frac{\pi u_n}{v}\)</span>.</p></li>
+<li><p>A curva ED (<em>Effective Demand</em> ou Demanda Efetiva): <span class="math inline">\(r = \frac{(\gamma_0 + \gamma_r r + \gamma_u u)}{s_r}\)</span>.</p></li>
+</ul>
+<p>O equilíbrio ocorre quando as duas taxas de lucro se igualam, garantindo que a taxa de lucro realizada seja compatível com a taxa de lucro desejada pelas firmas. Neste ponto temos o grau de utilização igual ao planejado e, portanto, a poupança crescendo na mesma taxa do que o investimento.</p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div id="fig-eqkanonico" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/equilibrio_kaleckiano2.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.4: Representação gráfica do modelo kaleckiano canônico
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:65%;">
+<p>Repare que caso o grau de utilização fique acima do normal, a taxa de lucro realizada será inferior à esperada ex-ante. Isto acontece pelo fato de a poupança estar crescendo acima do investimento neste ponto (ver quadrante superior).</p>
+<p>Este fato faz com que os emprsários invistam a uma taxa inferior, reduzindo o grau de utilização de volta ao desejado.</p>
+<p>Caso o grau de utilização comece de um patamar inferior ao desejado, o oposto ocorrerá. Nestas circunstâncias, a taxa de lucro efetiva superará a taxa de lucro esperada e a taxa de crescimento do investimento crescerá até que o grau efetivo convirja ao grau desejado.</p>
+<p>Assim, com as condições de estabildiades aceitas, o modelo converje para a taxa de crescimento em que o grau de utilização efetivo seja igual ao grau de utilização epserado pelas firmas.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-variantes" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="sec-variantes"><span class="header-section-number">4.7</span> Variantes do Modelo Canônico</h2>
+<section id="poupança-dos-trabalhadores" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="poupança-dos-trabalhadores"><span class="header-section-number">4.7.1</span> Poupança dos Trabalhadores</h3>
+<p>O modelo canônico assume que os trabalhadores não poupam (<span class="math inline">\(s_w = 0\)</span>). Esta hipótese pode ser relaxada, permitindo que os trabalhadores também poupem uma fração de sua renda.</p>
+<p>A função de poupança passa a ser:</p>
+<p><span id="eq-gs-sw"><span class="math display">\[g^s = \frac{(s_r \pi + s_w (1-\pi)) u}{v} \tag{4.16}\]</span></span></p>
+<p>Neste caso, a participação dos lucros na renda afeta a poupança de duas maneiras: - Diretamente, através da maior propensão a poupar dos capitalistas (<span class="math inline">\(s_r &gt; s_w\)</span>); - Indiretamente, através da mudança na distribuição de renda.</p>
+<p>A inclusão da poupança dos trabalhadores não altera qualitativamente os resultados principais do modelo, mas pode modificar a magnitude dos paradoxos.</p>
+</section>
+</section>
+<section id="sec-exercicios-kanonico" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="sec-exercicios-kanonico"><span class="header-section-number">4.8</span> Exercícios</h2>
+<section id="exercício-1-análise-de-estabilidade" class="level3" data-number="4.8.1">
+<h3 data-number="4.8.1" class="anchored" data-anchor-id="exercício-1-análise-de-estabilidade"><span class="header-section-number">4.8.1</span> Exercício 1: Análise de Estabilidade</h3>
+<p>Considere o modelo kaleckiano canônico com os seguintes parâmetros: <span class="math inline">\(\gamma_0 = 0.03\)</span>, <span class="math inline">\(\gamma_r = 0.2\)</span>, <span class="math inline">\(\gamma_u = 0.4\)</span>, <span class="math inline">\(s_r = 0.6\)</span>, <span class="math inline">\(\pi = 0.4\)</span>, <span class="math inline">\(v = 3\)</span>.</p>
+<ol type="a">
+<li><p>Verifique se a condição de estabilidade é satisfeita.</p></li>
+<li><p>Calcule o grau de utilização de equilíbrio (<span class="math inline">\(u^{*}\)</span>).</p></li>
+<li><p>Calcule a taxa de crescimento de equilíbrio (<span class="math inline">\(g^{*}\)</span>).</p></li>
+</ol>
+</section>
+<section id="exercício-2-o-paradoxo-da-parcimônia" class="level3" data-number="4.8.2">
+<h3 data-number="4.8.2" class="anchored" data-anchor-id="exercício-2-o-paradoxo-da-parcimônia"><span class="header-section-number">4.8.2</span> Exercício 2: O Paradoxo da Parcimônia</h3>
+<p>Utilizando os parâmetros do exercício anterior, analise o efeito de um aumento da propensão a poupar dos capitalistas para <span class="math inline">\(s_r = 0.7\)</span>.</p>
+<ol type="a">
+<li><p>Calcule o novo grau de utilização de equilíbrio.</p></li>
+<li><p>Calcule a nova taxa de crescimento de equilíbrio.</p></li>
+<li><p>Explique, com suas próprias palavras, o mecanismo econômico por trás do paradoxo da parcimônia.</p></li>
+</ol>
+</section>
+<section id="exercício-3-o-paradoxo-dos-custos" class="level3" data-number="4.8.3">
+<h3 data-number="4.8.3" class="anchored" data-anchor-id="exercício-3-o-paradoxo-dos-custos"><span class="header-section-number">4.8.3</span> Exercício 3: O Paradoxo dos Custos</h3>
+<p>Utilizando os parâmetros iniciais (<span class="math inline">\(s_r = 0.6\)</span>), analise o efeito de um aumento da participação dos salários na renda (redução de <span class="math inline">\(\pi\)</span> de 0.4 para 0.35).</p>
+<ol type="a">
+<li><p>Calcule a nova taxa de lucro de equilíbrio.</p></li>
+<li><p>Compare com a taxa de lucro inicial.</p></li>
+<li><p>Explique o paradoxo dos custos.</p></li>
+</ol>
+</section>
+<section id="exercício-4-simulação-numérica" class="level3" data-number="4.8.4">
+<h3 data-number="4.8.4" class="anchored" data-anchor-id="exercício-4-simulação-numérica"><span class="header-section-number">4.8.4</span> Exercício 4: Simulação Numérica</h3>
+<p>Construa uma tabela com os valores de <span class="math inline">\(u^{*}\)</span>, <span class="math inline">\(g^{*}\)</span> e <span class="math inline">\(r^{*}\)</span> para diferentes combinações de <span class="math inline">\(\pi\)</span> (0.3, 0.4, 0.5) e <span class="math inline">\(s_r\)</span> (0.5, 0.6, 0.7). Fixe os demais parâmetros em <span class="math inline">\(\gamma_0 = 0.03\)</span>, <span class="math inline">\(\gamma_r = 0.2\)</span>, <span class="math inline">\(\gamma_u = 0.4\)</span>, <span class="math inline">\(v = 3\)</span>.</p>
+<ol type="a">
+<li><p>Em quais casos o paradoxo da parcimônia se verifica?</p></li>
+<li><p>Em quais casos o paradoxo dos custos se verifica?</p></li>
+<li><p>O que você pode concluir sobre a relação entre distribuição de renda e crescimento?</p></li>
+</ol>
+</section>
+</section>
+<section id="sec-resumo-kanonico" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="sec-resumo-kanonico"><span class="header-section-number">4.9</span> Resumo</h2>
+<p>O modelo kaleckiano canônico estabelece as bases da teoria do crescimento liderado pela demanda com base em três pilares fundamentais:</p>
+<ol type="1">
+<li><p><strong>Distribuição de renda exógena</strong>: determinada pelo <em>markup</em> e pelo grau de monopólio, não por mecanismos de mercado.</p></li>
+<li><p><strong>Capacidade ociosa planejada</strong>: as firmas operam com grau de utilização abaixo da capacidade normal de forma deliberada.</p></li>
+<li><p><strong>Demanda efetiva como determinante do crescimento</strong>: a taxa de crescimento de longo prazo é determinada pela demanda agregada, não por fatores de oferta.</p></li>
+</ol>
+<p>Os principais resultados do modelo são:</p>
+<ul>
+<li><strong>Paradoxo da parcimônia</strong>: maior propensão a poupar reduz o crescimento.</li>
+<li><strong>Paradoxo dos custos</strong>: maior participação dos salários pode elevar a taxa de lucro.</li>
+<li><strong>Instabilidade potencial</strong>: o crescimento liderado pela demanda pode ser instável se o investimento responder muito fortemente à demanda.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Para saber mais
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O modelo kaleckiano canônico serve como base para extensões mais complexas, como: - O modelo de Bhaduri e Marglin (com efeitos distributivos sobre o investimento); - Modelos com endogeneidade da distribuição de renda; - Modelos com setor financeiro e restrições de crédito.</p>
+</div>
+</div>
 
 
 </section>
