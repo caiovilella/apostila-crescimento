@@ -6,6 +6,7 @@ lang: pt-BR
 editor_options: 
   chunk_output_type: inline
 ---
+
 # Modelo Neo-Kaleckiano (Bhaduri e Marglin) {#sec-modelo-bm}
 
 ## Introdução {#sec-introducao-bm}
@@ -270,7 +271,7 @@ resultado sobre o crescimento dependerá do efeito da lucratividade sobre
 o investimento. Se o segundo termo compensar, em magnitude, o terceiro
 termo, o crescimento responderá positivamente ao aumento da parcela dos
 lucros na renda. Assim, temos o caso de um regime de demanda wage-led,
-mas um **regime de crescimento profit-led**. 
+mas um **regime de crescimento profit-led**.
 
 ::: callout-note
 ### Regime de crescimento *profit-led*
@@ -281,7 +282,7 @@ $$\frac{\partial g^{*}}{\partial\pi}>0,$$ uma redistribuição da renda em
 favor dos lucros amplia a demanda agregada.
 
 Nesse caso, a economia encontra-se em um **regime de crescimento
-profit-led**. 
+profit-led**.
 :::
 
 Contudo, se o efeito da lucratividade sobre o investimento não for
@@ -312,7 +313,7 @@ de demanda e regimes de cresimento:
 | $\partial u^*/\partial\pi$ | $-$ | $-$ | $+$ |
 | $\partial g^*/\partial\pi$ | $-$ | $+$ | $+$ |
 
-: Combinações de regimes de demanda e de crescimento {#tbl-regimes}
+: Combinações de regimes de demanda e de crescimento
 
 Em suma, este modelo permite dois tipos distintos de regime de demanda e
 de crescimento. Esse resultado decorre da existência de dois efeitos
@@ -419,7 +420,7 @@ $$\begin{aligned}
 \end{aligned}$$
 :::
 
-:::::::: columns
+:::::::::: columns
 ::: {.column width="35%"}
 ![Parodoxo de Thrifit.](figuras/thrifitbm.png){width="100%"}
 :::
@@ -458,164 +459,186 @@ do modelo. Graficamente, vemos dois movimentos simultâneos:
 
 - rotação da reta da taxa de poupança $(g_s)$
 
-![Parodoxo dos custos](figuras/regimesbm.png){#fig-custos-bm width="100%"}
+![Parodoxo dos custos](figuras/regimesbm.png){#fig-custos-bm
+width="100%"}
 
-A @fig-custos-bm ilustra o efeito de um aumento da parcela dos salários na renda em três
-casos distintos. Se lembramos da @eq-r, é fácil notar que para a taxa de lucro subir 
-após o aumento dos salários (queda da parcela dos lucros), é preciso que o grau de
-utilização suba mais que proporcionalmente. Em outras palavras, o paradoxo dos custos
-só será verificado em um regime de demanda *wage-led*. A seguir, vamos estudar esta 
-relação entre parcela dos salários na renda e grau de utilização.
+A @fig-custos-bm ilustra o efeito de um aumento da parcela dos salários
+na renda em três casos distintos. Se lembramos da @eq-r, é fácil notar
+que para a taxa de lucro subir após o aumento dos salários (queda da
+parcela dos lucros), é preciso que o grau de utilização suba mais que
+proporcionalmente. Em outras palavras, o paradoxo dos custos só será
+verificado em um regime de demanda *wage-led*. A seguir, vamos estudar
+esta relação entre parcela dos salários na renda e grau de utilização.
 
-Como trata-se de um gráfico bidimensional, que considera $u$ e $g$, podemos
-pensar na mudança de $\pi$ na @eq-gkbm como uma mudança de intercepto da reta $g_K$. 
-Neste caso, o aumento dos salários é equivalente à queda da parcela dos lucros, portanto,
-diminuição do intercepto e, por isso, vemos um deslocamento para baixo da reta $g_K$.
+Como trata-se de um gráfico bidimensional, que considera $u$ e $g$,
+podemos pensar na mudança de $\pi$ na @eq-gkbm como uma mudança de
+intercepto da reta $g_K$. Neste caso, o aumento dos salários é
+equivalente à queda da parcela dos lucros, portanto, diminuição do
+intercepto e, por isso, vemos um deslocamento para baixo da reta $g_K$.
 
-Concomitantemente, ao olhar para @eq-gs-bm como uma equação linear, podemos notar que o
-$\pi$ funciona como um coeficiente angular da reta. Ou seja, a queda do $\pi$ reduz o 
-coeficiente angular de uma função de primeiro grau, reduzindo sua inclinação (rotacionando no sentido horário). 
-Em outras palavras: tornado a reta do plano cartesiano mais "deitada".
+Concomitantemente, ao olhar para @eq-gs-bm como uma equação linear,
+podemos notar que o $\pi$ funciona como um coeficiente angular da reta.
+Ou seja, a queda do $\pi$ reduz o coeficiente angular de uma função de
+primeiro grau, reduzindo sua inclinação (rotacionando no sentido
+horário). Em outras palavras: tornado a reta do plano cartesiano mais
+"deitada".
 
-O Quadrante A mostra que após a rotação da curva $g_S$ no sentido horário e o deslocamento
-para baixo de $g_K$, o novo equilíbrio se dá em um ponto compatível com maior grau de 
-utilização e maior taxa de crescimento. Enquanto o primeiro resultado denota um regime
-de demanda liderado por salários, o segundo deve ser lido como um regime de crescimento
-liderado pelos salários.
+O Quadrante A mostra que após a rotação da curva $g_S$ no sentido
+horário e o deslocamento para baixo de $g_K$, o novo equilíbrio se dá em
+um ponto compatível com maior grau de utilização e maior taxa de
+crescimento. Enquanto o primeiro resultado denota um regime de demanda
+liderado por salários, o segundo deve ser lido como um regime de
+crescimento liderado pelos salários.
 
-Em uma economia totalmente *wage-led*, o conflito distributivo fica menos intenso, já 
-que o aumento dos salários leva ao aumento do ritmo de acumulação do capital. Neste caso,
-o paradoxo dos custos pode ser verificado no curto e no longo-prazo.
+Em uma economia totalmente *wage-led*, o conflito distributivo fica
+menos intenso, já que o aumento dos salários leva ao aumento do ritmo de
+acumulação do capital. Neste caso, o paradoxo dos custos pode ser
+verificado no curto e no longo-prazo.
 
-::: {.callout-warning}
-
+::: callout-warning
 ### Atenção
 
-Observe que o resultado do **Quadrante A** depende de um deslocamento relativamente pequeno da curva $g_K$ e de uma rotação mais acentuada da curva $g_S$.
+Observe que o resultado do **Quadrante A** depende de um deslocamento
+relativamente pequeno da curva $g_K$ e de uma rotação mais acentuada da
+curva $g_S$.
 
-Em termos econômicos, isso significa que o aumento da participação dos salários na renda exerce apenas um efeito limitado sobre as expectativas de lucratividade dos empresários, enquanto o estímulo ao consumo e à demanda efetiva é suficientemente forte para elevar o grau de utilização da capacidade instalada. Nessas circunstâncias, o efeito acelerador sobre o investimento supera o efeito lucratividade, permitindo a ocorrência de um regime de demanda e crescimento liderado pelos salários (*wage-led*).
-
+Em termos econômicos, isso significa que o aumento da participação dos
+salários na renda exerce apenas um efeito limitado sobre as expectativas
+de lucratividade dos empresários, enquanto o estímulo ao consumo e à
+demanda efetiva é suficientemente forte para elevar o grau de utilização
+da capacidade instalada. Nessas circunstâncias, o efeito acelerador
+sobre o investimento supera o efeito lucratividade, permitindo a
+ocorrência de um regime de demanda e crescimento liderado pelos salários
+(*wage-led*).
 :::
 
 Como podemos notar pela @eq-gkbm, o tamanho do deslocamento da curva de
 investimentos dependerá diretamente do quão sensível o investimento é em
-relação à distribuição de renda (representado pelo parâmero $\gamma_\pi$).
-Quanto mais sensível for, maior será o deslocamento da reta $g_K$, aumemtando 
-as chances de um regime de demanda profit-led (para dado $\gamma_u$).
+relação à distribuição de renda (representado pelo parâmero
+$\gamma_\pi$). Quanto mais sensível for, maior será o deslocamento da
+reta $g_K$, aumemtando as chances de um regime de demanda profit-led
+(para dado $\gamma_u$).
 
-Em suma e simplificadamente, o efeito líquido de uma distribuição de renda em favor 
-dos salários dependerá do efeito líquido entre o efeito lucratividade $(\gamma_\pi)$ 
-e o efeito acelerador $(\gamma_u)$. Quanto maior for o efeito acelerador em relação ao
-efeito lucratividade, maiores serão as chances de termos um regime de demanda e crescimento
+Em suma e simplificadamente, o efeito líquido de uma distribuição de
+renda em favor dos salários dependerá do efeito líquido entre o efeito
+lucratividade $(\gamma_\pi)$ e o efeito acelerador $(\gamma_u)$. Quanto
+maior for o efeito acelerador em relação ao efeito lucratividade,
+maiores serão as chances de termos um regime de demanda e crescimento
 liderado pelos salários (*wage-led*).
 
-O Quadrante B da @fig-custos-bm representa um modelo de demanda wage-led, mas um regime
-de crescimento profit-led. Isto porque, apesar de o grau de utilização crescer após o 
-aumento da parcela dos salários, isso não é suficiente para compensar a 
-desaceleração do investimento puxada pela consequente queda da parcela dos lucros.
+O Quadrante B da @fig-custos-bm representa um modelo de demanda
+wage-led, mas um regime de crescimento profit-led. Isto porque, apesar
+de o grau de utilização crescer após o aumento da parcela dos salários,
+isso não é suficiente para compensar a desaceleração do investimento
+puxada pela consequente queda da parcela dos lucros.
 
-Neste caso, a validade do paradoxo dos custos dependerá de o aumento do grau de utilização 
-compensar a queda da parcela dos lucros na renda, a ponto de aumentar a taxa de lucro.
-Mais uma vez, menores serão as chances disso acontecer, quanto maior for o efeito lucratividade
-do investimento, capturado pelo parâmetro $\gamma_\pi$. Aqui vemos como um regime de 
-demanda liderado pelos salários é condição necessária, mas não suficiente para assegurar 
-que o regime de crescimento também seja liderado pelos salários (como vimos na @tbl-regimes).
+Neste caso, a validade do paradoxo dos custos dependerá de o aumento do
+grau de utilização compensar a queda da parcela dos lucros na renda, a
+ponto de aumentar a taxa de lucro. Mais uma vez, menores serão as
+chances disso acontecer, quanto maior for o efeito lucratividade do
+investimento, capturado pelo parâmetro $\gamma_\pi$. Aqui vemos como um
+regime de demanda liderado pelos salários é condição necessária, mas não
+suficiente para assegurar que o regime de crescimento também seja
+liderado pelos salários (como vimos na @tbl-regimes).
 
-Por fim, o Quadrante C da @fig-custos-bm mostra que após o aumento da parcela dos salários, o novo equilíbrio
-ocorre já com o grau de utilização menor do que o inicial, caracterizando o regime de demanda
-como liderado pelos lucros (*profit-led*). Nestas circunstância, não tem como o regime de 
-crescimento não ser liderado pelos lucros também, já que o efeito sensibilidade do 
-investimento se mostrou significativo ante o efeito acelerador, provocando um forte 
-deslocamento da curva $g_K$. O paradoxo dos custos não é válido neste contexto.
+Por fim, o Quadrante C da @fig-custos-bm mostra que após o aumento da
+parcela dos salários, o novo equilíbrio ocorre já com o grau de
+utilização menor do que o inicial, caracterizando o regime de demanda
+como liderado pelos lucros (*profit-led*). Nestas circunstância, não tem
+como o regime de crescimento não ser liderado pelos lucros também, já
+que o efeito sensibilidade do investimento se mostrou significativo ante
+o efeito acelerador, provocando um forte deslocamento da curva $g_K$. O
+paradoxo dos custos não é válido neste contexto.
 
-Trabalhos empíricos conduzidos por autores neokaleckianos tendem a mostrar um efeito
-acelerador bem alto, enquanto estimações apontam para um baixo efeito lucratividade. 
-Isto é, o investimento parece ser mais sensível à demanda do que à lucratividade. 
+Trabalhos empíricos conduzidos por autores neokaleckianos tendem a
+mostrar um efeito acelerador bem alto, enquanto estimações apontam para
+um baixo efeito lucratividade. Isto é, o investimento parece ser mais
+sensível à demanda do que à lucratividade.
 
-Intuitivamente, esta combinação de parâmetros, verificados empiricamente, aumenta o efeito 
-expansionista causado pela distribuição de renda e minimiza o efeito contracionista causado pelo 
-desestímulo ao investimento devido a esta mesma distribuição.
-
+Intuitivamente, esta combinação de parâmetros, verificados
+empiricamente, aumenta o efeito expansionista causado pela distribuição
+de renda e minimiza o efeito contracionista causado pelo desestímulo ao
+investimento devido a esta mesma distribuição.
 
 ## Seção de estudo interativo {#sec-estudo}
 
-O gráfico abaixo permite explorar, de forma interativa, os efeitos de alterações na propensão a poupar e na distribuição funcional da renda sobre o equilíbrio do modelo neokaleckiano de Bhaduri e Marglin. Utilize os controles deslizantes para modificar os parâmetros e observe como as curvas e o ponto de equilíbrio se alteram.
+O gráfico abaixo permite explorar, de forma interativa, os efeitos de
+alterações na propensão a poupar e na distribuição funcional da renda
+sobre o equilíbrio do modelo neokaleckiano de Bhaduri e Marglin. Utilize
+os controles deslizantes para modificar os parâmetros e observe como as
+curvas e o ponto de equilíbrio se alteram.
 
-::: {.callout-tip}
+::: callout-tip
 ### Como utilizar o simulador
 
 **Paradoxo da parcimônia**
 
 - Altere o *slider* vermelho correspondente à propensão a poupar ($s$).
 - Observe a rotação da curva de poupança ($g_S$).
-- Compare a posição inicial (linha contínua) com a posição final (linha tracejada).
+- Compare a posição inicial (linha contínua) com a posição final (linha
+  tracejada).
 
 **Paradoxo dos custos**
 
-- Altere o *slider* verde correspondente à participação dos salários ($w$).
+- Altere o *slider* verde correspondente à participação dos salários
+  ($w$).
 - Observe simultaneamente:
   - a alteração da inclinação da curva de poupança;
   - o deslocamento da curva de investimento, dada pela @eq-gkbm;
   - o novo ponto de equilíbrio.
 :::
 
-::: {.callout-important}
+::: callout-important
 ### O que observar?
 
-Durante a utilização do simulador, procure responder às seguintes questões:
+Durante a utilização do simulador, procure responder às seguintes
+questões:
 
-- Quais curvas se alteram quando aumenta a propensão a poupar (olhe o gráfico inferior também)?
+- Quais curvas se alteram quando aumenta a propensão a poupar (olhe o
+  gráfico inferior também)?
 - O aumento da participação dos salários desloca ou rotaciona as curvas?
 - O que determina os regimes de demanda e de crescimento do modelo?
 :::
 
 ::: {.callout-important appearance="minimal"}
+<iframe scrolling="no" title="Modelo Neokaleckiano wage-led" src="https://www.geogebra.org/material/iframe/id/kyjszhnv/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
 
-<iframe
-  scrolling="no"
-  title="Modelo Neokaleckiano wage-led"
-  src="https://www.geogebra.org/material/iframe/id/kyjszhnv/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
-  width="1499%"
-  height="835px"
-  style="border: none !important; overflow: hidden; display: block;"
-  frameborder="0">
 </iframe>
-
 :::
 
-
-::: {.callout-note}
+::: callout-note
 ### Exercício
 
-Após explorar diferentes valores para $s$ e $w$, explique, com suas próprias palavras, os mecanismos econômicos responsáveis pelas alterações observadas.
+Após explorar diferentes valores para $s$ e $w$, explique, com suas
+próprias palavras, os mecanismos econômicos responsáveis pelas
+alterações observadas.
 
-Sua resposta deve apresentar uma sequência lógica de causalidade, identificando:
+Sua resposta deve apresentar uma sequência lógica de causalidade,
+identificando:
 
-1. qual parâmetro foi alterado;
-2. quais curvas foram modificadas;
-3. por que essas curvas se deslocaram ou rotacionaram;
-4. como essas alterações afetaram o grau de utilização da capacidade e a taxa de crescimento;
-5. Qual é o regime de demanda e de crescimento em cada caso.
+1.  qual parâmetro foi alterado;
+2.  quais curvas foram modificadas;
+3.  por que essas curvas se deslocaram ou rotacionaram;
+4.  como essas alterações afetaram o grau de utilização da capacidade e
+    a taxa de crescimento;
+5.  Qual é o regime de demanda e de crescimento em cada caso.
 
-Evite apenas descrever o gráfico. Procure trazer a intuição econômica representada pelo modelo.
+Evite apenas descrever o gráfico. Procure trazer a intuição econômica
+representada pelo modelo.
 :::
 
-Agora, refaça o exercício anterior considerando o contexto do modelo abaixo. 
-A diferença entre os dois modelos são apenas os parâmteros $\gamma_\pi$ e $\gamma_u$.
-Na versão abaixo, o investimento se mostra muito mais sensível à mudanças da 
-distribuição de renda e a taxa de poupança menos sensível a esta mesma variável.
+Agora, refaça o exercício anterior considerando o contexto do modelo
+abaixo. A diferença entre os dois modelos são apenas os parâmteros
+$\gamma_\pi$ e $\gamma_u$. Na versão abaixo, o investimento se mostra
+muito mais sensível à mudanças da distribuição de renda e a taxa de
+poupança menos sensível a esta mesma variável.
 
-Repare que o regime de demanda e de crescimento não são o mesmo neste contexto.
-Faça o exercício e tente identificar as principais características presentes 
-nesta representação. Explore os dois paradoxos para aplicar o conhecimento construído
-ao longo deste capítulo.
+Repare que o regime de demanda e de crescimento não são o mesmo neste
+contexto. Faça o exercício e tente identificar as principais
+características presentes nesta representação. Explore os dois paradoxos
+para aplicar o conhecimento construído ao longo deste capítulo.
 
-<iframe
-  scrolling="no"
-  title="Modelo Neokaleckiano profit-led"
-  src="https://www.geogebra.org/material/iframe/id/jhabpd4r/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
-  width="1499%"
-  height="835px"
-  style="border: none !important; overflow: hidden; display: block;"
-  frameborder="0">
+<iframe scrolling="no" title="Modelo Neokaleckiano profit-led" src="https://www.geogebra.org/material/iframe/id/jhabpd4r/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
+
 </iframe>
+::::::::::

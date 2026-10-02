@@ -615,13 +615,97 @@ $$g^{*}= \frac{s_r \pi \gamma_0}{\pi(s_r - \gamma_r) - v\gamma_u}$$ {#eq-g-estre
 O processo de ajustamento do modelo pode ser representado pela seguinte
 equação dinâmica:
 
-$$\frac{\Delta u}{u} = \mu(g_K - g_s)$$ {#eq-dinamica-u}
+$${\Delta u} = \mu(g_K - g_s)$$ {#eq-dinamica-u}
 
 em que $\mu > 0$ é um parâmetro de velocidade de ajustamento.
 
 Sempre que $g_K > g_s$, o grau de utilização tende a aumentar, e
 vice-versa. O equilíbrio é atingido quando ambas as taxas de crescimento
 se igualam.
+
+## A Representação Gráfica do Equilíbrio
+
+Repare que algébricamente nós resolvemos um modelo linear de três equações seguindo os seguintes passos lógicos:
+
+ - Igualamos @eq-gsr-kal à @eq-gk-kal;
+ - Substituimos, nesta igualdade, o valor de $r$ conforme a @eq-r ;
+ - Encontramos o valor de $u$ que garante com que o investimento cresça a mesma taxa da poupança;
+ - Substituimos o valor de $u$ encontrado na @eq-gs-kal para encontrar a taxa de crescimento do estado estacionário ;
+ - Usamos o mesmo valor de $u$ para encontrar a taxa de lucro compatível (@eq-r) com o estado estacionário.
+
+Assim, temos explícito que o equilíbrio no modelo canônico acontece por ajustes no grau de utilização da capacidade instalada até que esta variável ajuste a taxa de lucro, de forma garantir que a taxa de crescimento da poupança se adeque à nova taxa de crescimento do investimento.
+
+Um ponto importante a esta altura é entender que podemos ter duas taxas de lucro se manifestando simultaneamente. De um lado temos a taxa de lucro da "Curva de Phillips", isto é, a taxa de lucro que equilibraria a distribuição de renda conforme o planejado pelas firmas. Esta taxa pode ser representada por:
+
+$$ r_{PC} = \frac{{\pi}u_n}{s_r}$$ {#eq-rpc-kal}
+
+Esta taxa é aquela manifestada quando a parcela dos lucros na renda se ajusta ao nível compátivel com o grau de utilização planejado pelas firmas. Esta é a taxa de lucro que os empresários esperavam ex-ante.
+
+Por outro lado, se olharmos para a @eq-gsr-kal, podemos notar que há uma outra taxa de lucro possível de acordo com a demanda efetiva da economia:
+
+$$r_{ED} = \frac{g}{s_r}$$ 
+
+$$r_{ED} = \frac{\gamma_0 + \gamma_r r + \gamma_u u}{s_r}$$
+
+Desta forma, sempre que a taxa de lucro eferivada pelo grau de demanda efetiva (ex-post) superar a taxa de lucro esperada ex-ante, o empresário aumentará a taxa de investimento e o contrário também é verdade. Assim, quando a taxa de lucro de equilíbrio pode ser relacionada com aquela em que temos o grau de utilização efetivo igualando ao grau planejado. Ou seja, existirá um grua de utilização que igualará estas taxas de lucro, retirando qualquer incentivo do capitalista aletar sua taxa de investimento.
+
+O equilíbrio do modelo kaleckiano canônico pode ser representado
+graficamente em dois quadrantes:
+
+::::: columns
+::: {.column width="35%"}
+![Representação gráfica do modelo kaleckiano
+canônico](figuras/equilibrio_kaleckiano.png){#fig-eqkanonico
+width="100%"}
+:::
+
+::: {.column width="65%"}
+
+No quadrante superior, temos: 
+
+- A curva de poupança ($g_s$): reta
+crescente com intercepto zero. 
+
+- A curva de investimento ($g_K$): reta
+crescente com intercepto $\gamma_0 > 0$.
+
+A interseção das duas curvas determina o equilíbrio $(u^{*}, g^{*})$, onde a poupança cresce na mesma taxa de crescimento do que o investimento. Esta igualdade é produzida por meio de ajustes no grau de utilização, que tende ao grau planejado
+
+No quadrante inferior, temos: 
+
+- A curva PC (*Profit Curve* ou Curva de
+Lucro): $r = \frac{\pi u_n}{v}$. 
+
+- A curva ED (*Effective Demand* ou Demanda
+Efetiva): $r = \frac{(\gamma_0 + \gamma_r r + \gamma_u u)}{s_r}$.
+
+O equilíbrio ocorre quando as duas taxas de lucro se igualam, garantindo
+que a taxa de lucro realizada seja compatível com a taxa de lucro
+desejada pelas firmas. Neste ponto temos o grau de utilização igual ao planejado e, portanto, a poupança crescendo na mesma taxa do que o investimento.
+:::
+:::::
+
+::::: columns
+::: {.column width="35%"}
+![Representação gráfica do modelo kaleckiano
+canônico](figuras/equilibrio_kaleckiano2.png){#fig-eqkanonico
+width="100%"}
+:::
+
+::: {.column width="65%"}
+Repare que caso o grau de utilização fique acima do normal, a taxa de lucro realizada será inferior à esperada ex-ante. Isto acontece pelo fato de a poupança estar crescendo acima do investimento neste ponto (ver quadrante superior). 
+
+Este fato faz com que os emprsários invistam a uma taxa inferior, reduzindo o grau de utilização de volta ao desejado. Lembre-se da @eq-dinamica-u.
+
+Caso o grau de utilização comece de um patamar inferior ao desejado, o oposto ocorrerá. Nestas circunstâncias, a taxa de lucro efetiva superará a taxa de lucro esperada e a taxa de crescimento do investimento crescerá até que o grau efetivo convirja ao grau desejado. 
+
+Assim, com as condições de estabildiades aceitas, o modelo converje para a taxa de crescimento em que o grau de utilização efetivo seja igual ao grau de utilização esperado pelas firmas.
+
+Aqui o princípio da demanda efetiva segue válido no longo-prazo. Na dinâmica descrita, o aumento da taxa de crescimento do investimento eleva o grau de utilização que, por meio da taxa de lucro, ajusta a taxa de crescimento da poupança conforme a do investimento. A poupança foi gerada pelo investimento via ajustes na quantidade produzida.
+:::
+:::::
+
+Repare que a condição de estabilidade harrodiana exigia que a taxa de crescimento efetiva convergisse para a taxa desejada $(\frac{su}{v}=\frac{s u_n}{v})$, mas o problema é que nada garantiria tal igualdade. Neste modelo, este equilíbrio é garantido conforme o grau efetivo tende para o grau desejado. Assim, para dada propensão a poupar e dada relação capital-produto, a taxa efetiva convergirá para a taxa desejada.
 
 ## Os Paradoxos do Modelo Kaleckiano {#sec-paradoxos-kal}
 
@@ -679,6 +763,28 @@ demanda cai $\rightarrow$ produção cai $\rightarrow$ poupança efetiva
 não aumenta.
 :::
 
+
+::::: columns
+::: {.column width="35%"}
+![Representação gráfica do modelo kaleckiano
+canônico](figuras/paradoxo_thrifit_kal.png){#fig-thrifitkal
+width="100%"}
+:::
+
+::: {.column width="65%"}
+Graficamente, podemos demonstrar o funcionamento do paradoxo pela @fig-thrifitkal. Repare que o aumento da propensão a poupar de $s_r$ para $s'_r$ é responsável por rotacionar a curva $g_s$ de forma a aumentar sua inclinação. Isso fica fácil de entender se lembrarmos da @eq-gsr-kal como uma equação linear, em que $s_r$ é justamente o coeficiente angular. Com o grau de utilização retraindo a partir da queda do consumo, a demanda efetiva se contrai e desestimula novos investimentos, deslocando a curva de Demanda Efetiva para baixo no quadrante inferior.
+
+Intuitivamente temos que o aumento da propensão a poupar reduz a demanda e, consequentemente, desestimula o investimento diretamente pela queda do graud e utilização. Mas o efeito sobre investimento é amplificado pelo efeito que a queda na demanda causa sobre a taxa de lucro e, portanto, sobre o investimento novamente. Com a menor taxa de crescimento do investimento, a taxa de crescimento da poupança também se reduz.
+:::
+:::::
+::: callout-note
+### Exemplo numérico
+
+Se os capitalistas poupam 20% da sua renda $(s_r = 0,2)$, obtida a
+partir de uma taxa de lucro de 50% sobre o capital investido $(r=0,5)$,
+temos que a poupança crescerá 10%, como discutido anteriormente. Agora suponha que a propensão a poupar dos capitalistas suba para 30%. Com o menor consumo capitalista, a demanda cai e derruba a taxa de lucro, digamos que para 30%. Note que esta maior taxa de poupança aplicada sobre uma taxa de lucro menor produzirá uma taxa de crescimento da poupança menor (9%, no caso final deste exemplo).
+:::
+
 ### O Paradoxo dos Custos (*Cost Paradox*)
 
 O paradoxo dos custos, também conhecido como paradoxo de Rowthorn,
@@ -724,83 +830,18 @@ aumentos salariais estimulam a demanda via efeito multiplicador e acelerador, el
 $\rightarrow$ demanda aumenta $\rightarrow$ utilização aumenta $\rightarrow$ investimento aumenta $\rightarrow$ taxa de lucro aumenta.
 :::
 
-Repare que algébricamente nós resolvemos um modelo linear de três equações seguindo os seguintes passos lógicos:
-
- - Igualamos @eq-gsr-kal à @eq-gk-kal;
- - Substituimos, nesta igualdade, o valor de $r$ conforme a @eq-r ;
- - Encontramos o valor de $u$ que garante com que o investimento cresça a mesma taxa da poupança;
- - Substituimos o valor de $u$ encontrado na @eq-gs-kal para encontrar a taxa de crescimento do estado estacionário ;
- - Usamos o mesmo valor de $u$ para encontrar a taxa de lucro compatível (@eq-r) com o estado estacionário.
-
-Assim, temos explícito que o equilíbrio no modelo canônico acontece por ajustes no grau de utilização da capacidade instalada até que esta variável ajuste a taxa de lucro, de forma garantir que a taxa de crescimento da poupança se adeque à nova taxa de crescimento do investimento.
-
-Um ponto importante a esta altura é entender que podemos ter duas taxas de lucro se manifestand simultaneamente. De um lado temos a taxa de lucro da "Curva de Phillips", isto é, a taxa de lucro que equilibraria a distribuição de renda conforme o planejado pelas firmas. Esta taxa pode ser representada por:
-
-$$ r_{PC} = \frac{{\pi}u_n}{s_r}$$ {#eq-rpc-kal}
-
-Esta taxa é aquela manifestada quando a parcela dos lucros na renda se ajusta ao nível compátivel com o grau de utilização planejado pelas firmas. Esta é a taxa de lucro que os empresários esperavam ex-ante.
-
-Por outro lado, se olharmos para a @eq-gsr-kal, podemos notar que há uma outra taxa de lucro possível de acordo com a demanda efetiva da economia:
-
-$$r_{ED} = \frac{g}{s_r}$$ 
-
-$$r_{ED} = \frac{\gamma_0 + \gamma_r r + \gamma_u u}{s_r}$$
-
-Desta forma, sempre que a taxa de lucro eferivada pelo grau de demanda efetiva (ex-post) superar a taxa de lucro esperada ex-ante, o empresário aumentará a taxa de investimento e o contrário também é verdade. Assim, quando a taxa de lucro de equilíbrio pode ser relacionada com aquela em que temos o grau de utilização efetivo igualando ao grau planejado. Ou seja, existirá um grua de utilização que igualará estas taxas de lucro, retirando qualquer incentivo do capitalista aletar sua taxa de investimento.
-
-### A Representação Gráfica do Equilíbrio
-
-O equilíbrio do modelo kaleckiano canônico pode ser representado
-graficamente em dois quadrantes:
 
 ::::: columns
 ::: {.column width="35%"}
 ![Representação gráfica do modelo kaleckiano
-canônico](figuras/equilibrio_kaleckiano.png){#fig-eqkanonico
+canônico](figuras/paradoxo_custos_kal.png){#fig-custoskal
 width="100%"}
 :::
 
 ::: {.column width="65%"}
+Suponha o aumento dos salários levando a queda da parcela dos lucros na renda. Pela @eq-rpc-kal é possível notar que estamos alterando o coeficiente angular da reta PC no quadrante inferior da @fig-custoskal. Com uma maior parte da renda sendo destinada para quem tem maior propensão a consumir, a demanda se aquece e aumenta a taxa de lucro. Com a taxa de lucro subindo, a taxa de crescimento do investimento também subiria, mas, principalmente, a taxa de poupança rotacionaria (ver @eq-gs-kal).
 
-No quadrante superior, temos: 
-
-- A curva de poupança ($g_s$): reta
-crescente com intercepto zero. 
-
-- A curva de investimento ($g_K$): reta
-crescente com intercepto $\gamma_0 > 0$.
-
-A interseção das duas curvas determina o equilíbrio $(u^{*}, g^{*})$.
-
-No quadrante inferior, temos: 
-
-- A curva PC (*Profit Curve* ou Curva de
-Lucro): $r = \frac{\pi u_n}{v}$. 
-
-- A curva ED (*Effective Demand* ou Demanda
-Efetiva): $r = \frac{(\gamma_0 + \gamma_r r + \gamma_u u)}{s_r}$.
-
-O equilíbrio ocorre quando as duas taxas de lucro se igualam, garantindo
-que a taxa de lucro realizada seja compatível com a taxa de lucro
-desejada pelas firmas. Neste ponto temos o grau de utilização igual ao planejado e, portanto, a poupança crescendo na mesma taxa do que o investimento.
-:::
-:::::
-
-::::: columns
-::: {.column width="35%"}
-![Representação gráfica do modelo kaleckiano
-canônico](figuras/equilibrio_kaleckiano2.png){#fig-eqkanonico
-width="100%"}
-:::
-
-::: {.column width="65%"}
-Repare que caso o grau de utilização fique acima do normal, a taxa de lucro realizada será inferior à esperada ex-ante. Isto acontece pelo fato de a poupança estar crescendo acima do investimento neste ponto (ver quadrante superior). 
-
-Este fato faz com que os emprsários invistam a uma taxa inferior, reduzindo o grau de utilização de volta ao desejado.
-
-Caso o grau de utilização comece de um patamar inferior ao desejado, o oposto ocorrerá. Nestas circunstâncias, a taxa de lucro efetiva superará a taxa de lucro esperada e a taxa de crescimento do investimento crescerá até que o grau efetivo convirja ao grau desejado. 
-
-Assim, com as condições de estabildiades aceitas, o modelo converje para a taxa de crescimento em que o grau de utilização efetivo seja igual ao grau de utilização epserado pelas firmas.
+Para preservar a principal alteração, desconsideramos a mudança de $g_K$ no gráfico ao lado. Contudo, intuitivamente, podemos ver que o aumento dos salários indubitavelmente eleva o grau de utilização, denotando um regme de demanda liderado por salários. Com o efeito direto do grau de utilização sobre a taxa de investimento e o indireto via aumento da taxa de lucro, há, também, um impacto indubitavelmente positivo sobre a taxa de crescimento do estado estaionário, denotando um regime de crescimento liderado pelos salários.
 :::
 :::::
 
@@ -825,57 +866,47 @@ A inclusão da poupança dos trabalhadores não altera qualitativamente os
 resultados principais do modelo, mas pode modificar a magnitude dos
 paradoxos.
 
-## Exercícios {#sec-exercicios-kanonico}
+## Seção Estudo Interativo {#sec-exercicios-kanonico}
 
-### Exercício 1: Análise de Estabilidade
+O gráfico abaixo permite explorar, de forma interativa, os efeitos de
+alterações na propensão a poupar e na distribuição funcional da renda
+sobre o equilíbrio do modelo kaleckiano estudado neste capítulo. Utilize
+os controles deslizantes para modificar os parâmetros e observe como as
+curvas e o ponto de equilíbrio se alteram.
 
-Considere o modelo kaleckiano canônico com os seguintes parâmetros:
-$\gamma_0 = 0.03$, $\gamma_r = 0.2$, $\gamma_u = 0.4$, $s_r = 0.6$,
-$\pi = 0.4$, $v = 3$.
+::: callout-tip
+### Como utilizar o simulador
 
-a)  Verifique se a condição de estabilidade é satisfeita.
+**Paradoxo da parcimônia**
 
-b)  Calcule o grau de utilização de equilíbrio ($u^{*}$).
+- Altere o *slider* vermelho correspondente à propensão a poupar ($s$).
+- Observe a rotação da curva de poupança ($g_S$).
+- Observe o deslocamento da curva de Demanda Efetiva.
+- Compare a posição inicial (linha contínua) com a posição final (linha
+  tracejada).
 
-c)  Calcule a taxa de crescimento de equilíbrio ($g^{*}$).
+**Paradoxo dos custos**
 
-### Exercício 2: O Paradoxo da Parcimônia
+- Altere o *slider* verde correspondente à participação dos salários
+  ($w$).
+- Observe simultaneamente:
+  - a alteração da inclinação da curva de poupança;
+  - o deslocamento da curva de investimento, dada pela @eq-gk-kal;
+  - A rotação da curva de Phillips (PC);
+  - o novo ponto de equilíbrio.
+:::
 
-Utilizando os parâmetros do exercício anterior, analise o efeito de um
-aumento da propensão a poupar dos capitalistas para $s_r = 0.7$.
 
-a)  Calcule o novo grau de utilização de equilíbrio.
+<iframe scrolling="no"
+        title="Modelo kaleckiano canônico"
+        src="https://www.geogebra.org/material/iframe/id/fenpzjha/width/800/height/700/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+        width="800"
+        height="750"
+        style="border: none !important; overflow: hidden; display: block;"
+        frameborder="0">
+</iframe>
 
-b)  Calcule a nova taxa de crescimento de equilíbrio.
 
-c)  Explique, com suas próprias palavras, o mecanismo econômico por trás
-    do paradoxo da parcimônia.
-
-### Exercício 3: O Paradoxo dos Custos
-
-Utilizando os parâmetros iniciais ($s_r = 0.6$), analise o efeito de
-um aumento da participação dos salários na renda (redução de $\pi$ de
-0.4 para 0.35).
-
-a)  Calcule a nova taxa de lucro de equilíbrio.
-
-b)  Compare com a taxa de lucro inicial.
-
-c)  Explique o paradoxo dos custos.
-
-### Exercício 4: Simulação Numérica
-
-Construa uma tabela com os valores de $u^{*}$, $g^{*}$ e $r^{*}$ para
-diferentes combinações de $\pi$ (0.3, 0.4, 0.5) e $s_r$ (0.5, 0.6,
-0.7). Fixe os demais parâmetros em $\gamma_0 = 0.03$, $\gamma_r = 0.2$,
-$\gamma_u = 0.4$, $v = 3$.
-
-a)  Em quais casos o paradoxo da parcimônia se verifica?
-
-b)  Em quais casos o paradoxo dos custos se verifica?
-
-c)  O que você pode concluir sobre a relação entre distribuição de renda
-    e crescimento?
 
 ## Resumo {#sec-resumo-kanonico}
 
