@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -382,13 +385,8 @@ s_\pi \frac{\pi}{v} - \gamma_u \right)^2}&lt;0\]</span> A razão disso é que a 
 </div>
 </div>
 <p>A tabela a seguir resume as possibilidades de combinação entre regimes de demanda e regimes de cresimento:</p>
-<div id="tbl-regimes" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-regimes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;5.1: Combinações de regimes de demanda e de crescimento
-</figcaption>
-<div aria-describedby="tbl-regimes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
+<caption>Combinações de regimes de demanda e de crescimento</caption>
 <colgroup>
 <col style="width: 26%">
 <col style="width: 24%">
@@ -416,9 +414,6 @@ Tabela&nbsp;5.1: Combinações de regimes de demanda e de crescimento
 </tr>
 </tbody>
 </table>
-</div>
-</figure>
-</div>
 <p>Em suma, este modelo permite dois tipos distintos de regime de demanda e de crescimento. Esse resultado decorre da existência de dois efeitos opostos.</p>
 <p>Por um lado, um aumento da parcela dos lucros reduz o consumo, uma vez que os capitalistas possuem maior propensão a poupar.</p>
 <p>Por outro lado, uma maior participação dos lucros estimula o investimento ao elevar a rentabilidade esperada.</p>
@@ -457,7 +452,7 @@ Figura&nbsp;5.1: Representação gráfica do modelo.
 </section>
 <section id="paradoxo-dos-custos-e-da-parcimônia" class="level2" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="paradoxo-dos-custos-e-da-parcimônia"><span class="header-section-number">5.6</span> Paradoxo dos custos e da parcimônia</h2>
-<p>Assim como discutido na <a href="modelo_kaleckiano.html#sec-paradoxos-kal" class="quarto-xref"><span>Seção 4.6</span></a>, temos que analisar os paradoxos dos custos e da parcimônia (Thrifit) no fechamento neo-kaleckiano.</p>
+<p>Assim como discutido na <a href="modelo_kaleckiano.html#sec-paradoxos-kal" class="quarto-xref"><span>Seção 4.7</span></a>, temos que analisar os paradoxos dos custos e da parcimônia (Thrifit) no fechamento neo-kaleckiano.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -516,7 +511,7 @@ Figura&nbsp;5.2: Parodoxo dos custos
 <p>Observe que o resultado do <strong>Quadrante A</strong> depende de um deslocamento relativamente pequeno da curva <span class="math inline">\(g_K\)</span> e de uma rotação mais acentuada da curva <span class="math inline">\(g_S\)</span>.</p>
 <p>Em termos econômicos, isso significa que o aumento da participação dos salários na renda exerce apenas um efeito limitado sobre as expectativas de lucratividade dos empresários, enquanto o estímulo ao consumo e à demanda efetiva é suficientemente forte para elevar o grau de utilização da capacidade instalada. Nessas circunstâncias, o efeito acelerador sobre o investimento supera o efeito lucratividade, permitindo a ocorrência de um regime de demanda e crescimento liderado pelos salários (<em>wage-led</em>).</p>
 </div>
-</div><p>Como podemos notar pela <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a>, o tamanho do deslocamento da curva de investimentos dependerá diretamente do quão sensível o investimento é em relação à distribuição de renda (representado pelo parâmero <span class="math inline">\(\gamma_\pi\)</span>). Quanto mais sensível for, maior será o deslocamento da reta <span class="math inline">\(g_K\)</span>, aumemtando as chances de um regime de demanda profit-led (para dado <span class="math inline">\(\gamma_u\)</span>).</p><p>Em suma e simplificadamente, o efeito líquido de uma distribuição de renda em favor dos salários dependerá do efeito líquido entre o efeito lucratividade <span class="math inline">\((\gamma_\pi)\)</span> e o efeito acelerador <span class="math inline">\((\gamma_u)\)</span>. Quanto maior for o efeito acelerador em relação ao efeito lucratividade, maiores serão as chances de termos um regime de demanda e crescimento liderado pelos salários (<em>wage-led</em>).</p><p>O Quadrante B da <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> representa um modelo de demanda wage-led, mas um regime de crescimento profit-led. Isto porque, apesar de o grau de utilização crescer após o aumento da parcela dos salários, isso não é suficiente para compensar a desaceleração do investimento puxada pela consequente queda da parcela dos lucros.</p><p>Neste caso, a validade do paradoxo dos custos dependerá de o aumento do grau de utilização compensar a queda da parcela dos lucros na renda, a ponto de aumentar a taxa de lucro. Mais uma vez, menores serão as chances disso acontecer, quanto maior for o efeito lucratividade do investimento, capturado pelo parâmetro <span class="math inline">\(\gamma_\pi\)</span>. Aqui vemos como um regime de demanda liderado pelos salários é condição necessária, mas não suficiente para assegurar que o regime de crescimento também seja liderado pelos salários (como vimos na <a href="#tbl-regimes" class="quarto-xref">Tabela&nbsp;<span>5.1</span></a>).</p><p>Por fim, o Quadrante C da <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> mostra que após o aumento da parcela dos salários, o novo equilíbrio ocorre já com o grau de utilização menor do que o inicial, caracterizando o regime de demanda como liderado pelos lucros (<em>profit-led</em>). Nestas circunstância, não tem como o regime de crescimento não ser liderado pelos lucros também, já que o efeito sensibilidade do investimento se mostrou significativo ante o efeito acelerador, provocando um forte deslocamento da curva <span class="math inline">\(g_K\)</span>. O paradoxo dos custos não é válido neste contexto.</p><p>Trabalhos empíricos conduzidos por autores neokaleckianos tendem a mostrar um efeito acelerador bem alto, enquanto estimações apontam para um baixo efeito lucratividade. Isto é, o investimento parece ser mais sensível à demanda do que à lucratividade.</p><p>Intuitivamente, esta combinação de parâmetros, verificados empiricamente, aumenta o efeito expansionista causado pela distribuição de renda e minimiza o efeito contracionista causado pelo desestímulo ao investimento devido a esta mesma distribuição.</p><section id="sec-estudo" class="level2" data-number="5.7">
+</div><p>Como podemos notar pela <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a>, o tamanho do deslocamento da curva de investimentos dependerá diretamente do quão sensível o investimento é em relação à distribuição de renda (representado pelo parâmero <span class="math inline">\(\gamma_\pi\)</span>). Quanto mais sensível for, maior será o deslocamento da reta <span class="math inline">\(g_K\)</span>, aumemtando as chances de um regime de demanda profit-led (para dado <span class="math inline">\(\gamma_u\)</span>).</p><p>Em suma e simplificadamente, o efeito líquido de uma distribuição de renda em favor dos salários dependerá do efeito líquido entre o efeito lucratividade <span class="math inline">\((\gamma_\pi)\)</span> e o efeito acelerador <span class="math inline">\((\gamma_u)\)</span>. Quanto maior for o efeito acelerador em relação ao efeito lucratividade, maiores serão as chances de termos um regime de demanda e crescimento liderado pelos salários (<em>wage-led</em>).</p><p>O Quadrante B da <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> representa um modelo de demanda wage-led, mas um regime de crescimento profit-led. Isto porque, apesar de o grau de utilização crescer após o aumento da parcela dos salários, isso não é suficiente para compensar a desaceleração do investimento puxada pela consequente queda da parcela dos lucros.</p><p>Neste caso, a validade do paradoxo dos custos dependerá de o aumento do grau de utilização compensar a queda da parcela dos lucros na renda, a ponto de aumentar a taxa de lucro. Mais uma vez, menores serão as chances disso acontecer, quanto maior for o efeito lucratividade do investimento, capturado pelo parâmetro <span class="math inline">\(\gamma_\pi\)</span>. Aqui vemos como um regime de demanda liderado pelos salários é condição necessária, mas não suficiente para assegurar que o regime de crescimento também seja liderado pelos salários (como vimos na <span class="quarto-unresolved-ref">?tbl-regimes</span>).</p><p>Por fim, o Quadrante C da <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> mostra que após o aumento da parcela dos salários, o novo equilíbrio ocorre já com o grau de utilização menor do que o inicial, caracterizando o regime de demanda como liderado pelos lucros (<em>profit-led</em>). Nestas circunstância, não tem como o regime de crescimento não ser liderado pelos lucros também, já que o efeito sensibilidade do investimento se mostrou significativo ante o efeito acelerador, provocando um forte deslocamento da curva <span class="math inline">\(g_K\)</span>. O paradoxo dos custos não é válido neste contexto.</p><p>Trabalhos empíricos conduzidos por autores neokaleckianos tendem a mostrar um efeito acelerador bem alto, enquanto estimações apontam para um baixo efeito lucratividade. Isto é, o investimento parece ser mais sensível à demanda do que à lucratividade.</p><p>Intuitivamente, esta combinação de parâmetros, verificados empiricamente, aumenta o efeito expansionista causado pela distribuição de renda e minimiza o efeito contracionista causado pelo desestímulo ao investimento devido a esta mesma distribuição.</p><section id="sec-estudo" class="level2" data-number="5.7">
 <h2 data-number="5.7" class="anchored" data-anchor-id="sec-estudo"><span class="header-section-number">5.7</span> Seção de estudo interativo</h2>
 <p>O gráfico abaixo permite explorar, de forma interativa, os efeitos de alterações na propensão a poupar e na distribuição funcional da renda sobre o equilíbrio do modelo neokaleckiano de Bhaduri e Marglin. Utilize os controles deslizantes para modificar os parâmetros e observe como as curvas e o ponto de equilíbrio se alteram.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -602,10 +597,10 @@ Figura&nbsp;5.2: Parodoxo dos custos
 <p>Repare que o regime de demanda e de crescimento não são o mesmo neste contexto. Faça o exercício e tente identificar as principais características presentes nesta representação. Explore os dois paradoxos para aplicar o conhecimento construído ao longo deste capítulo.</p>
 <iframe scrolling="no" title="Modelo Neokaleckiano profit-led" src="https://www.geogebra.org/material/iframe/id/jhabpd4r/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
 </iframe>
-
-
 </section>
 </div>
+
+
 </section>
 
 </main> <!-- /main -->

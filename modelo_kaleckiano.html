@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,10 +45,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -197,24 +200,18 @@ window.Quarto = {
   <li><a href="#taxa-de-crescimento-de-equilíbrio" id="toc-taxa-de-crescimento-de-equilíbrio" class="nav-link" data-scroll-target="#taxa-de-crescimento-de-equilíbrio"><span class="header-section-number">4.5.4</span> Taxa de Crescimento de Equilíbrio</a></li>
   <li><a href="#dinâmica-do-grau-de-utilização" id="toc-dinâmica-do-grau-de-utilização" class="nav-link" data-scroll-target="#dinâmica-do-grau-de-utilização"><span class="header-section-number">4.5.5</span> Dinâmica do Grau de Utilização</a></li>
   </ul></li>
-  <li><a href="#sec-paradoxos-kal" id="toc-sec-paradoxos-kal" class="nav-link" data-scroll-target="#sec-paradoxos-kal"><span class="header-section-number">4.6</span> Os Paradoxos do Modelo Kaleckiano</a>
+  <li><a href="#a-representação-gráfica-do-equilíbrio" id="toc-a-representação-gráfica-do-equilíbrio" class="nav-link" data-scroll-target="#a-representação-gráfica-do-equilíbrio"><span class="header-section-number">4.6</span> A Representação Gráfica do Equilíbrio</a></li>
+  <li><a href="#sec-paradoxos-kal" id="toc-sec-paradoxos-kal" class="nav-link" data-scroll-target="#sec-paradoxos-kal"><span class="header-section-number">4.7</span> Os Paradoxos do Modelo Kaleckiano</a>
   <ul class="collapse">
-  <li><a href="#o-paradoxo-da-parcimônia-thrift-paradox" id="toc-o-paradoxo-da-parcimônia-thrift-paradox" class="nav-link" data-scroll-target="#o-paradoxo-da-parcimônia-thrift-paradox"><span class="header-section-number">4.6.1</span> O Paradoxo da Parcimônia (<em>Thrift Paradox</em>)</a></li>
-  <li><a href="#o-paradoxo-dos-custos-cost-paradox" id="toc-o-paradoxo-dos-custos-cost-paradox" class="nav-link" data-scroll-target="#o-paradoxo-dos-custos-cost-paradox"><span class="header-section-number">4.6.2</span> O Paradoxo dos Custos (<em>Cost Paradox</em>)</a></li>
-  <li><a href="#a-representação-gráfica-do-equilíbrio" id="toc-a-representação-gráfica-do-equilíbrio" class="nav-link" data-scroll-target="#a-representação-gráfica-do-equilíbrio"><span class="header-section-number">4.6.3</span> A Representação Gráfica do Equilíbrio</a></li>
+  <li><a href="#o-paradoxo-da-parcimônia-thrift-paradox" id="toc-o-paradoxo-da-parcimônia-thrift-paradox" class="nav-link" data-scroll-target="#o-paradoxo-da-parcimônia-thrift-paradox"><span class="header-section-number">4.7.1</span> O Paradoxo da Parcimônia (<em>Thrift Paradox</em>)</a></li>
+  <li><a href="#o-paradoxo-dos-custos-cost-paradox" id="toc-o-paradoxo-dos-custos-cost-paradox" class="nav-link" data-scroll-target="#o-paradoxo-dos-custos-cost-paradox"><span class="header-section-number">4.7.2</span> O Paradoxo dos Custos (<em>Cost Paradox</em>)</a></li>
   </ul></li>
-  <li><a href="#sec-variantes" id="toc-sec-variantes" class="nav-link" data-scroll-target="#sec-variantes"><span class="header-section-number">4.7</span> Variantes do Modelo Canônico</a>
+  <li><a href="#sec-variantes" id="toc-sec-variantes" class="nav-link" data-scroll-target="#sec-variantes"><span class="header-section-number">4.8</span> Variantes do Modelo Canônico</a>
   <ul class="collapse">
-  <li><a href="#poupança-dos-trabalhadores" id="toc-poupança-dos-trabalhadores" class="nav-link" data-scroll-target="#poupança-dos-trabalhadores"><span class="header-section-number">4.7.1</span> Poupança dos Trabalhadores</a></li>
+  <li><a href="#poupança-dos-trabalhadores" id="toc-poupança-dos-trabalhadores" class="nav-link" data-scroll-target="#poupança-dos-trabalhadores"><span class="header-section-number">4.8.1</span> Poupança dos Trabalhadores</a></li>
   </ul></li>
-  <li><a href="#sec-exercicios-kanonico" id="toc-sec-exercicios-kanonico" class="nav-link" data-scroll-target="#sec-exercicios-kanonico"><span class="header-section-number">4.8</span> Exercícios</a>
-  <ul class="collapse">
-  <li><a href="#exercício-1-análise-de-estabilidade" id="toc-exercício-1-análise-de-estabilidade" class="nav-link" data-scroll-target="#exercício-1-análise-de-estabilidade"><span class="header-section-number">4.8.1</span> Exercício 1: Análise de Estabilidade</a></li>
-  <li><a href="#exercício-2-o-paradoxo-da-parcimônia" id="toc-exercício-2-o-paradoxo-da-parcimônia" class="nav-link" data-scroll-target="#exercício-2-o-paradoxo-da-parcimônia"><span class="header-section-number">4.8.2</span> Exercício 2: O Paradoxo da Parcimônia</a></li>
-  <li><a href="#exercício-3-o-paradoxo-dos-custos" id="toc-exercício-3-o-paradoxo-dos-custos" class="nav-link" data-scroll-target="#exercício-3-o-paradoxo-dos-custos"><span class="header-section-number">4.8.3</span> Exercício 3: O Paradoxo dos Custos</a></li>
-  <li><a href="#exercício-4-simulação-numérica" id="toc-exercício-4-simulação-numérica" class="nav-link" data-scroll-target="#exercício-4-simulação-numérica"><span class="header-section-number">4.8.4</span> Exercício 4: Simulação Numérica</a></li>
-  </ul></li>
-  <li><a href="#sec-resumo-kanonico" id="toc-sec-resumo-kanonico" class="nav-link" data-scroll-target="#sec-resumo-kanonico"><span class="header-section-number">4.9</span> Resumo</a></li>
+  <li><a href="#sec-exercicios-kanonico" id="toc-sec-exercicios-kanonico" class="nav-link" data-scroll-target="#sec-exercicios-kanonico"><span class="header-section-number">4.9</span> Seção Estudo Interativo</a></li>
+  <li><a href="#sec-resumo-kanonico" id="toc-sec-resumo-kanonico" class="nav-link" data-scroll-target="#sec-resumo-kanonico"><span class="header-section-number">4.10</span> Resumo</a></li>
   </ul>
 </nav>
     </div>
@@ -680,16 +677,84 @@ g_K &amp;= \gamma_0 + \gamma_r r + \gamma_u u
 <section id="dinâmica-do-grau-de-utilização" class="level3" data-number="4.5.5">
 <h3 data-number="4.5.5" class="anchored" data-anchor-id="dinâmica-do-grau-de-utilização"><span class="header-section-number">4.5.5</span> Dinâmica do Grau de Utilização</h3>
 <p>O processo de ajustamento do modelo pode ser representado pela seguinte equação dinâmica:</p>
-<p><span id="eq-dinamica-u"><span class="math display">\[\frac{\Delta u}{u} = \mu(g_K - g_s) \tag{4.13}\]</span></span></p>
+<p><span id="eq-dinamica-u"><span class="math display">\[{\Delta u} = \mu(g_K - g_s) \tag{4.13}\]</span></span></p>
 <p>em que <span class="math inline">\(\mu &gt; 0\)</span> é um parâmetro de velocidade de ajustamento.</p>
 <p>Sempre que <span class="math inline">\(g_K &gt; g_s\)</span>, o grau de utilização tende a aumentar, e vice-versa. O equilíbrio é atingido quando ambas as taxas de crescimento se igualam.</p>
 </section>
 </section>
-<section id="sec-paradoxos-kal" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="sec-paradoxos-kal"><span class="header-section-number">4.6</span> Os Paradoxos do Modelo Kaleckiano</h2>
+<section id="a-representação-gráfica-do-equilíbrio" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="a-representação-gráfica-do-equilíbrio"><span class="header-section-number">4.6</span> A Representação Gráfica do Equilíbrio</h2>
+<p>Repare que algébricamente nós resolvemos um modelo linear de três equações seguindo os seguintes passos lógicos:</p>
+<ul>
+<li>Igualamos <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> à <a href="#eq-gk-kal" class="quarto-xref">Equação&nbsp;<span>4.9</span></a>;</li>
+<li>Substituimos, nesta igualdade, o valor de <span class="math inline">\(r\)</span> conforme a <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a> ;</li>
+<li>Encontramos o valor de <span class="math inline">\(u\)</span> que garante com que o investimento cresça a mesma taxa da poupança;</li>
+<li>Substituimos o valor de <span class="math inline">\(u\)</span> encontrado na <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a> para encontrar a taxa de crescimento do estado estacionário ;</li>
+<li>Usamos o mesmo valor de <span class="math inline">\(u\)</span> para encontrar a taxa de lucro compatível (<a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>) com o estado estacionário.</li>
+</ul>
+<p>Assim, temos explícito que o equilíbrio no modelo canônico acontece por ajustes no grau de utilização da capacidade instalada até que esta variável ajuste a taxa de lucro, de forma garantir que a taxa de crescimento da poupança se adeque à nova taxa de crescimento do investimento.</p>
+<p>Um ponto importante a esta altura é entender que podemos ter duas taxas de lucro se manifestando simultaneamente. De um lado temos a taxa de lucro da “Curva de Phillips”, isto é, a taxa de lucro que equilibraria a distribuição de renda conforme o planejado pelas firmas. Esta taxa pode ser representada por:</p>
+<p><span id="eq-rpc-kal"><span class="math display">\[ r_{PC} = \frac{{\pi}u_n}{s_r} \tag{4.14}\]</span></span></p>
+<p>Esta taxa é aquela manifestada quando a parcela dos lucros na renda se ajusta ao nível compátivel com o grau de utilização planejado pelas firmas. Esta é a taxa de lucro que os empresários esperavam ex-ante.</p>
+<p>Por outro lado, se olharmos para a <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a>, podemos notar que há uma outra taxa de lucro possível de acordo com a demanda efetiva da economia:</p>
+<p><span class="math display">\[r_{ED} = \frac{g}{s_r}\]</span></p>
+<p><span class="math display">\[r_{ED} = \frac{\gamma_0 + \gamma_r r + \gamma_u u}{s_r}\]</span></p>
+<p>Desta forma, sempre que a taxa de lucro eferivada pelo grau de demanda efetiva (ex-post) superar a taxa de lucro esperada ex-ante, o empresário aumentará a taxa de investimento e o contrário também é verdade. Assim, quando a taxa de lucro de equilíbrio pode ser relacionada com aquela em que temos o grau de utilização efetivo igualando ao grau planejado. Ou seja, existirá um grua de utilização que igualará estas taxas de lucro, retirando qualquer incentivo do capitalista aletar sua taxa de investimento.</p>
+<p>O equilíbrio do modelo kaleckiano canônico pode ser representado graficamente em dois quadrantes:</p>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div id="fig-eqkanonico" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/equilibrio_kaleckiano.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.3: Representação gráfica do modelo kaleckiano canônico
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:65%;">
+<p>No quadrante superior, temos:</p>
+<ul>
+<li><p>A curva de poupança (<span class="math inline">\(g_s\)</span>): reta crescente com intercepto zero.</p></li>
+<li><p>A curva de investimento (<span class="math inline">\(g_K\)</span>): reta crescente com intercepto <span class="math inline">\(\gamma_0 &gt; 0\)</span>.</p></li>
+</ul>
+<p>A interseção das duas curvas determina o equilíbrio <span class="math inline">\((u^{*}, g^{*})\)</span>, onde a poupança cresce na mesma taxa de crescimento do que o investimento. Esta igualdade é produzida por meio de ajustes no grau de utilização, que tende ao grau planejado</p>
+<p>No quadrante inferior, temos:</p>
+<ul>
+<li><p>A curva PC (<em>Profit Curve</em> ou Curva de Lucro): <span class="math inline">\(r = \frac{\pi u_n}{v}\)</span>.</p></li>
+<li><p>A curva ED (<em>Effective Demand</em> ou Demanda Efetiva): <span class="math inline">\(r = \frac{(\gamma_0 + \gamma_r r + \gamma_u u)}{s_r}\)</span>.</p></li>
+</ul>
+<p>O equilíbrio ocorre quando as duas taxas de lucro se igualam, garantindo que a taxa de lucro realizada seja compatível com a taxa de lucro desejada pelas firmas. Neste ponto temos o grau de utilização igual ao planejado e, portanto, a poupança crescendo na mesma taxa do que o investimento.</p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div id="fig-eqkanonico" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/equilibrio_kaleckiano2.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.4: Representação gráfica do modelo kaleckiano canônico
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:65%;">
+<p>Repare que caso o grau de utilização fique acima do normal, a taxa de lucro realizada será inferior à esperada ex-ante. Isto acontece pelo fato de a poupança estar crescendo acima do investimento neste ponto (ver quadrante superior).</p>
+<p>Este fato faz com que os emprsários invistam a uma taxa inferior, reduzindo o grau de utilização de volta ao desejado. Lembre-se da <a href="#eq-dinamica-u" class="quarto-xref">Equação&nbsp;<span>4.13</span></a>.</p>
+<p>Caso o grau de utilização comece de um patamar inferior ao desejado, o oposto ocorrerá. Nestas circunstâncias, a taxa de lucro efetiva superará a taxa de lucro esperada e a taxa de crescimento do investimento crescerá até que o grau efetivo convirja ao grau desejado.</p>
+<p>Assim, com as condições de estabildiades aceitas, o modelo converje para a taxa de crescimento em que o grau de utilização efetivo seja igual ao grau de utilização esperado pelas firmas.</p>
+<p>Aqui o princípio da demanda efetiva segue válido no longo-prazo. Na dinâmica descrita, o aumento da taxa de crescimento do investimento eleva o grau de utilização que, por meio da taxa de lucro, ajusta a taxa de crescimento da poupança conforme a do investimento. A poupança foi gerada pelo investimento via ajustes na quantidade produzida.</p>
+</div>
+</div>
+<p>Repare que a condição de estabilidade harrodiana exigia que a taxa de crescimento efetiva convergisse para a taxa desejada <span class="math inline">\((\frac{su}{v}=\frac{s u_n}{v})\)</span>, mas o problema é que nada garantiria tal igualdade. Neste modelo, este equilíbrio é garantido conforme o grau efetivo tende para o grau desejado. Assim, para dada propensão a poupar e dada relação capital-produto, a taxa efetiva convergirá para a taxa desejada.</p>
+</section>
+<section id="sec-paradoxos-kal" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="sec-paradoxos-kal"><span class="header-section-number">4.7</span> Os Paradoxos do Modelo Kaleckiano</h2>
 <p>O modelo kaleckiano canônico gera dois resultados contraintuitivos que desafiam a sabedoria convencional: o paradoxo da parcimônia (<em>thrift</em>) e o paradoxo dos custos. Ambos decorrem da interação entre distribuição de renda, demanda efetiva e acumulação de capital.</p>
-<section id="o-paradoxo-da-parcimônia-thrift-paradox" class="level3" data-number="4.6.1">
-<h3 data-number="4.6.1" class="anchored" data-anchor-id="o-paradoxo-da-parcimônia-thrift-paradox"><span class="header-section-number">4.6.1</span> O Paradoxo da Parcimônia (<em>Thrift Paradox</em>)</h3>
+<section id="o-paradoxo-da-parcimônia-thrift-paradox" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="o-paradoxo-da-parcimônia-thrift-paradox"><span class="header-section-number">4.7.1</span> O Paradoxo da Parcimônia (<em>Thrift Paradox</em>)</h3>
 <p>O paradoxo de Thrifit afirma que <strong>um aumento da propensão a poupar dos capitalistas</strong> (<span class="math inline">\(s_r\)</span>) reduz a taxa de crescimento da poupança. Este paradoxo já havia sido demonstrado pelo efeito multiplicador de Keynes para uma análise estática do nível da renda. Keynes mostrou que se a propensão marginal a poupar de uma sociedade aumentar, a demanda agregada cai, reduzindo a renda e, consequentemente, o nível de poupança macroeconômica (ver <a href="#eq-multrenda" class="quarto-xref">Equação&nbsp;<span>4.3</span></a>).</p>
 <p>A questão a se investigar, então, é se este resultado seguiria válido em uma análise dinâmica em termos de taxa. Isto é, o aumento da propensão a poupar das pessoas leva a uma queda da taxa de crescimento da renda e da poupança?</p>
 <p>Analisando a <a href="#eq-u-estrela" class="quarto-xref">Equação&nbsp;<span>4.11</span></a>, notamos que <span class="math inline">\(s_r\)</span> aparece no denominador. Portanto:</p>
@@ -719,13 +784,43 @@ g_K &amp;= \gamma_0 + \gamma_r r + \gamma_u u
 <p><strong>Economia</strong>: poupar mais <span class="math inline">\(\rightarrow\)</span> consumir menos <span class="math inline">\(\rightarrow\)</span> demanda cai <span class="math inline">\(\rightarrow\)</span> produção cai <span class="math inline">\(\rightarrow\)</span> poupança efetiva não aumenta.</p>
 </div>
 </div>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div id="fig-thrifitkal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-thrifitkal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/paradoxo_thrifit_kal.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thrifitkal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.5: Representação gráfica do modelo kaleckiano canônico
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:65%;">
+<p>Graficamente, podemos demonstrar o funcionamento do paradoxo pela <a href="#fig-thrifitkal" class="quarto-xref">Figura&nbsp;<span>4.5</span></a>. Repare que o aumento da propensão a poupar de <span class="math inline">\(s_r\)</span> para <span class="math inline">\(s'_r\)</span> é responsável por rotacionar a curva <span class="math inline">\(g_s\)</span> de forma a aumentar sua inclinação. Isso fica fácil de entender se lembrarmos da <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> como uma equação linear, em que <span class="math inline">\(s_r\)</span> é justamente o coeficiente angular. Com o grau de utilização retraindo a partir da queda do consumo, a demanda efetiva se contrai e desestimula novos investimentos, deslocando a curva de Demanda Efetiva para baixo no quadrante inferior.</p>
+<p>Intuitivamente temos que o aumento da propensão a poupar reduz a demanda e, consequentemente, desestimula o investimento diretamente pela queda do graud e utilização. Mas o efeito sobre investimento é amplificado pelo efeito que a queda na demanda causa sobre a taxa de lucro e, portanto, sobre o investimento novamente. Com a menor taxa de crescimento do investimento, a taxa de crescimento da poupança também se reduz.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Exemplo numérico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Se os capitalistas poupam 20% da sua renda <span class="math inline">\((s_r = 0,2)\)</span>, obtida a partir de uma taxa de lucro de 50% sobre o capital investido <span class="math inline">\((r=0,5)\)</span>, temos que a poupança crescerá 10%, como discutido anteriormente. Agora suponha que a propensão a poupar dos capitalistas suba para 30%. Com o menor consumo capitalista, a demanda cai e derruba a taxa de lucro, digamos que para 30%. Note que esta maior taxa de poupança aplicada sobre uma taxa de lucro menor produzirá uma taxa de crescimento da poupança menor (9%, no caso final deste exemplo).</p>
+</div>
+</div>
 </section>
-<section id="o-paradoxo-dos-custos-cost-paradox" class="level3" data-number="4.6.2">
-<h3 data-number="4.6.2" class="anchored" data-anchor-id="o-paradoxo-dos-custos-cost-paradox"><span class="header-section-number">4.6.2</span> O Paradoxo dos Custos (<em>Cost Paradox</em>)</h3>
+<section id="o-paradoxo-dos-custos-cost-paradox" class="level3" data-number="4.7.2">
+<h3 data-number="4.7.2" class="anchored" data-anchor-id="o-paradoxo-dos-custos-cost-paradox"><span class="header-section-number">4.7.2</span> O Paradoxo dos Custos (<em>Cost Paradox</em>)</h3>
 <p>O paradoxo dos custos, também conhecido como paradoxo de Rowthorn, afirma que <strong>um aumento da participação dos salários na renda (queda de</strong> <span class="math inline">\(\pi\)</span>) pode elevar a taxa de lucro de equilíbrio. Ainda que do ponto de vista individual da firma pagar salários maiores reduza seu lucro, do ponto de vista agregado, Kalecki mostrou que uma maior parcela dos salários na renda é compatível com um maior nível de renda (ver <span class="quarto-unresolved-ref">?eq-multirenda</span>) e, consequentemente, com maior nível de lucro agregado.</p>
 <p>Para analisar o paradoxo dos custos no longo prazo, precisamos examinar como a taxa de lucro de equilíbrio responde a mudanças na participação dos lucros na renda.</p>
 <p>A taxa de lucro de equilíbrio é dada pela substituição do <span class="math inline">\(u^{*}\)</span> na <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>:</p>
-<p><span id="eq-r-estrela"><span class="math display">\[r^{*} = \frac{\pi u^{*}}{v} = \frac{\pi \gamma_0}{\pi(s_r - \gamma_r) - v\gamma_u} \tag{4.14}\]</span></span></p>
+<p><span id="eq-r-estrela"><span class="math display">\[r^{*} = \frac{\pi u^{*}}{v} = \frac{\pi \gamma_0}{\pi(s_r - \gamma_r) - v\gamma_u} \tag{4.15}\]</span></span></p>
 <p>A derivada da taxa de lucro em relação à participação dos lucros é:</p>
 <p><span class="math display">\[\frac{\partial r^{*}}{\partial \pi} = \frac{-\gamma_0 \gamma_u}{\left(\frac{\pi}{v}(s_r - \gamma_r) - \gamma_u\right)^2} &lt; 0\]</span></p>
 <p>Como o numerador é negativo e o denominador é uma expressão quadrática, portanto, invariavelmente positiva, a razão tem de ser negativa. Isso significa que quedas na parcela dos lucros na renda, ou seja, aumentos salarias, levam a aumentos na taxa de lucro.</p>
@@ -751,78 +846,29 @@ g_K &amp;= \gamma_0 + \gamma_r r + \gamma_u u
 <p><strong>Economia</strong>: aumentam salários <span class="math inline">\(\rightarrow\)</span> consumo aumenta <span class="math inline">\(\rightarrow\)</span> demanda aumenta <span class="math inline">\(\rightarrow\)</span> utilização aumenta <span class="math inline">\(\rightarrow\)</span> investimento aumenta <span class="math inline">\(\rightarrow\)</span> taxa de lucro aumenta.</p>
 </div>
 </div>
-<p>Repare que algébricamente nós resolvemos um modelo linear de três equações seguindo os seguintes passos lógicos:</p>
-<ul>
-<li>Igualamos <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> à <a href="#eq-gk-kal" class="quarto-xref">Equação&nbsp;<span>4.9</span></a>;</li>
-<li>Substituimos, nesta igualdade, o valor de <span class="math inline">\(r\)</span> conforme a <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a> ;</li>
-<li>Encontramos o valor de <span class="math inline">\(u\)</span> que garante com que o investimento cresça a mesma taxa da poupança;</li>
-<li>Substituimos o valor de <span class="math inline">\(u\)</span> encontrado na <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a> para encontrar a taxa de crescimento do estado estacionário ;</li>
-<li>Usamos o mesmo valor de <span class="math inline">\(u\)</span> para encontrar a taxa de lucro compatível (<a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>) com o estado estacionário.</li>
-</ul>
-<p>Assim, temos explícito que o equilíbrio no modelo canônico acontece por ajustes no grau de utilização da capacidade instalada até que esta variável ajuste a taxa de lucro, de forma garantir que a taxa de crescimento da poupança se adeque à nova taxa de crescimento do investimento.</p>
-<p>Um ponto importante a esta altura é entender que podemos ter duas taxas de lucro se manifestand simultaneamente. De um lado temos a taxa de lucro da “Curva de Phillips”, isto é, a taxa de lucro que equilibraria a distribuição de renda conforme o planejado pelas firmas. Esta taxa pode ser representada por:</p>
-<p><span id="eq-rpc-kal"><span class="math display">\[ r_{PC} = \frac{{\pi}u_n}{s_r} \tag{4.15}\]</span></span></p>
-<p>Esta taxa é aquela manifestada quando a parcela dos lucros na renda se ajusta ao nível compátivel com o grau de utilização planejado pelas firmas. Esta é a taxa de lucro que os empresários esperavam ex-ante.</p>
-<p>Por outro lado, se olharmos para a <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a>, podemos notar que há uma outra taxa de lucro possível de acordo com a demanda efetiva da economia:</p>
-<p><span class="math display">\[r_{ED} = \frac{g}{s_r}\]</span></p>
-<p><span class="math display">\[r_{ED} = \frac{\gamma_0 + \gamma_r r + \gamma_u u}{s_r}\]</span></p>
-<p>Desta forma, sempre que a taxa de lucro eferivada pelo grau de demanda efetiva (ex-post) superar a taxa de lucro esperada ex-ante, o empresário aumentará a taxa de investimento e o contrário também é verdade. Assim, quando a taxa de lucro de equilíbrio pode ser relacionada com aquela em que temos o grau de utilização efetivo igualando ao grau planejado. Ou seja, existirá um grua de utilização que igualará estas taxas de lucro, retirando qualquer incentivo do capitalista aletar sua taxa de investimento.</p>
-</section>
-<section id="a-representação-gráfica-do-equilíbrio" class="level3" data-number="4.6.3">
-<h3 data-number="4.6.3" class="anchored" data-anchor-id="a-representação-gráfica-do-equilíbrio"><span class="header-section-number">4.6.3</span> A Representação Gráfica do Equilíbrio</h3>
-<p>O equilíbrio do modelo kaleckiano canônico pode ser representado graficamente em dois quadrantes:</p>
 <div class="columns">
 <div class="column" style="width:35%;">
-<div id="fig-eqkanonico" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-custoskal" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/equilibrio_kaleckiano.png" class="img-fluid figure-img" style="width:100.0%">
+<div aria-describedby="fig-custoskal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/paradoxo_custos_kal.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.3: Representação gráfica do modelo kaleckiano canônico
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-custoskal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.6: Representação gráfica do modelo kaleckiano canônico
 </figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:65%;">
-<p>No quadrante superior, temos:</p>
-<ul>
-<li><p>A curva de poupança (<span class="math inline">\(g_s\)</span>): reta crescente com intercepto zero.</p></li>
-<li><p>A curva de investimento (<span class="math inline">\(g_K\)</span>): reta crescente com intercepto <span class="math inline">\(\gamma_0 &gt; 0\)</span>.</p></li>
-</ul>
-<p>A interseção das duas curvas determina o equilíbrio <span class="math inline">\((u^{*}, g^{*})\)</span>.</p>
-<p>No quadrante inferior, temos:</p>
-<ul>
-<li><p>A curva PC (<em>Profit Curve</em> ou Curva de Lucro): <span class="math inline">\(r = \frac{\pi u_n}{v}\)</span>.</p></li>
-<li><p>A curva ED (<em>Effective Demand</em> ou Demanda Efetiva): <span class="math inline">\(r = \frac{(\gamma_0 + \gamma_r r + \gamma_u u)}{s_r}\)</span>.</p></li>
-</ul>
-<p>O equilíbrio ocorre quando as duas taxas de lucro se igualam, garantindo que a taxa de lucro realizada seja compatível com a taxa de lucro desejada pelas firmas. Neste ponto temos o grau de utilização igual ao planejado e, portanto, a poupança crescendo na mesma taxa do que o investimento.</p>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:35%;">
-<div id="fig-eqkanonico" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/equilibrio_kaleckiano2.png" class="img-fluid figure-img" style="width:100.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.4: Representação gráfica do modelo kaleckiano canônico
-</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:65%;">
-<p>Repare que caso o grau de utilização fique acima do normal, a taxa de lucro realizada será inferior à esperada ex-ante. Isto acontece pelo fato de a poupança estar crescendo acima do investimento neste ponto (ver quadrante superior).</p>
-<p>Este fato faz com que os emprsários invistam a uma taxa inferior, reduzindo o grau de utilização de volta ao desejado.</p>
-<p>Caso o grau de utilização comece de um patamar inferior ao desejado, o oposto ocorrerá. Nestas circunstâncias, a taxa de lucro efetiva superará a taxa de lucro esperada e a taxa de crescimento do investimento crescerá até que o grau efetivo convirja ao grau desejado.</p>
-<p>Assim, com as condições de estabildiades aceitas, o modelo converje para a taxa de crescimento em que o grau de utilização efetivo seja igual ao grau de utilização epserado pelas firmas.</p>
+<p>Suponha o aumento dos salários levando a queda da parcela dos lucros na renda. Pela <a href="#eq-rpc-kal" class="quarto-xref">Equação&nbsp;<span>4.14</span></a> é possível notar que estamos alterando o coeficiente angular da reta PC no quadrante inferior da <a href="#fig-custoskal" class="quarto-xref">Figura&nbsp;<span>4.6</span></a>. Com uma maior parte da renda sendo destinada para quem tem maior propensão a consumir, a demanda se aquece e aumenta a taxa de lucro. Com a taxa de lucro subindo, a taxa de crescimento do investimento também subiria, mas, principalmente, a taxa de poupança rotacionaria (ver <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a>).</p>
+<p>Para preservar a principal alteração, desconsideramos a mudança de <span class="math inline">\(g_K\)</span> no gráfico ao lado. Contudo, intuitivamente, podemos ver que o aumento dos salários indubitavelmente eleva o grau de utilização, denotando um regme de demanda liderado por salários. Com o efeito direto do grau de utilização sobre a taxa de investimento e o indireto via aumento da taxa de lucro, há, também, um impacto indubitavelmente positivo sobre a taxa de crescimento do estado estaionário, denotando um regime de crescimento liderado pelos salários.</p>
 </div>
 </div>
 </section>
 </section>
-<section id="sec-variantes" class="level2" data-number="4.7">
-<h2 data-number="4.7" class="anchored" data-anchor-id="sec-variantes"><span class="header-section-number">4.7</span> Variantes do Modelo Canônico</h2>
-<section id="poupança-dos-trabalhadores" class="level3" data-number="4.7.1">
-<h3 data-number="4.7.1" class="anchored" data-anchor-id="poupança-dos-trabalhadores"><span class="header-section-number">4.7.1</span> Poupança dos Trabalhadores</h3>
+<section id="sec-variantes" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="sec-variantes"><span class="header-section-number">4.8</span> Variantes do Modelo Canônico</h2>
+<section id="poupança-dos-trabalhadores" class="level3" data-number="4.8.1">
+<h3 data-number="4.8.1" class="anchored" data-anchor-id="poupança-dos-trabalhadores"><span class="header-section-number">4.8.1</span> Poupança dos Trabalhadores</h3>
 <p>O modelo canônico assume que os trabalhadores não poupam (<span class="math inline">\(s_w = 0\)</span>). Esta hipótese pode ser relaxada, permitindo que os trabalhadores também poupem uma fração de sua renda.</p>
 <p>A função de poupança passa a ser:</p>
 <p><span id="eq-gs-sw"><span class="math display">\[g^s = \frac{(s_r \pi + s_w (1-\pi)) u}{v} \tag{4.16}\]</span></span></p>
@@ -830,47 +876,44 @@ Figura&nbsp;4.4: Representação gráfica do modelo kaleckiano canônico
 <p>A inclusão da poupança dos trabalhadores não altera qualitativamente os resultados principais do modelo, mas pode modificar a magnitude dos paradoxos.</p>
 </section>
 </section>
-<section id="sec-exercicios-kanonico" class="level2" data-number="4.8">
-<h2 data-number="4.8" class="anchored" data-anchor-id="sec-exercicios-kanonico"><span class="header-section-number">4.8</span> Exercícios</h2>
-<section id="exercício-1-análise-de-estabilidade" class="level3" data-number="4.8.1">
-<h3 data-number="4.8.1" class="anchored" data-anchor-id="exercício-1-análise-de-estabilidade"><span class="header-section-number">4.8.1</span> Exercício 1: Análise de Estabilidade</h3>
-<p>Considere o modelo kaleckiano canônico com os seguintes parâmetros: <span class="math inline">\(\gamma_0 = 0.03\)</span>, <span class="math inline">\(\gamma_r = 0.2\)</span>, <span class="math inline">\(\gamma_u = 0.4\)</span>, <span class="math inline">\(s_r = 0.6\)</span>, <span class="math inline">\(\pi = 0.4\)</span>, <span class="math inline">\(v = 3\)</span>.</p>
-<ol type="a">
-<li><p>Verifique se a condição de estabilidade é satisfeita.</p></li>
-<li><p>Calcule o grau de utilização de equilíbrio (<span class="math inline">\(u^{*}\)</span>).</p></li>
-<li><p>Calcule a taxa de crescimento de equilíbrio (<span class="math inline">\(g^{*}\)</span>).</p></li>
-</ol>
+<section id="sec-exercicios-kanonico" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="sec-exercicios-kanonico"><span class="header-section-number">4.9</span> Seção Estudo Interativo</h2>
+<p>O gráfico abaixo permite explorar, de forma interativa, os efeitos de alterações na propensão a poupar e na distribuição funcional da renda sobre o equilíbrio do modelo kaleckiano estudado neste capítulo. Utilize os controles deslizantes para modificar os parâmetros e observe como as curvas e o ponto de equilíbrio se alteram.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Como utilizar o simulador
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Paradoxo da parcimônia</strong></p>
+<ul>
+<li>Altere o <em>slider</em> vermelho correspondente à propensão a poupar (<span class="math inline">\(s\)</span>).</li>
+<li>Observe a rotação da curva de poupança (<span class="math inline">\(g_S\)</span>).</li>
+<li>Observe o deslocamento da curva de Demanda Efetiva.</li>
+<li>Compare a posição inicial (linha contínua) com a posição final (linha tracejada).</li>
+</ul>
+<p><strong>Paradoxo dos custos</strong></p>
+<ul>
+<li>Altere o <em>slider</em> verde correspondente à participação dos salários (<span class="math inline">\(w\)</span>).</li>
+<li>Observe simultaneamente:
+<ul>
+<li>a alteração da inclinação da curva de poupança;</li>
+<li>o deslocamento da curva de investimento, dada pela <a href="#eq-gk-kal" class="quarto-xref">Equação&nbsp;<span>4.9</span></a>;</li>
+<li>A rotação da curva de Phillips (PC);</li>
+<li>o novo ponto de equilíbrio.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<iframe scrolling="no" title="Modelo kaleckiano canônico" src="https://www.geogebra.org/material/iframe/id/fenpzjha/width/800/height/700/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="800" height="750" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
+</iframe>
 </section>
-<section id="exercício-2-o-paradoxo-da-parcimônia" class="level3" data-number="4.8.2">
-<h3 data-number="4.8.2" class="anchored" data-anchor-id="exercício-2-o-paradoxo-da-parcimônia"><span class="header-section-number">4.8.2</span> Exercício 2: O Paradoxo da Parcimônia</h3>
-<p>Utilizando os parâmetros do exercício anterior, analise o efeito de um aumento da propensão a poupar dos capitalistas para <span class="math inline">\(s_r = 0.7\)</span>.</p>
-<ol type="a">
-<li><p>Calcule o novo grau de utilização de equilíbrio.</p></li>
-<li><p>Calcule a nova taxa de crescimento de equilíbrio.</p></li>
-<li><p>Explique, com suas próprias palavras, o mecanismo econômico por trás do paradoxo da parcimônia.</p></li>
-</ol>
-</section>
-<section id="exercício-3-o-paradoxo-dos-custos" class="level3" data-number="4.8.3">
-<h3 data-number="4.8.3" class="anchored" data-anchor-id="exercício-3-o-paradoxo-dos-custos"><span class="header-section-number">4.8.3</span> Exercício 3: O Paradoxo dos Custos</h3>
-<p>Utilizando os parâmetros iniciais (<span class="math inline">\(s_r = 0.6\)</span>), analise o efeito de um aumento da participação dos salários na renda (redução de <span class="math inline">\(\pi\)</span> de 0.4 para 0.35).</p>
-<ol type="a">
-<li><p>Calcule a nova taxa de lucro de equilíbrio.</p></li>
-<li><p>Compare com a taxa de lucro inicial.</p></li>
-<li><p>Explique o paradoxo dos custos.</p></li>
-</ol>
-</section>
-<section id="exercício-4-simulação-numérica" class="level3" data-number="4.8.4">
-<h3 data-number="4.8.4" class="anchored" data-anchor-id="exercício-4-simulação-numérica"><span class="header-section-number">4.8.4</span> Exercício 4: Simulação Numérica</h3>
-<p>Construa uma tabela com os valores de <span class="math inline">\(u^{*}\)</span>, <span class="math inline">\(g^{*}\)</span> e <span class="math inline">\(r^{*}\)</span> para diferentes combinações de <span class="math inline">\(\pi\)</span> (0.3, 0.4, 0.5) e <span class="math inline">\(s_r\)</span> (0.5, 0.6, 0.7). Fixe os demais parâmetros em <span class="math inline">\(\gamma_0 = 0.03\)</span>, <span class="math inline">\(\gamma_r = 0.2\)</span>, <span class="math inline">\(\gamma_u = 0.4\)</span>, <span class="math inline">\(v = 3\)</span>.</p>
-<ol type="a">
-<li><p>Em quais casos o paradoxo da parcimônia se verifica?</p></li>
-<li><p>Em quais casos o paradoxo dos custos se verifica?</p></li>
-<li><p>O que você pode concluir sobre a relação entre distribuição de renda e crescimento?</p></li>
-</ol>
-</section>
-</section>
-<section id="sec-resumo-kanonico" class="level2" data-number="4.9">
-<h2 data-number="4.9" class="anchored" data-anchor-id="sec-resumo-kanonico"><span class="header-section-number">4.9</span> Resumo</h2>
+<section id="sec-resumo-kanonico" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="sec-resumo-kanonico"><span class="header-section-number">4.10</span> Resumo</h2>
 <p>O modelo kaleckiano canônico estabelece as bases da teoria do crescimento liderado pela demanda com base em três pilares fundamentais:</p>
 <ol type="1">
 <li><p><strong>Distribuição de renda exógena</strong>: determinada pelo <em>markup</em> e pelo grau de monopólio, não por mecanismos de mercado.</p></li>
