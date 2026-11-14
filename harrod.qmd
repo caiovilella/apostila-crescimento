@@ -11,48 +11,101 @@ editor_options:
 
 ## Introdução {#sec-introducao-harrod}
 
-A *Teoria Geral do Emprego, do Juro e da Moeda* de Keynes representou um avanço fundamental ao demonstrar que a economia capitalista não possui mecanismos automáticos de ajuste em direção ao pleno emprego. No entanto, a análise de Keynes concentrou-se no curto prazo e no nível de renda, deixando em aberto a questão de como sua teoria poderia ser estendida para o longo prazo e para o estudo das taxas de crescimento.
+A *Teoria Geral do Emprego, do Juro e da Moeda* de Keynes representou um
+avanço fundamental ao demonstrar que a economia capitalista não possui
+mecanismos automáticos de ajuste em direção ao pleno emprego. No
+entanto, a análise de Keynes concentrou-se no curto prazo e no nível de
+renda, deixando em aberto a questão de como sua teoria poderia ser
+estendida para o longo prazo e para o estudo das taxas de crescimento.
 
-Foi Roy Harrod (1939) em um trabalho intitulado "An Essay in Dynamic Theory", quem deu os primeiros passos nessa direção. Harrod tinha como objetivo transpor a análise estática da *Teoria Geral* para uma teoria dinâmica, ou seja, uma teoria preocupada não com os *níveis* das variáveis econômicas, mas com suas *taxas de crescimento*.
+Foi Roy Harrod (1939) em um trabalho intitulado "An Essay in Dynamic
+Theory", quem deu os primeiros passos nessa direção. Harrod tinha como
+objetivo transpor a análise estática da *Teoria Geral* para uma teoria
+dinâmica, ou seja, uma teoria preocupada não com os *níveis* das
+variáveis econômicas, mas com suas *taxas de crescimento*.
 
-O modelo de Harrod, embora não tenha se consolidado como uma teoria completa de crescimento e distribuição, estabeleceu as bases para o desenvolvimento de toda uma tradição de pensamento econômico. A intenção de Harrod não era bem estudar as causas do crescimento econômico, mas mostrar como o sistema capitalista é inerentemente instável mesmo no longo prazo.
-
+O modelo de Harrod, embora não tenha se consolidado como uma teoria
+completa de crescimento e distribuição, estabeleceu as bases para o
+desenvolvimento de toda uma tradição de pensamento econômico. A intenção
+de Harrod não era bem estudar as causas do crescimento econômico, mas
+mostrar como o sistema capitalista é inerentemente instável mesmo no
+longo prazo.
 
 ## O equilíbrio estático como ponto de partida {#sec-estatico-harrod}
 
-Keynes elabora sobre o princípio da demanda efetiva separando sua análise em elementos *ex-ante* e *ex-post*. Sendo que a produção e o emprego são determinados *ex-ante* a partir de expectativas de demanda sobre a venda que só se materializará no futuro. Paul Davidson resume esta análise expondo que a "produção leva tempo".
+Keynes elabora sobre o princípio da demanda efetiva separando sua
+análise em elementos *ex-ante* e *ex-post*. Sendo que a produção e o
+emprego são determinados *ex-ante* a partir de expectativas de demanda
+sobre a venda que só se materializará no futuro. Paul Davidson resume
+esta análise expondo que a "produção leva tempo".
 
-Para evitar jargões como *ex-ante* e *ex-post*, no box abaixo vamos explicar esta análise imaginando um produtor que passa a semana produzindo e no final de semana vai ao mercado vender o que produziu em sua fábrica. Chamaremos a semana de "período de produção" e o final de semana de "período de mercado".
+Para evitar jargões como *ex-ante* e *ex-post*, no box abaixo vamos
+explicar esta análise imaginando um produtor que passa a semana
+produzindo e no final de semana vai ao mercado vender o que produziu em
+sua fábrica. Chamaremos a semana de "período de produção" e o final de
+semana de "período de mercado".
 
-:::callout-important
-**Período de produção** $\rightarrow$ é o período em que o empresário produz com base em expectativas de venda.
+::: callout-important
+**Período de produção** $\rightarrow$ é o período em que o empresário
+produz com base em expectativas de venda.
 
-**Período de mercado** $\rightarrow$ é o período em que o empresário conhece a demanda efetiva pelo seu produto.
+**Período de mercado** $\rightarrow$ é o período em que o empresário
+conhece a demanda efetiva pelo seu produto.
 :::
 
-Para decidir o quanto produzir, o empresário formula o que Keynes chamou de expectativas de curto-prazo, isto é, expectativas sobre qual será a demanda por seu produto no período de mercado. Ele toma esta decisão planejando acumular um dado nível de estoque, mas ao chegar no período de mercado, suas expectativas podem se mostrar erradas.
+Para decidir o quanto produzir, o empresário formula o que Keynes chamou
+de expectativas de curto-prazo, isto é, expectativas sobre qual será a
+demanda por seu produto no período de mercado. Ele toma esta decisão
+planejando acumular um dado nível de estoque, mas ao chegar no período
+de mercado, suas expectativas podem se mostrar erradas.
 
-:::callout-note
+:::: callout-note
 ## Exemplo didático
 
-Imagine que o empresário produza 10 unidades esperando vender apenas 8 e planejando acumular 2 unidades de estoque. 
+Imagine que o empresário produza 10 unidades esperando vender apenas 8 e
+planejando acumular 2 unidades de estoque.
 
-Ao chegar no mercado no final de semana, a demanda pelo propduto supera suas expectativas, de tal forma que ele vende todas as 10 unidades produzidas. Nesta circunstância, vemos que a variação tivemos uma variação não planejada do estoque.
+Ao chegar no mercado no final de semana, a demanda pelo propduto supera
+suas expectativas, de tal forma que ele vende todas as 10 unidades
+produzidas. Nesta circunstância, vemos que a variação tivemos uma
+variação não planejada do estoque.
 
-Agora, o empresário voltará para sua fábrica e ajsutará suas expectativas de curto prazo. Ele vai, por exemplo, passar a produzir 12 unidades, planejando vender 10 e acumular 2 unidades como estoque.
+Agora, o empresário voltará para sua fábrica e ajsutará suas
+expectativas de curto prazo. Ele vai, por exemplo, passar a produzir 12
+unidades, planejando vender 10 e acumular 2 unidades como estoque.
 
-:::callout-important
-Repare que neste exemplo, a oferta está se ajustando à demanda. Temos o princípio da dmenada efetiva revertendo a lei de Say.
+::: callout-important
+Repare que neste exemplo, a oferta está se ajustando à demanda. Temos o
+princípio da dmenada efetiva revertendo a lei de Say.
 :::
 
-O estado estacionário ocorrerá no nível em que a demanda efetiva satisfazer as expectativas de curto prazo do empresário. Vamos supor que ele chege ao mercado novamente e se depare com uma demanda efetiva por seu produto de 10 unidades, acumulando 2 unidades de estoque, tal como planejado. Agora, ele não terá incentivos para reajustar sua produção, já que o efetivo e o planejado estão coincidindo.
+O estado estacionário ocorrerá no nível em que a demanda efetiva
+satisfazer as expectativas de curto prazo do empresário. Vamos supor que
+ele chege ao mercado novamente e se depare com uma demanda efetiva por
+seu produto de 10 unidades, acumulando 2 unidades de estoque, tal como
+planejado. Agora, ele não terá incentivos para reajustar sua produção,
+já que o efetivo e o planejado estão coincidindo.
 
-Contudo, se para produzir estas 12 unidades, o empresário precisa contratar apenas 90% da força de trabalho disponível, o desemprego será consequência da baixa demanda efetiva. Diferente do modelo neoclássico de determinação da renda, reduzir os salários reais não fará a demanda por trabalho das firmas subir. Para Keynes, o empresário não contratará mais trabalhadores só porque está "barato", ele contratará tão somente o necessário para produzir a quantidade que espera ser demandada a um preço rentável. 
-:::
+Contudo, se para produzir estas 12 unidades, o empresário precisa
+contratar apenas 90% da força de trabalho disponível, o desemprego será
+consequência da baixa demanda efetiva. Diferente do modelo neoclássico
+de determinação da renda, reduzir os salários reais não fará a demanda
+por trabalho das firmas subir. Para Keynes, o empresário não contratará
+mais trabalhadores só porque está "barato", ele contratará tão somente o
+necessário para produzir a quantidade que espera ser demandada a um
+preço rentável.
+::::
 
-Os economistas pós-keynesianos expressam a relação explicada acima dizendo que em uma economia monetária da produção, a condição de maximização dos lucros monetários pode ocorrer ainda que o salário permaneça abaixo da produtividade marginal do trabalho. Afinal, pode não compensar para o empresário demandar mais trabalho se não ele não espera vender a produção extra do trabalho a ser contratado.
+Os economistas pós-keynesianos expressam a relação explicada acima
+dizendo que em uma economia monetária da produção, a condição de
+maximização dos lucros monetários pode ocorrer ainda que o salário
+permaneça abaixo da produtividade marginal do trabalho. Afinal, pode não
+compensar para o empresário demandar mais trabalho se não ele não espera
+vender a produção extra do trabalho a ser contratado.
 
-Juntando esta abrodagem de expectativas com o que foi apresentado na @sec-contabilidade e, principalmente com o que vimos na @eq-Y e na @eq-g-equilibrio, vamos nos debruçar sobre o exercício de Harrod.
+Juntando esta abrodagem de expectativas com o que foi apresentado na
+@sec-contabilidade e, principalmente com o que vimos na @eq-Y e na
+@eq-g-equilibrio, vamos nos debruçar sobre o exercício de Harrod.
 
 ## A transição para a dinâmica: o problema do investimento recorrente {#sec-dinamica-harrod}
 
@@ -137,19 +190,31 @@ O grau de utilização ($u$) atua como um termo de ajuste que reflete o
 quão intensamente o estoque de capital existente está sendo utilizado.
 :::
 
-Um ponto a se notar é que o efeito acelerador, nesta versão simples, deve ser representado pela letra $v$, já que busca medir o quanto que mudanças do investimento afetam a capacidade produtiva. Isto pode ser verificado se partirmos da definição de $v$ e isolarmos o investimento:
+Um ponto a se notar é que o efeito acelerador, nesta versão simples,
+deve ser representado pela letra $v$, já que busca medir o quanto que
+mudanças do investimento afetam a capacidade produtiva. Isto pode ser
+verificado se partirmos da definição de $v$ e isolarmos o investimento:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 v= \frac{K}{Y_K}\\
 Y_K v = K
-\end{aligned}$$
+\end{aligned}$$ {#eq-k-har}
 
 Pegando o diferencial dos dois lados e considerando que $\Delta K = I$:
-$$\Delta Y_K v = I$$
-Aqui fica nítido que o $v$ está medindo a magnitude do impacto do investimento sobre a capacidade produtiva da economia, refletindo a questão do investimento se convertendo em oferta no futuro.
+$$\Delta Y_K v = I$$ {#eq-acelrigido-har}
 
-O caráter dual do investimento vem do fato de ele ser demanda hoje (o efeito multiplicador captura isso) e oferta no futuro (o efeito acelerador considera isso).
+Aqui fica nítido que o $v$ está medindo a magnitude do impacto do
+investimento sobre a capacidade produtiva da economia, refletindo a
+questão do investimento se convertendo em oferta no futuro. Outro ponto
+de suma importância -e que será retomado no @sec-modelo-super - é notar
+que investimento responde de maneira uniforme para qualquer crescimento
+do produto (ou da demanda). Isso acontece porquê este modelo preserva o
+que a literatura classifica como um *acelerador rígido*, que não se
+ajusta ao nível de demanda.
+
+O caráter dual do investimento vem do fato de ele ser demanda hoje (o
+efeito multiplicador captura isso) e oferta no futuro (o efeito
+acelerador considera isso).
 
 ## A taxa desejada (ou garantida) de crescimento {#sec-garantida-harrod}
 
@@ -164,15 +229,28 @@ quantidade certa. Em suas próprias palavras:
 > right thing, and which will induce them to continue in the same line
 > of advance." (Harrod 1939, p. 22)
 
-A taxa garantida é aquela compatível com as expectativas de curto-prazo dos
-empresários. Ela ocorre quando o grau de utilização efetivo ($u$) é
+A taxa garantida é aquela compatível com as expectativas de curto-prazo
+dos empresários. Ela ocorre quando o grau de utilização efetivo ($u$) é
 igual ao grau de utilização desejado ou normal ($u_n$), ou seja, aquele
 nível de utilização que as firmas consideram adequado para suas decisões
 de investimento.
 
-Aqui é impossível deixar de fazer analogia com o que foi discutido no box da @sec-estatico-harrod. Conforme apresentamos no exemplo didático, a estabildiade das expectativas dos agentes está relacionada com o fato de a demanda efetiva coincidir com a variação planejada dos estoques. Passando da análise de nível da renda para a análise da taxa de crescimento, temos que a estabilidade do sistema ocorre quando a taxa efetiva do grau de utilização iguala à taxa planejada, àquela em que as expectativas dos agentes estariam sendo satisfeitas.
+Aqui é impossível deixar de fazer analogia com o que foi discutido no
+box da @sec-estatico-harrod. Conforme apresentamos no exemplo didático,
+a estabildiade das expectativas dos agentes está relacionada com o fato
+de a demanda efetiva coincidir com a variação planejada dos estoques.
+Passando da análise de nível da renda para a análise da taxa de
+crescimento, temos que a estabilidade do sistema ocorre quando a taxa
+efetiva do grau de utilização iguala à taxa planejada, àquela em que as
+expectativas dos agentes estariam sendo satisfeitas.
 
-Particularmente, eu acho estranho os economistas chamarem esta taxa de "normal", mas podemos facilmente enxergar o que Harrod tinha em mente se pensarmos que seu objetivo era passar a teoria estática de Keynes para uma análise dinâmica. Neste caso, em vez de falar em nível de demanda esperado no período de produção em relação ao período de mercado, podemos falar em um grau de utilização da capacidade instalada planejado $(u_n)$.
+Particularmente, eu acho estranho os economistas chamarem esta taxa de
+"normal", mas podemos facilmente enxergar o que Harrod tinha em mente se
+pensarmos que seu objetivo era passar a teoria estática de Keynes para
+uma análise dinâmica. Neste caso, em vez de falar em nível de demanda
+esperado no período de produção em relação ao período de mercado,
+podemos falar em um grau de utilização da capacidade instalada planejado
+$(u_n)$.
 
 Substituindo $u = u_n$ na @eq-gy-harrod, obtemos:
 
@@ -210,29 +288,25 @@ firmas.
 investimento.](figuras/equilibrio_harrod.png){#fig-equilibrio-harrod
 width="75%"}
 
-É importante notar que a condição para o equilíbrio acontecer é:
-$$ 
+É importante notar que a condição para o equilíbrio acontecer é: $$ 
 \begin{aligned}
 g_y &= g_W\\
 \frac{su}{v}&=\frac{s u_n}{v}
-\end{aligned}
-$$
-O que nos leva à condição de:
-$$
-\begin{aligned}
+\end{aligned}$$ O que nos leva à condição de: $$\begin{aligned}
 u &= u_n\\
 \frac{Y}{Y_K} &= \frac{Y_n}{Y_K}\\
 Y &= Y_n
 \end{aligned}$$
 
-Ou seja, que o nível de demanda efetiva convirja para o nível esperado, tal como discutido nas expectativas de curto-prazo.
+Ou seja, que o nível de demanda efetiva convirja para o nível esperado,
+tal como discutido nas expectativas de curto-prazo.
 
 ## A taxa natural de crescimento {#sec-natural-harrod}
 
 Além da taxa efetiva e da taxa desejada, Harrod introduziu uma terceira
 taxa: a *taxa natural de crescimento* ($g_n$). Esta taxa representa o
-limite máximo de crescimento imposto pelo lado da oferta, ou
-seja, pelas condições de disponibilidade de fatores de produção.
+limite máximo de crescimento imposto pelo lado da oferta, ou seja, pelas
+condições de disponibilidade de fatores de produção.
 
 Imagine uma pequena aldeia. Sua capacidade produtiva dependerá
 fundamentalmente de duas coisas:
@@ -297,7 +371,8 @@ $$\Delta \gamma_0 = v (u - u_n)$$ {#eq-ajuste-expectativas}
 A intuição por trás desse mecanismo é a seguinte:
 
 1.  Se $u > u_n$ (economia operando acima da capacidade planejada), as
-    firmas observam que estão vendendo mais do que o planejado, verificando variações não desjeadas de seus estoques.
+    firmas observam que estão vendendo mais do que o planejado,
+    verificando variações não desjeadas de seus estoques.
 2.  Isso melhora suas expectativas de demanda futura.
 3.  Elas decidem acelerar o investimento para expandir a capacidade
     produtiva.
@@ -323,7 +398,6 @@ o que torna a trajetória de equilíbrio uma "faca de dois gumes"
 Em outras palavras: se a economia não estiver exatamente sobre a
 trajetória de crescimento garantido, ela tende a explodir para cima
 (euforia) ou para baixo (frustração).
-
 :::
 
 ### Representação gráfica da instabilidade
@@ -331,7 +405,7 @@ trajetória de crescimento garantido, ela tende a explodir para cima
 Graficamente, o primeiro problema de Harrod pode ser representado da
 seguinte forma:
 
-::::: columns
+:::::::::::: columns
 ::: {.column width="35%"}
 ![Instabilidade do modelo de
 Harrod.](figuras/instabilidade_harrod.png){#fig-instabilidade-harrod
@@ -351,9 +425,9 @@ desloca para $g_Y^2$, gerando um novo equilíbrio com $u_2 > u_1$. O
 processo se repete, afastando cada vez mais a economia do equilíbrio
 inicial.
 
-Analogamente, se a curva de investimento se deslocasse para baixo,
-o processo operaria em sentido contrário, com a economia se afastando
-para baixo.
+Analogamente, se a curva de investimento se deslocasse para baixo, o
+processo operaria em sentido contrário, com a economia se afastando para
+baixo.
 
 Em seu ensaio, Harrod resume este resultado da seguinte forma:
 :::
@@ -371,12 +445,19 @@ Em seu ensaio, Harrod resume este resultado da seguinte forma:
 > it. The moving equilibrium of advance is thus a highly unstable one."
 > (Harrod 1939, p. 23)
 
-Representando a dinâmica por um diagrama de fases, temos a @fig-fases-harrod.
+Representando a dinâmica por um diagrama de fases, temos a
+@fig-fases-harrod.
 
-![Instabilidade do modelo de Harrod.](figuras/fases_harrod.png){#fig-fases-harrod
-width="75%"}
+![Instabilidade do modelo de
+Harrod.](figuras/fases_harrod.png){#fig-fases-harrod width="75%"}
 
-Em que notamos que qualqeur ponto inicial em que a demanda efetiva não seja compatível com as expectativas dos agentes conduz a economia para um processo explosivo. Portanto, é possível transpor a teoria estática de Keynes para uma teoria dinâmica e estável? sim, mas só se você assumir que o equilíbrio do curto prazo esteja ocorrendo. Pois, qualquer ponto de partida distinto desse conduziria a economia para um estado de euforia ou para uma dperessão profunda.
+Em que notamos que qualqeur ponto inicial em que a demanda efetiva não
+seja compatível com as expectativas dos agentes conduz a economia para
+um processo explosivo. Portanto, é possível transpor a teoria estática
+de Keynes para uma teoria dinâmica e estável? sim, mas só se você
+assumir que o equilíbrio do curto prazo esteja ocorrendo. Pois, qualquer
+ponto de partida distinto desse conduziria a economia para um estado de
+euforia ou para uma depressão profunda.
 
 ## O segundo problema de Harrod: a divergência entre a taxa garantida e a taxa natural {#sec-segundo-problema-harrod}
 
@@ -390,7 +471,7 @@ $$g_y= g_W \neq g_n$$
 
 ### Caso 1: A taxa natural supera a taxa garantida
 
-::::: columns
+::::::::: columns
 ::: {.column width="40%"}
 ![Taxa garantida abaixo da taxa
 natural.](figuras/harrod_caso1.png){#fig-harrod-caso1
@@ -399,16 +480,29 @@ width="100%"}
 
 ::: {.column width="60%"}
 Se $g_n > g_W$, a economia cresce a uma taxa inferior ao seu potencial
-máximo. Por simplicidade, podemos assumir que $g_A=0$ e que o crescimento natural é dado apenas pelo crescimento populacional.
+máximo. Por simplicidade, podemos assumir que $g_A=0$ e que o
+crescimento natural é dado apenas pelo crescimento populacional.
 
-Este caso implica que a taxa de crescimento populacional é mais rápida do que a taxa de expansão da demanda efetiva. Significa que a taxa de pessoas entrando na força de trabalho está maior do que a taxa que faz com que as firmas contratem novas pessoas. 
+Este caso implica que a taxa de crescimento populacional é mais rápida
+do que a taxa de expansão da demanda efetiva. Significa que a taxa de
+pessoas entrando na força de trabalho está maior do que a taxa que faz
+com que as firmas contratem novas pessoas.
 :::
-Neste caso, a economia tenderá a operar com desemprego crescente ao longo do tempo. Mesmo que, por acaso, a taxa efetiva se iguale à garantida, a economia não será capaz de absorver toda a força de trabalho disponível.
 
+Neste caso, a economia tenderá a operar com desemprego crescente ao
+longo do tempo. Mesmo que, por acaso, a taxa efetiva se iguale à
+garantida, a economia não será capaz de absorver toda a força de
+trabalho disponível.
+
+Vale notar que para Harrod isso não seria propriamente um problema do modelo. Ao identificar o desemprego o governo poderia agir e injetar gastos autônomos, aquecendo a economia, ainda que isso levasse a $u > u_n$ e, portanto, $g_Y > g_W$. Segundo o modelo, quando isto acontecesse teríamos um caso de euforia extrema, onde uam onda de otimismo geraria outra onda de otimismo com investimetnos cada vez maiores e taxas de crescimento superiores a cada período.
+
+Contudo, é posível ler esta dinâmica imaginando que os empresários reagiriam conforme a taxa efetiva se aproximasse da natural. Quanto mais perto do pleno emprego a economia estiver, mais cético os empresários serão quanto à manutenção de taxas de crescimento elevadas no futuro, já que as barreiras físicas à produção a limitariam. Neste sentido, as revisões de expectativas otimistas colocariam um fim à esta fase de expansão, pois a medida que a economia se aproximasse do pleno emprego, a propensão empresarial a investir reduziria com o maior ceticismo e frearia o processo de expansão até revertê-lo.
+
+A principal questão com esta análise, contudo, é que o modelo depende de uma variável exógena (exectativas) balizada por um teto exógeno, para que o ciclo de expansão tenha um limite. Modelos com o acelerador flexível possibilitariam o ajustamento endógenamente. Mas este será tema para os capítulos futuros.
 
 ### Caso 2: A taxa natural é inferior à taxa garantida
 
-::::: columns
+:::::: columns
 ::: {.column width="40%"}
 ![Taxa garantida acima da taxa
 natural.](figuras/harrod_caso2.png){#fig-harrod-caso2
@@ -416,14 +510,20 @@ width="100%"}
 :::
 
 ::: {.column width="60%"}
+Se $g_n < g_W$, a economia cresce a uma taxa superior ao seu potencial
+máximo. A demanda efetiva se expande mais rapidamente do que a
+capacidade produtiva.
 
-Se $g_n < g_W$, a economia cresce a uma taxa superior ao seu potencial máximo. A demanda efetiva se expande mais rapidamente do que a capacidade produtiva.
-
-Pense que a taxa em que as empresas contratam novas pessoas superará a taxa de pessoas entrando na força de trabalho. Esta situação pode até permanecer enquanto houver um estoque de desempregados, mas tão logo este estoque se esgote, mesmo que haja demanda pelo produto, não terá mão-de-obra disponível para produzí-lo.
-
+Pense que a taxa em que as empresas contratam novas pessoas superará a
+taxa de pessoas entrando na força de trabalho. Esta situação pode até
+permanecer enquanto houver um estoque de desempregados, mas tão logo
+este estoque se esgote, mesmo que haja demanda pelo produto, não terá
+mão-de-obra disponível para produzí-lo.
 :::
 
-Neste caso, a taxa de estado estacionário encontrará um limite na mão-de-obra disponível em algum momento. Quando isso acontecer, a demanda cairá, reduzindo o grau de utilização da capacidade.
+Neste caso, a taxa de estado estacionário encontrará um limite na
+mão-de-obra disponível em algum momento. Quando isso acontecer, a
+demanda cairá, reduzindo o grau de utilização da capacidade.
 
 O problema aqui é duplo:
 
@@ -432,9 +532,16 @@ O problema aqui é duplo:
 2.  Quando isso ocorre, o grau de utilização cai abaixo do normal, o que
     ativa o mecanismo do primeiro problema de Harrod: a instabilidade.
 
-Ou seja, o segundo problema não é independente do primeiro. Uma vez que a taxa garantida supera a natural, a economia está fadada a colidir com o limite da oferta, gerando uma crise que a joga para baixo da trajetória de equilíbrio.
+Ou seja, o segundo problema não é independente do primeiro. Uma vez que
+a taxa garantida supera a natural, a economia está fadada a colidir com
+o limite da oferta, gerando uma crise que a joga para baixo da
+trajetória de equilíbrio.
 
+Contudo, é importante apontar para a possibilidade de ler esta dinâmica como um resultado do modelo, não exatamente um problema. O que o modelo está sugerindo é que mesmo economias capitalistas estáveis podem ser retiradas da instabilidade e jogadas numa recessão profunda. 
 
+A taxa natural abaixo do equilíbrio funcionaria como um piso para recessão. Conforme a recessão se aprofunda, as transferências de renda e os programas de seguridade social passam a ocupar uma parte maior da renda, de tal forma que os gastos privados induzidos pela renda representem uma parcela menor, portanto, sua queda influencia cada vez menos na renda agregda. Assim sendo, apesar de o modelo apontar esta possibilidade, no mundo real e economia não caíria para sempre devido a estes gastos que colocam um piso para a queda da demanda efetiva.
+
+A principal questão com este tipo de leitura, no entanto, é que a estabilização do modelo, mais uma vez, passa a depender de um comportamento exógeno a sua arquitetura. Isto é, tanto os pisos quanto o teto da taxa de crescimento efetiva, que possibilitariam uma flexibilização interpretativa dos resultados do modelo são imputados exógenamente ao modelo.
 
 ## A dupla condição de equilíbrio {#sec-dupla-condicao}
 
@@ -450,7 +557,7 @@ $$g_L + g_A = g_W = g_Y = \frac{s u}{v} = \frac{s u_n}{v}$$ {#eq-dupla-condicao}
 
 O que garante que essas duas condições sejam satisfeitas? A resposta de
 Harrod é: *nada*. Não há mecanismo automático que assegure a
-coincidência entre a taxa desejada e a natural.
+coincidência entre a taxa desejada e a natural. O problema da instabilidade no modelo de Harrod decorre que o equilíbrio depender da igualdade entre variáveis completamente idependentes entre si.
 
 ::: callout-important
 ### A "faca de dois gumes" de Harrod
@@ -488,9 +595,7 @@ apontaram as seguintes limitações:
     financiamento**: o modelo ignora o papel do sistema financeiro.
 4.  **Falta de consideração da taxa de lucro**: o modelo não incorpora a
     lucratividade como determinante do investimento.
-5.  **Tratamento da relação capital-produto como constante**: Harrod
-    assume que $v$ é fixo, o que exclui a possibilidade de mudanças
-    técnicas que alterem essa relação.
+
 
 ### A contribuição de Harrod
 
@@ -515,37 +620,34 @@ Como bem resumiu Kregel:
 > they are not ranks as a basic contribution to growth." (Kregel 1971,
 > p. 118)
 
-Além do que, o obejtivo de Harrod era estabelecer as condições de equilíbrio do modelo para entender os fatores que o desestabilizariam. A ideia final, que Harrod não chegou a desenvolver, era fazer sugestões de política econômica. Ora, se o autor conseguisse mapear os elementos que tornam o sistema instável, poderia então propor políticas para neutralizar tais elementos e tornar a economia capitalista mais estável.
+Além do que, o obejtivo de Harrod era estabelecer as condições de
+equilíbrio do modelo para entender os fatores que o desestabilizariam. A
+ideia final, que Harrod não chegou a desenvolver, era fazer sugestões de
+política econômica. Ora, se o autor conseguisse mapear os elementos que
+tornam o sistema instável, poderia então propor políticas para
+neutralizar tais elementos e tornar a economia capitalista mais estável.
 
-Este último obejtivo nunca cehgou a ser alcançado por Harrod, mas foi desenvolvido por outros autores, como veremos ao longo desta apostila.
+Este último obejtivo nunca cehgou a ser alcançado por Harrod, mas foi
+desenvolvido por outros autores, como veremos ao longo desta apostila.
 
-Por fim, para quem pensa que o objetivo e Harrod era montar um modelo de crescimento para explicar ume stado estacinário de longo prazo, de fato o modelo carrega sérios problemas. Contudo, se o objetivo do modelo de Harrod fosse de fato explicar como a economia capitalista é inerentemente instável, a sua contribuição foi mostrar que a estabildiade da economia depende de uma variável tão fugaz quanto as expectativas empresariais.
+Por fim, para quem pensa que o objetivo e Harrod era montar um modelo de
+crescimento para explicar um estado estacinário de longo prazo, de fato
+o modelo carrega sérios problemas. Contudo, se o objetivo do modelo de
+Harrod fosse de fato explicar como a economia capitalista é
+inerentemente instável, a sua contribuição foi mostrar que a
+estabildiade da economia depende de uma variável tão fugaz quanto as
+expectativas empresariais.
 
-## Conexão com os modelos subsequentes {#sec-conexao-harrod}
+Neste sentido, a instabilidade poderia não ser um problema para o Harrod, desde que o modelo funcionasse a partir de pisos e tetos, como descrito anteriomente. Para esta forma de leitura do modelo de Harrod, podemos entender que os resultados apresentados pelo modelo não seriam, de fato, "problemas" senão "achados".
 
-O modelo de Harrod estabeleceu as bases para o desenvolvimento de outras
-tradições teóricas:
+![Taxa de crescimento dos EUA (1961-2023).](figuras/harrod_pisoteto.png){#fig-pisoteto-harrod
+width="100%"}
 
-### O modelo neoclássico de Solow
+Em suma, se a intenção de Harrod era desenvolver um modelo teórico para explicar os determinantes do crescimento, ele desenvolveu a metodologia para isso, mas esbarrou em dois problemas que não conseguiu resolver. Contudo, se pensarmos que seu propósito era transpor a teoria keynesiana para uma análise dinâmica de longo prazo, talvez ele tenha tido méritos em demonstrar que a economia capitalista é inerentemente instável dentro de certos parâmetros, mesmo no longo prazo.
 
-Solow (1956) interpretou o problema de Harrod como resultado da hipótese
-de proporções fixas na produção ($v$ constante). Ao permitir a
-substituição entre capital e trabalho, Solow mostrou que a economia
-poderia convergir para um estado estacionário com pleno emprego,
-independentemente da taxa garantida.
+Olhando para o caso dos Estados Unidos, como na @fig-pisoteto_harrod, podemos notar que, de fato, a economia esteve oscilando entre um piso e um teto. Claro que há divergências significativas na média de crescimento entre períodos e isto não é explicado pelo modelo deste capítulo, mas os ciclos sim podem ser interpretados como casos de euforia seguidos de fortes frustações dos investimentos. Ambos limitados a um teto e um piso.
 
-Essa interpretação, no entanto, foi criticada por autores
-pós-keynesianos por assumir que a substituição entre fatores ocorreria
-de forma automática, sem considerar a incerteza fundamental e a rigidez
-dos preços relativos.
-
-### O modelo Kaleckiano de crescimento
-
-O modelo Kaleckiano (discutido no @sec-modelo-kal) partiu da mesma crítica de Harrod em relação à instabilidade, mas propôs uma solução diferente: a endogeneidade do grau de utilização de equilíbrio.
-
-No modelo Kaleckiano, a taxa de crescimento não é determinada por uma "faca de dois gumes", mas pela interação entre a demanda efetiva e a distribuição funcional da renda. Este modelo será aprofundado no @sec-modelo-kal.
-
-### O modelo Kaldor-Robinson
-
-O modelo Kaldor-Robinson, por sua vez, adotou a solução de ajuste pela distribuição funcional da renda, desenvolvendo uma teoria em que a participação dos lucros na renda se ajusta para garantir a igualdade entre poupança e investimento na taxa natural.
-
+Mas para explicar os determinantes de médias distintas, precisamos desenvolver outras formas de determinar a função da poupança e do investimetno e faremos isso ao longo de toda esta apostila.
+::::::
+:::::::::
+::::::::::::

@@ -11,6 +11,8 @@ book:
     - harrod.qmd
     - modelo_kaleckiano.qmd
     - modelo_bm.qmd
+    - modelo_super.qmd
+    - exercicios.qmd
 
 bibliography: references.bib
 

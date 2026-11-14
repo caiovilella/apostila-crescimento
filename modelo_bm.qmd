@@ -7,11 +7,11 @@ editor_options:
   chunk_output_type: inline
 ---
 
-# Modelo Neo-Kaleckiano (Bhaduri e Marglin) {#sec-modelo-bm}
+# Modelo Pós-Kaleckiano (Bhaduri e Marglin) {#sec-modelo-bm}
 
 ## Introdução {#sec-introducao-bm}
 
-O modelo neokaleckiano desenvolvido por Bhaduri e Marglin representa uma
+O modelo pós-kaleckiano desenvolvido por Bhaduri e Marglin representa uma
 das principais extensões da tradição kaleckiana de crescimento e
 distribuição. Seu objetivo é incorporar, de forma explícita, o efeito da
 distribuição funcional da renda sobre as decisões de investimento,
@@ -70,18 +70,18 @@ Uma crítica inicial é que, conforme podemos constatar na @eq-gkcanonico,
 o grau de utilização da capacidade tem impacto duplo sobre o
 investimento. Quando a demanda efetiva aquece $(u\uparrow)$, as firmas
 aumentam o investimento tanto pelo efeito acelerador como pelo efeito
-lucratividade (ver termo entre parênteses na @eq-gkbm).
+lucratividade (ver termo entre parênteses na acima).
 
 Essa especificação sugere que o impacto será sempre amplificado, pois
 pressupõe que sempre temos $\gamma_u > 0$. Entretanto, essa relação
 positiva entre grau de utilização e investimento possui uma relação
-implícita nada trivial. O fato de $\gamma_u$ se sempre positivo pode ser
-interpretado como: *tudo o mais constante* (**inclusive a taxa de
+implícita nada trivial. O fato de $\gamma_u$ ser sempre positivo pode
+ser interpretado como: *tudo o mais constante* (**inclusive a taxa de
 lucro**), o aumento do grau de utilização conduz ao aumento da taxa de
 investimento.
 
 Repare que manter a taxa de lucro constante após ocorrer o aumento do
-grau de utilização só será possível se houver um aumento proporcional da
+grau de utilização só é possível se houver um aumento proporcional da
 participação dos lucros na renda. Isso é mais fácil de ser verificado
 pela representação algébrica:
 
@@ -94,7 +94,16 @@ implicitamente, que uma firma pode observar uma redução do seu *markup*
 e, ainda assim, decidir ampliar seus investimentos devido ao grau de
 utilização permanecer elevado.
 
-Bhaduri e Marglin questionam precisamente essa hipótese.
+Bhaduri e Marglin questionam precisamente essa hipótese. Ao resgatarem a
+contribuição de Joan Ronbinson, os autores sugerem que o investimento
+depende da rentabilidade esperada. Neste sentido, a taxa de lucro capta
+a rentabilidade realizada e deveria ser substituída na equação do
+investimento pela parcela dos lucros na renda. Assim, quando o grau de
+mark-up das firmas se reduz, a rentabilidade esperada da produçao obtida
+com seus investimentos também cairá. Lembremos, então, que a parcela dos
+lucros na renda é uma função direta desta taxa de mark-up para entender
+a crítica de Bhaduri e Marglin de que seria mais preciso substituir, na
+@eq-gk-kal, a taxa de lucro pela parcela dos lucros na renda.
 
 ::: callout-important
 ### A crítica de Bhaduri e Marglin
@@ -141,20 +150,32 @@ $\gamma_\pi$.
 
 Quando $\gamma_{\pi}=0$, a @eq-gkbm reduz-se aproximadamente à função de
 investimento estudada no capítulo anterior. Aqui, basicamente, temos
-duas forças oeprando sobre o investimento. De um lado, a demanda efetiva
+duas forças operando sobre o investimento. De um lado, a demanda efetiva
 aquecida estimula o investimento via efeito acelerador, enquanto que,
-por outro lado, o aumento da parclea salarial (*wage-share*)
+por outro lado, o aumento da parcela salarial (*wage-share*)
 desestimnula o investimento via efeito lucratividade. O resultado
 líquido sobre a taxa de crescimento do investimento dependerá de qual
 destes efeitos preponderará.
 
 ## O equilíbrio do modelo {#sec-equilibrio-bm}
 
-A condição de equilíbrio continua sendo dada pela igualdade entre
-poupança e investimento. Neste caso, igualdade entre taxa de poupança e
-taxa de investimento:
+Tal como no modelo Kaleckiano canônico, seguimos com um sistema de três
+equações:
 
-$$g_{s}=g_{K}.$$
+$$\boxed{
+\begin{aligned}
+r &= \frac{\pi u}{v}
+&&\text{(taxa de lucro)} \\[0.5em]
+g_s &= s_{\pi}r
+&&\text{(taxa de crescimento da poupança)} \\[0.5em]
+g_K &= \gamma_0+\gamma_{\pi}\pi+\gamma_u u
+&&\text{(taxa de crescimento do investimento)}
+\end{aligned}}$$
+
+A condição de equilíbrio continua sendo dada pela igualdade entre
+poupança e investimento.
+
+$$g_{s}=g_{K}$$
 
 Assumindo a função de poupança apresentada pela @eq-gs e já substituindo
 $r$ chegamos em:
@@ -169,9 +190,9 @@ Isolando o grau de utilização de equilíbrio,
 
 $$u^{*}=\frac{\gamma_0+\gamma_{\pi}\pi}{\dfrac{s_\pi \pi}{v}-\gamma_u}$$ {#eq-u-bm}
 
-Esta expressão mostra que o grau de utilização depende simultaneamente
-da distribuição funcional da renda e da sensibilidade do investimento
-tanto à parcela dos lcuros, quanto à demanda.
+Esta expressão mostra que o grau de utilização do equilíbrio depende
+simultaneamente da distribuição funcional da renda e da sensibilidade do
+investimento tanto à parcela dos lcuros, quanto à demanda.
 
 A linearidade assumida, apesar de beneficiar a matemática, traz algumas
 contradições que precisamos lidar. A primeira dela é que calcular a
@@ -231,7 +252,7 @@ Nesse caso, a economia encontra-se em um regime de demanda
 **profit-led**.
 :::
 
-::: callout-note
+::: callout-important
 ### Sobre a contradição adotada na linearidade hipotética
 
 Repare que dividirmos todo mundo na equaçãoa cima por $\pi$ fico com:
@@ -248,7 +269,7 @@ didáticos, mas que causa complicações não fidedignas ao modelo de BM.
 :::
 
 Seguindo com nossa derivação do equilíbrio, temos de substituir o
-resutlado encontrado para o grau de utilização na @eq-gkbm, o que nos
+resultado encontrado para o grau de utilização na @eq-gkbm, o que nos
 leva à:
 
 $$g^*=\gamma_0 + \gamma_{\pi}\pi +\gamma_u \left(\frac{\gamma_0+\gamma_\pi \pi}{s_\pi\frac{\pi}{v}-\gamma_u}\right)$$ {#eq-g-bm}
@@ -397,7 +418,7 @@ Portanto, alterações na distribuição de renda terão efeito de:
 
 Assim como discutido na @sec-paradoxos-kal, temos que analisar os
 paradoxos dos custos e da parcimônia (Thrifit) no fechamento
-neo-kaleckiano.
+pós-kaleckiano.
 
 ::: callout-note
 ### Lembrando os conceitos:
@@ -426,7 +447,7 @@ $$\begin{aligned}
 :::
 
 ::: {.column width="65%"}
-O paradoxo de Thrifit segue válido no modelo neo-kaleckiano de Bhaduri e
+O paradoxo de Thrifit segue válido no modelo pós-kaleckiano de Bhaduri e
 Marglin.
 
 Graficamente podemos constatar isso pela rotação que a mudança da
@@ -440,12 +461,12 @@ faz com que as firmas optem por reduzir a taxa de crescimento dos
 investimentos e manter sua parcela dos lucros na renda, ainda que com
 menor taxa de lucro.
 
-$$ s_\pi\downarrow \rightarrow g_s\downarrow \rightarrow u\downarrow \rightarrow g_K\downarrow \rightarrow u_n\downarrow $$
+$$ s_\pi\uparrow \rightarrow g_s\downarrow \rightarrow u\downarrow \rightarrow g_K\downarrow \rightarrow u_n\downarrow $$
 :::
 
 Algebricamente, não precisamos derivar para notar que o aumento de
 $s_\pi$ na @eq-u-bm leva ao aumento do denominador, fato que reduz a
-razão. Ou seja, elevar $s_\pi$ reduz $u^*$. Concomintantemente, pela
+razão. Ou seja, elevar $s_\pi$ reduz $u^*$. Concomitantemente, pela
 @eq-gkbm vemos que a queda de $u$, tudo o mais constante, leva à queda
 de $g_K$.
 
@@ -480,7 +501,7 @@ Concomitantemente, ao olhar para @eq-gs-bm como uma equação linear,
 podemos notar que o $\pi$ funciona como um coeficiente angular da reta.
 Ou seja, a queda do $\pi$ reduz o coeficiente angular de uma função de
 primeiro grau, reduzindo sua inclinação (rotacionando no sentido
-horário). Em outras palavras: tornado a reta do plano cartesiano mais
+horário). Em outras palavras: tornando a reta do plano cartesiano mais
 "deitada".
 
 O Quadrante A mostra que após a rotação da curva $g_S$ no sentido
@@ -516,7 +537,7 @@ Como podemos notar pela @eq-gkbm, o tamanho do deslocamento da curva de
 investimentos dependerá diretamente do quão sensível o investimento é em
 relação à distribuição de renda (representado pelo parâmero
 $\gamma_\pi$). Quanto mais sensível for, maior será o deslocamento da
-reta $g_K$, aumemtando as chances de um regime de demanda profit-led
+reta $g_K$, aumentando as chances de um regime de demanda profit-led
 (para dado $\gamma_u$).
 
 Em suma e simplificadamente, o efeito líquido de uma distribuição de
@@ -539,7 +560,7 @@ chances disso acontecer, quanto maior for o efeito lucratividade do
 investimento, capturado pelo parâmetro $\gamma_\pi$. Aqui vemos como um
 regime de demanda liderado pelos salários é condição necessária, mas não
 suficiente para assegurar que o regime de crescimento também seja
-liderado pelos salários (como vimos na @tbl-regimes).
+liderado pelos salários (como vimos na tabela sobre os regimes).
 
 Por fim, o Quadrante C da @fig-custos-bm mostra que após o aumento da
 parcela dos salários, o novo equilíbrio ocorre já com o grau de
@@ -550,7 +571,7 @@ que o efeito sensibilidade do investimento se mostrou significativo ante
 o efeito acelerador, provocando um forte deslocamento da curva $g_K$. O
 paradoxo dos custos não é válido neste contexto.
 
-Trabalhos empíricos conduzidos por autores neokaleckianos tendem a
+Trabalhos empíricos conduzidos por autores pós-kaleckianos tendem a
 mostrar um efeito acelerador bem alto, enquanto estimações apontam para
 um baixo efeito lucratividade. Isto é, o investimento parece ser mais
 sensível à demanda do que à lucratividade.
@@ -564,7 +585,7 @@ investimento devido a esta mesma distribuição.
 
 O gráfico abaixo permite explorar, de forma interativa, os efeitos de
 alterações na propensão a poupar e na distribuição funcional da renda
-sobre o equilíbrio do modelo neokaleckiano de Bhaduri e Marglin. Utilize
+sobre o equilíbrio do modelo pós-kaleckiano de Bhaduri e Marglin. Utilize
 os controles deslizantes para modificar os parâmetros e observe como as
 curvas e o ponto de equilíbrio se alteram.
 
@@ -601,7 +622,7 @@ questões:
 :::
 
 ::: {.callout-important appearance="minimal"}
-<iframe scrolling="no" title="Modelo Neokaleckiano wage-led" src="https://www.geogebra.org/material/iframe/id/kyjszhnv/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
+<iframe scrolling="no" title="Modelo pós-kaleckiano wage-led" src="https://www.geogebra.org/material/iframe/id/kyjszhnv/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
 
 </iframe>
 :::
@@ -638,7 +659,7 @@ contexto. Faça o exercício e tente identificar as principais
 características presentes nesta representação. Explore os dois paradoxos
 para aplicar o conhecimento construído ao longo deste capítulo.
 
-<iframe scrolling="no" title="Modelo Neokaleckiano profit-led" src="https://www.geogebra.org/material/iframe/id/jhabpd4r/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
+<iframe scrolling="no" title="Modelo pós-kaleckiano profit-led" src="https://www.geogebra.org/material/iframe/id/jhabpd4r/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
 
 </iframe>
 ::::::::::
