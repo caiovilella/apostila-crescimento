@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -38,14 +41,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./harrod.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6a629bff3a0aec5539adec26986c1e98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -106,17 +110,17 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./modelo_kaleckiano.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modelo Kaleckiano Canônico</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./modelo_kaleckiano.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modelo Kaleckiano Canônico</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -127,7 +131,7 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Apostila de Crescimento</a> 
@@ -167,7 +171,19 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./modelo_bm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Neo-Kaleckiano (Bhaduri e Marglin)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Pós-Kaleckiano (Bhaduri e Marglin)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modelo_super.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Modelo Supermultiplicador Sraffiano</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exercicios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exercícios</span></span></a>
   </div>
 </li>
     </ul>
@@ -176,7 +192,7 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
     <h2 id="toc-title">Índice</h2>
    
   <ul>
@@ -213,7 +229,7 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -483,7 +499,7 @@ g_K &amp;= g_s
 <p>Se os capitalistas poupam 20% da sua renda <span class="math inline">\((s_r = 0,2)\)</span>, obtida a partir de uma taxa de lucro de 50% sobre o capital investido <span class="math inline">\((r=0,5)\)</span>, temos que a poupança, logicamente, crescerá 20% destes 50% de renda do capitalista, portanto, crescerá 10% <span class="math inline">\((g_s=0,2 \times 0,5 = 0,1)\)</span>.</p>
 </div>
 </div>
-<p>Substituindo a definição da taxa de lucro (<a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>), chegamos à forma final da função de poupança:</p>
+<p>Substituindo a definição da taxa de lucro (1), chegamos à forma final da função de poupança:</p>
 <p><span id="eq-gs-kal"><span class="math display">\[g_s = s_r \frac{ \pi u}{v} \tag{4.8}\]</span></span></p>
 <p>A <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a> revela que a taxa de crescimento da poupança é: - <strong>Positivamente relacionada</strong> ao grau de utilização da capacidade (<span class="math inline">\(u\)</span>); - <strong>Positivamente relacionada</strong> à participação dos lucros na renda (<span class="math inline">\(\pi\)</span>); - <strong>Positivamente relacionada</strong> à propensão a poupar dos capitalistas (<span class="math inline">\(s_r\)</span>).</p>
 <div class="columns">
@@ -516,7 +532,7 @@ Figura&nbsp;4.2: Representação gráfica do modelo.
 <p>Quando o grau de utilização aumenta, a taxa de lucro se eleva (para dado <span class="math inline">\(\pi\)</span>), gerando maiores lucros e, consequentemente, maior poupança. A inclinação da curva reflete a sensibilidade da poupança a variações na utilização da capacidade.</p>
 </div>
 </div>
-<p>Algebricamente, repare que até agora temos um modelo linear simples de duas equações e duas variáveis. A <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a> é a primeira equação linear e a <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> é a segunda equação. Como método algébrico, optamos pela substitução daquela nesta para obter a equação <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a>. Cujo coeficiente linear é zero e o coeficiente angular é dado por todos parâmteros e variável exógena que multiplicam o grau de utilização <span class="math inline">\((\frac{s_r \pi}{v})\)</span>, como representado no gráfico acima.</p>
+<p>Algebricamente, repare que até agora temos um modelo linear simples de duas equações e duas variáveis. A 1 é a primeira equação linear e a <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> é a segunda equação. Como método algébrico, optamos pela substitução daquela nesta para obter a equação <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a>. Cujo coeficiente linear é zero e o coeficiente angular é dado por todos parâmteros e variável exógena que multiplicam o grau de utilização <span class="math inline">\((\frac{s_r \pi}{v})\)</span>, como representado no gráfico acima.</p>
 </section>
 <section id="sec-investimento" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="sec-investimento"><span class="header-section-number">4.4</span> A Função de Investimento</h2>
@@ -584,13 +600,13 @@ Figura&nbsp;4.2: Representação gráfica do modelo.
 </div>
 <div class="callout-body-container callout-body">
 <p>O modelo canônico assume que <span class="math inline">\(\gamma_u\)</span> é sempre positivo. Isso significa que, tudo o mais constante, o aumento do grau de utilização leva a um aumento do investimento.</p>
-<p>No entanto, a expressão “<em>tudo o mais constante</em>” esconde uma relação implícita importante: manter a taxa de lucro constante após o aumento de <span class="math inline">\(u\)</span> requer uma queda proporcional em <span class="math inline">\(\pi\)</span> (ver <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>). Isso sugere que o modelo canônico pressupõe que as firmas podem observar uma redução em sua participação nos lucros e, ainda assim, aumentar o investimento devido ao aquecimento da demanda.</p>
+<p>No entanto, a expressão “<em>tudo o mais constante</em>” esconde uma relação implícita importante: manter a taxa de lucro constante após o aumento de <span class="math inline">\(u\)</span> requer uma queda proporcional em <span class="math inline">\(\pi\)</span> (ver 1). Isso sugere que o modelo canônico pressupõe que as firmas podem observar uma redução em sua participação nos lucros e, ainda assim, aumentar o investimento devido ao aquecimento da demanda.</p>
 </div>
 </div>
 </section>
 <section id="representação-gráfica" class="level3" data-number="4.4.3">
 <h3 data-number="4.4.3" class="anchored" data-anchor-id="representação-gráfica"><span class="header-section-number">4.4.3</span> Representação Gráfica</h3>
-<p>Substituindo a definição da taxa de lucro (<a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>) na <span class="quarto-unresolved-ref">?eq-gk</span>, podemos reescrever a função de investimento como:</p>
+<p>Substituindo a definição da taxa de lucro (1) na <span class="quarto-unresolved-ref">?eq-gk</span>, podemos reescrever a função de investimento como:</p>
 <p><span class="math display">\[g_K = \gamma_0 + \left(\gamma_r \frac{\pi}{v} + \gamma_u\right) u\]</span></p>
 <p>Esta equação mostra que a função de investimento é linear no grau de utilização, com intercepto <span class="math inline">\(\gamma_0\)</span> e inclinação <span class="math inline">\(\gamma_r \pi/v + \gamma_u\)</span>.</p>
 </section>
@@ -636,7 +652,7 @@ g_K &amp;= \gamma_0 + \gamma_r r + \gamma_u u
 </section>
 <section id="determinação-do-grau-de-utilização-de-equilíbrio" class="level3" data-number="4.5.2">
 <h3 data-number="4.5.2" class="anchored" data-anchor-id="determinação-do-grau-de-utilização-de-equilíbrio"><span class="header-section-number">4.5.2</span> Determinação do Grau de Utilização de Equilíbrio</h3>
-<p>Igualando a taxa de crescimento do investimento (<a href="#eq-gk-kal" class="quarto-xref">Equação&nbsp;<span>4.9</span></a>) com a taxa de crescimento da poupança (<a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a>), temos: <span class="math display">\[s_r r = \gamma_0 + \gamma_r r + \gamma_u u\]</span> A priori poderíamos dizer que a taxa de lucro é a variável endógena responsável por igualar os dois lados desta equação (poupança com investimento) e isso não estaria totalmente errado. Mas, se lembrarmos da <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>, podemos notar que a taxa de lucro,a o fim e ao cabo, responde à mudanças no grau de utilização, de tal forma que podemos escrever:</p>
+<p>Igualando a taxa de crescimento do investimento (<a href="#eq-gk-kal" class="quarto-xref">Equação&nbsp;<span>4.9</span></a>) com a taxa de crescimento da poupança (<a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a>), temos: <span class="math display">\[s_r r = \gamma_0 + \gamma_r r + \gamma_u u\]</span> A priori poderíamos dizer que a taxa de lucro é a variável endógena responsável por igualar os dois lados desta equação (poupança com investimento) e isso não estaria totalmente errado. Mas, se lembrarmos da 1, podemos notar que a taxa de lucro,a o fim e ao cabo, responde à mudanças no grau de utilização, de tal forma que podemos escrever:</p>
 <p><span id="eq-equilibrio-passo1"><span class="math display">\[\frac{s_r \pi u}{v} = \gamma_0 + \gamma_r \frac{\pi u}{v} + \gamma_u u \tag{4.10}\]</span></span></p>
 <p>Agora fica nítida a importância do grau de utilização neste modelo. É esta a variável responsável por igualar a taxa de crescimento da poupança à taxa de crescimento do investimento. Portanto, se no modelo estático de Keynes, mudanças no nível do investimento causam mudanças no nível de renda até mudar o nível da poupança de acordo com o novo nivel de investimento, na dinâmica kaleckiana este mecanismo se repete a partir de mudanças na taxa de crescimento do investimento mudando o grau de utilização até provocar mudanças proporcionais na taxa de lucro e, consequentemente, na taxa de crescimento da poupança.</p>
 <p>Isolando o grau de utilização <span class="math inline">\(u\)</span>, obtemos:</p>
@@ -684,10 +700,13 @@ g_K &amp;= \gamma_0 + \gamma_r r + \gamma_u u
 <p>Repare que algébricamente nós resolvemos um modelo linear de três equações seguindo os seguintes passos lógicos:</p>
 <ul>
 <li>Igualamos <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> à <a href="#eq-gk-kal" class="quarto-xref">Equação&nbsp;<span>4.9</span></a>;</li>
-<li>Substituimos, nesta igualdade, o valor de <span class="math inline">\(r\)</span> conforme a <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a> ;</li>
+<li>Substituimos, nesta igualdade, o valor de <span class="math inline">\(r\)</span> conforme a 1 ;</li>
 <li>Encontramos o valor de <span class="math inline">\(u\)</span> que garante com que o investimento cresça a mesma taxa da poupança;</li>
 <li>Substituimos o valor de <span class="math inline">\(u\)</span> encontrado na <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a> para encontrar a taxa de crescimento do estado estacionário ;</li>
-<li>Usamos o mesmo valor de <span class="math inline">\(u\)</span> para encontrar a taxa de lucro compatível (<a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>) com o estado estacionário.</li>
+<li>Usamos o mesmo valor de <span class="math inline">\(u\)</span> para encontrar a taxa de lucro compatível
+<ol class="example" type="1">
+<li>com o estado estacionário.</li>
+</ol></li>
 </ul>
 <p>Assim, temos explícito que o equilíbrio no modelo canônico acontece por ajustes no grau de utilização da capacidade instalada até que esta variável ajuste a taxa de lucro, de forma garantir que a taxa de crescimento da poupança se adeque à nova taxa de crescimento do investimento.</p>
 <p>Um ponto importante a esta altura é entender que podemos ter duas taxas de lucro se manifestando simultaneamente. De um lado temos a taxa de lucro da “Curva de Phillips”, isto é, a taxa de lucro que equilibraria a distribuição de renda conforme o planejado pelas firmas. Esta taxa pode ser representada por:</p>
@@ -727,14 +746,10 @@ Figura&nbsp;4.3: Representação gráfica do modelo kaleckiano canônico
 </div>
 <div class="columns">
 <div class="column" style="width:35%;">
-<div id="fig-eqkanonico" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figuras/equilibrio_kaleckiano2.png" class="img-fluid figure-img" style="width:100.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eqkanonico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.4: Representação gráfica do modelo kaleckiano canônico
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figuras/equilibrio_kaleckiano2.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Representação gráfica do modelo kaleckiano canônico</figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:65%;">
@@ -789,12 +804,12 @@ Figura&nbsp;4.4: Representação gráfica do modelo kaleckiano canônico
 <img src="figuras/paradoxo_thrifit_kal.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thrifitkal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.5: Representação gráfica do modelo kaleckiano canônico
+Figura&nbsp;4.4: Representação gráfica do modelo kaleckiano canônico
 </figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:65%;">
-<p>Graficamente, podemos demonstrar o funcionamento do paradoxo pela <a href="#fig-thrifitkal" class="quarto-xref">Figura&nbsp;<span>4.5</span></a>. Repare que o aumento da propensão a poupar de <span class="math inline">\(s_r\)</span> para <span class="math inline">\(s'_r\)</span> é responsável por rotacionar a curva <span class="math inline">\(g_s\)</span> de forma a aumentar sua inclinação. Isso fica fácil de entender se lembrarmos da <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> como uma equação linear, em que <span class="math inline">\(s_r\)</span> é justamente o coeficiente angular. Com o grau de utilização retraindo a partir da queda do consumo, a demanda efetiva se contrai e desestimula novos investimentos, deslocando a curva de Demanda Efetiva para baixo no quadrante inferior.</p>
+<p>Graficamente, podemos demonstrar o funcionamento do paradoxo pela <a href="#fig-thrifitkal" class="quarto-xref">Figura&nbsp;<span>4.4</span></a>. Repare que o aumento da propensão a poupar de <span class="math inline">\(s_r\)</span> para <span class="math inline">\(s'_r\)</span> é responsável por rotacionar a curva <span class="math inline">\(g_s\)</span> de forma a aumentar sua inclinação. Isso fica fácil de entender se lembrarmos da <a href="#eq-gsr-kal" class="quarto-xref">Equação&nbsp;<span>4.7</span></a> como uma equação linear, em que <span class="math inline">\(s_r\)</span> é justamente o coeficiente angular. Com o grau de utilização retraindo a partir da queda do consumo, a demanda efetiva se contrai e desestimula novos investimentos, deslocando a curva de Demanda Efetiva para baixo no quadrante inferior.</p>
 <p>Intuitivamente temos que o aumento da propensão a poupar reduz a demanda e, consequentemente, desestimula o investimento diretamente pela queda do graud e utilização. Mas o efeito sobre investimento é amplificado pelo efeito que a queda na demanda causa sobre a taxa de lucro e, portanto, sobre o investimento novamente. Com a menor taxa de crescimento do investimento, a taxa de crescimento da poupança também se reduz.</p>
 </div>
 </div>
@@ -816,7 +831,7 @@ Figura&nbsp;4.5: Representação gráfica do modelo kaleckiano canônico
 <h3 data-number="4.7.2" class="anchored" data-anchor-id="o-paradoxo-dos-custos-cost-paradox"><span class="header-section-number">4.7.2</span> O Paradoxo dos Custos (<em>Cost Paradox</em>)</h3>
 <p>O paradoxo dos custos, também conhecido como paradoxo de Rowthorn, afirma que <strong>um aumento da participação dos salários na renda (queda de</strong> <span class="math inline">\(\pi\)</span>) pode elevar a taxa de lucro de equilíbrio. Ainda que do ponto de vista individual da firma pagar salários maiores reduza seu lucro, do ponto de vista agregado, Kalecki mostrou que uma maior parcela dos salários na renda é compatível com um maior nível de renda (ver <span class="quarto-unresolved-ref">?eq-multirenda</span>) e, consequentemente, com maior nível de lucro agregado.</p>
 <p>Para analisar o paradoxo dos custos no longo prazo, precisamos examinar como a taxa de lucro de equilíbrio responde a mudanças na participação dos lucros na renda.</p>
-<p>A taxa de lucro de equilíbrio é dada pela substituição do <span class="math inline">\(u^{*}\)</span> na <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>:</p>
+<p>A taxa de lucro de equilíbrio é dada pela substituição do <span class="math inline">\(u^{*}\)</span> na 1:</p>
 <p><span id="eq-r-estrela"><span class="math display">\[r^{*} = \frac{\pi u^{*}}{v} = \frac{\pi \gamma_0}{\pi(s_r - \gamma_r) - v\gamma_u} \tag{4.15}\]</span></span></p>
 <p>A derivada da taxa de lucro em relação à participação dos lucros é:</p>
 <p><span class="math display">\[\frac{\partial r^{*}}{\partial \pi} = \frac{-\gamma_0 \gamma_u}{\left(\frac{\pi}{v}(s_r - \gamma_r) - \gamma_u\right)^2} &lt; 0\]</span></p>
@@ -851,12 +866,12 @@ Figura&nbsp;4.5: Representação gráfica do modelo kaleckiano canônico
 <img src="figuras/paradoxo_custos_kal.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-custoskal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;4.6: Representação gráfica do modelo kaleckiano canônico
+Figura&nbsp;4.5: Representação gráfica do modelo kaleckiano canônico
 </figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:65%;">
-<p>Suponha o aumento dos salários levando a queda da parcela dos lucros na renda. Pela <a href="#eq-rpc-kal" class="quarto-xref">Equação&nbsp;<span>4.14</span></a> é possível notar que estamos alterando o coeficiente angular da reta PC no quadrante inferior da <a href="#fig-custoskal" class="quarto-xref">Figura&nbsp;<span>4.6</span></a>. Com uma maior parte da renda sendo destinada para quem tem maior propensão a consumir, a demanda se aquece e aumenta a taxa de lucro. Com a taxa de lucro subindo, a taxa de crescimento do investimento também subiria, mas, principalmente, a taxa de poupança rotacionaria (ver <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a>).</p>
+<p>Suponha o aumento dos salários levando a queda da parcela dos lucros na renda. Pela <a href="#eq-rpc-kal" class="quarto-xref">Equação&nbsp;<span>4.14</span></a> é possível notar que estamos alterando o coeficiente angular da reta PC no quadrante inferior da <a href="#fig-custoskal" class="quarto-xref">Figura&nbsp;<span>4.5</span></a>. Com uma maior parte da renda sendo destinada para quem tem maior propensão a consumir, a demanda se aquece e aumenta a taxa de lucro. Com a taxa de lucro subindo, a taxa de crescimento do investimento também subiria, mas, principalmente, a taxa de poupança rotacionaria (ver <a href="#eq-gs-kal" class="quarto-xref">Equação&nbsp;<span>4.8</span></a>).</p>
 <p>Para preservar a principal alteração, desconsideramos a mudança de <span class="math inline">\(g_K\)</span> no gráfico ao lado. Contudo, intuitivamente, podemos ver que o aumento dos salários indubitavelmente eleva o grau de utilização, denotando um regme de demanda liderado por salários. Com o efeito direto do grau de utilização sobre a taxa de investimento e o indireto via aumento da taxa de lucro, há, também, um impacto indubitavelmente positivo sobre a taxa de crescimento do estado estaionário, denotando um regime de crescimento liderado pelos salários.</p>
 </div>
 </div>
@@ -1019,7 +1034,8 @@ Figura&nbsp;4.6: Representação gráfica do modelo kaleckiano canônico
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -1028,8 +1044,69 @@ Figura&nbsp;4.6: Representação gráfica do modelo kaleckiano canônico
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -1043,6 +1120,7 @@ Figura&nbsp;4.6: Representação gráfica do modelo kaleckiano canônico
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -1205,44 +1283,54 @@ Figura&nbsp;4.6: Representação gráfica do modelo kaleckiano canônico
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1341,15 +1429,18 @@ Figura&nbsp;4.6: Representação gráfica do modelo kaleckiano canônico
     }
   });
   </script>
-<nav class="page-navigation">
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
   <div class="nav-page nav-page-previous">
       <a href="./harrod.html" class="pagination-link" aria-label="O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./modelo_bm.html" class="pagination-link" aria-label="Modelo Neo-Kaleckiano (Bhaduri e Marglin)">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Neo-Kaleckiano (Bhaduri e Marglin)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./modelo_bm.html" class="pagination-link" aria-label="Modelo Pós-Kaleckiano (Bhaduri e Marglin)">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Pós-Kaleckiano (Bhaduri e Marglin)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

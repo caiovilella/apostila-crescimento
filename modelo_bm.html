@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Caio Vilella">
 
-<title>5&nbsp; Modelo Neo-Kaleckiano (Bhaduri e Marglin) – Apostila de Crescimento</title>
+<title>5&nbsp; Modelo Pós-Kaleckiano (Bhaduri e Marglin) – Apostila de Crescimento</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,17 +37,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./modelo_super.html" rel="next">
 <link href="./modelo_kaleckiano.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6a629bff3a0aec5539adec26986c1e98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -105,17 +110,17 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./modelo_bm.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Neo-Kaleckiano (Bhaduri e Marglin)</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./modelo_bm.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Pós-Kaleckiano (Bhaduri e Marglin)</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -126,7 +131,7 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Apostila de Crescimento</a> 
@@ -166,7 +171,19 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./modelo_bm.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Neo-Kaleckiano (Bhaduri e Marglin)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Pós-Kaleckiano (Bhaduri e Marglin)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modelo_super.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Modelo Supermultiplicador Sraffiano</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exercicios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exercícios</span></span></a>
   </div>
 </li>
     </ul>
@@ -175,7 +192,7 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
     <h2 id="toc-title">Índice</h2>
    
   <ul>
@@ -189,11 +206,11 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-modelo-bm" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Neo-Kaleckiano (Bhaduri e Marglin)</span></span></h1>
+<h1 class="title"><span id="sec-modelo-bm" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Pós-Kaleckiano (Bhaduri e Marglin)</span></span></h1>
 </div>
 
 
@@ -218,7 +235,7 @@ window.Quarto = {
 
 <section id="sec-introducao-bm" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="sec-introducao-bm"><span class="header-section-number">5.1</span> Introdução</h2>
-<p>O modelo neokaleckiano desenvolvido por Bhaduri e Marglin representa uma das principais extensões da tradição kaleckiana de crescimento e distribuição. Seu objetivo é incorporar, de forma explícita, o efeito da distribuição funcional da renda sobre as decisões de investimento, permitindo analisar diferentes regimes de demanda e crescimento.</p>
+<p>O modelo pós-kaleckiano desenvolvido por Bhaduri e Marglin representa uma das principais extensões da tradição kaleckiana de crescimento e distribuição. Seu objetivo é incorporar, de forma explícita, o efeito da distribuição funcional da renda sobre as decisões de investimento, permitindo analisar diferentes regimes de demanda e crescimento.</p>
 <p>O modelo parte da estrutura do modelo kaleckiano canônico, mas modifica a função de investimento ao introduzir a participação dos lucros na renda (<em>profit share</em>) como um determinante autônomo do investimento desejado. Essa modificação torna possível distinguir economias em que aumentos da parcela dos lucros estimulam a atividade econômica daquelas em que o crescimento é favorecido pelo aumento da participação dos salários.</p>
 <p>Ao final deste capítulo veremos que essa alteração aparentemente simples produz resultados bastante ricos, permitindo diferenciar:</p>
 <ul>
@@ -244,12 +261,12 @@ g_K=\gamma_0 + \gamma_r \frac{\pi u}{v} + \gamma_u u \\
 g_K = \gamma_0 + \left(\gamma_r \frac{\pi}{v}+\gamma_u \right) u
 \end{aligned} \tag{5.1}\]</span></span></p>
 <p>em que <span class="math inline">\(\pi\)</span> representa a participação dos lucros na renda e <span class="math inline">\(v\)</span> corresponde à relação capital-produto.</p>
-<p>Uma crítica inicial é que, conforme podemos constatar na <a href="#eq-gkcanonico" class="quarto-xref">Equação&nbsp;<span>5.1</span></a>, o grau de utilização da capacidade tem impacto duplo sobre o investimento. Quando a demanda efetiva aquece <span class="math inline">\((u\uparrow)\)</span>, as firmas aumentam o investimento tanto pelo efeito acelerador como pelo efeito lucratividade (ver termo entre parênteses na <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a>).</p>
-<p>Essa especificação sugere que o impacto será sempre amplificado, pois pressupõe que sempre temos <span class="math inline">\(\gamma_u &gt; 0\)</span>. Entretanto, essa relação positiva entre grau de utilização e investimento possui uma relação implícita nada trivial. O fato de <span class="math inline">\(\gamma_u\)</span> se sempre positivo pode ser interpretado como: <em>tudo o mais constante</em> (<strong>inclusive a taxa de lucro</strong>), o aumento do grau de utilização conduz ao aumento da taxa de investimento.</p>
-<p>Repare que manter a taxa de lucro constante após ocorrer o aumento do grau de utilização só será possível se houver um aumento proporcional da participação dos lucros na renda. Isso é mais fácil de ser verificado pela representação algébrica:</p>
+<p>Uma crítica inicial é que, conforme podemos constatar na <a href="#eq-gkcanonico" class="quarto-xref">Equação&nbsp;<span>5.1</span></a>, o grau de utilização da capacidade tem impacto duplo sobre o investimento. Quando a demanda efetiva aquece <span class="math inline">\((u\uparrow)\)</span>, as firmas aumentam o investimento tanto pelo efeito acelerador como pelo efeito lucratividade (ver termo entre parênteses na acima).</p>
+<p>Essa especificação sugere que o impacto será sempre amplificado, pois pressupõe que sempre temos <span class="math inline">\(\gamma_u &gt; 0\)</span>. Entretanto, essa relação positiva entre grau de utilização e investimento possui uma relação implícita nada trivial. O fato de <span class="math inline">\(\gamma_u\)</span> ser sempre positivo pode ser interpretado como: <em>tudo o mais constante</em> (<strong>inclusive a taxa de lucro</strong>), o aumento do grau de utilização conduz ao aumento da taxa de investimento.</p>
+<p>Repare que manter a taxa de lucro constante após ocorrer o aumento do grau de utilização só é possível se houver um aumento proporcional da participação dos lucros na renda. Isso é mais fácil de ser verificado pela representação algébrica:</p>
 <p><span class="math display">\[\bar{r} = \frac{\pi \downarrow u\uparrow}{v}\]</span></p>
 <p>No entanto, devemos lembrar que a parcela dos lucros na renda é diretamente relacionada com a taxa de <em>markup</em> (ver <a href="modelo_kaleckiano.html#eq-pi" class="quarto-xref">Equação&nbsp;<span>4.6</span></a>). Ou seja, a relação descrita acima sugere que o modelo kaleckiano admite, implicitamente, que uma firma pode observar uma redução do seu <em>markup</em> e, ainda assim, decidir ampliar seus investimentos devido ao grau de utilização permanecer elevado.</p>
-<p>Bhaduri e Marglin questionam precisamente essa hipótese.</p>
+<p>Bhaduri e Marglin questionam precisamente essa hipótese. Ao resgatarem a contribuição de Joan Ronbinson, os autores sugerem que o investimento depende da rentabilidade esperada. Neste sentido, a taxa de lucro capta a rentabilidade realizada e deveria ser substituída na equação do investimento pela parcela dos lucros na renda. Assim, quando o grau de mark-up das firmas se reduz, a rentabilidade esperada da produçao obtida com seus investimentos também cairá. Lembremos, então, que a parcela dos lucros na renda é uma função direta desta taxa de mark-up para entender a crítica de Bhaduri e Marglin de que seria mais preciso substituir, na <a href="modelo_kaleckiano.html#eq-gk-kal" class="quarto-xref">Equação&nbsp;<span>4.9</span></a>, a taxa de lucro pela parcela dos lucros na renda.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -281,19 +298,29 @@ g_K = \gamma_0 + \left(\gamma_r \frac{\pi}{v}+\gamma_u \right) u
 <li><span class="math inline">\(\gamma_u&gt;0\)</span>; representa a resposta ao grau de utilização.</li>
 </ul>
 <p>Nesta versão, a decisão de investimento depende não da taxa de lucro realizada, mas da distribuição de renda desejada. Mesmo o <span class="math inline">\(\gamma_u\)</span> sendo positivo, como antes, ele já não mais pressupõe a manutenção da taxa de lucro, pois o que influencia o investimento é a parcela dos lucros, não sua taxa. Desta forma, pode ocorrer de a taxa de lucro realizada ficar abaixo da que seria compatível com o markup desejado pelas firmas, fato que desestimularia novos investimentos e reduziria a taxa de crescimento do estoque de capital por meio do parâmtero <span class="math inline">\(\gamma_\pi\)</span>.</p>
-<p>Quando <span class="math inline">\(\gamma_{\pi}=0\)</span>, a <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a> reduz-se aproximadamente à função de investimento estudada no capítulo anterior. Aqui, basicamente, temos duas forças oeprando sobre o investimento. De um lado, a demanda efetiva aquecida estimula o investimento via efeito acelerador, enquanto que, por outro lado, o aumento da parclea salarial (<em>wage-share</em>) desestimnula o investimento via efeito lucratividade. O resultado líquido sobre a taxa de crescimento do investimento dependerá de qual destes efeitos preponderará.</p>
+<p>Quando <span class="math inline">\(\gamma_{\pi}=0\)</span>, a <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a> reduz-se aproximadamente à função de investimento estudada no capítulo anterior. Aqui, basicamente, temos duas forças operando sobre o investimento. De um lado, a demanda efetiva aquecida estimula o investimento via efeito acelerador, enquanto que, por outro lado, o aumento da parcela salarial (<em>wage-share</em>) desestimnula o investimento via efeito lucratividade. O resultado líquido sobre a taxa de crescimento do investimento dependerá de qual destes efeitos preponderará.</p>
 </section>
 <section id="sec-equilibrio-bm" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="sec-equilibrio-bm"><span class="header-section-number">5.4</span> O equilíbrio do modelo</h2>
-<p>A condição de equilíbrio continua sendo dada pela igualdade entre poupança e investimento. Neste caso, igualdade entre taxa de poupança e taxa de investimento:</p>
-<p><span class="math display">\[g_{s}=g_{K}.\]</span></p>
+<p>Tal como no modelo Kaleckiano canônico, seguimos com um sistema de três equações:</p>
+<p><span class="math display">\[\boxed{
+\begin{aligned}
+r &amp;= \frac{\pi u}{v}
+&amp;&amp;\text{(taxa de lucro)} \\[0.5em]
+g_s &amp;= s_{\pi}r
+&amp;&amp;\text{(taxa de crescimento da poupança)} \\[0.5em]
+g_K &amp;= \gamma_0+\gamma_{\pi}\pi+\gamma_u u
+&amp;&amp;\text{(taxa de crescimento do investimento)}
+\end{aligned}}\]</span></p>
+<p>A condição de equilíbrio continua sendo dada pela igualdade entre poupança e investimento.</p>
+<p><span class="math display">\[g_{s}=g_{K}\]</span></p>
 <p>Assumindo a função de poupança apresentada pela <a href="contabilidade.html#eq-gs" class="quarto-xref">Equação&nbsp;<span>2.1</span></a> e já substituindo <span class="math inline">\(r\)</span> chegamos em:</p>
 <p><span id="eq-gs-bm"><span class="math display">\[g_s=\frac{s_\pi\pi u}{v}, \tag{5.3}\]</span></span></p>
 <p>e substituindo a Equação <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a>, obtemos</p>
 <p><span class="math display">\[\frac{s\pi}{v}u=\gamma_0+\gamma_{\pi}\pi+\gamma_u u\]</span></p>
 <p>Isolando o grau de utilização de equilíbrio,</p>
 <p><span id="eq-u-bm"><span class="math display">\[u^{*}=\frac{\gamma_0+\gamma_{\pi}\pi}{\dfrac{s_\pi \pi}{v}-\gamma_u} \tag{5.4}\]</span></span></p>
-<p>Esta expressão mostra que o grau de utilização depende simultaneamente da distribuição funcional da renda e da sensibilidade do investimento tanto à parcela dos lcuros, quanto à demanda.</p>
+<p>Esta expressão mostra que o grau de utilização do equilíbrio depende simultaneamente da distribuição funcional da renda e da sensibilidade do investimento tanto à parcela dos lcuros, quanto à demanda.</p>
 <p>A linearidade assumida, apesar de beneficiar a matemática, traz algumas contradições que precisamos lidar. A primeira dela é que calcular a derivada aqui não será equivalente ao resultado obtido pelo Bhaduri e Marglin. Mas, para fins didáticos, abriremos mão do rigor matemático para elucidar o resultado de Bhaduri e Marglin.</p>
 <p>Para fins didáticos, repare que a parcela dos lucros na renda entra tanto no numerador quanto no denominador do grau de utilização e seu efeito sobre esta variável dependerá de dois parâmetros principais. Por um lado, a concentração de renda nos lucros amplia o investimento e aquece a demanda pelo efeito lucratividade. Só que, por outro lado, esta mesma concentração de renda em favor dos que tem maior propensão a poupar (portanto, consomem menos) desaquece a demanda pelo efeito acelerador. O resultado líquido dependerá de qual efeito preponderará ao final da mudança na distribuição de renda.</p>
 <p>Caso <span class="math inline">\(\gamma_u &gt; \gamma_\pi\)</span>, o fato de o efeito acelerador ser maior que o efeito da lucratividade garante uma relação inversa entre profit-share e grau de utilização, indicando que a economia desacelera quando a renda se concentra nos lucros e vice-versa. Assim, dizemos se tratar de um regime de <strong>demanda wage-led</strong>, ainda que sem propensão a poupar dos salários.</p>
@@ -330,13 +357,13 @@ g_K = \gamma_0 + \left(\gamma_r \frac{\pi}{v}+\gamma_u \right) u
 <p>Nesse caso, a economia encontra-se em um regime de demanda <strong>profit-led</strong>.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Sobre a contradição adotada na linearidade hipotética
+<span class="screen-reader-only">Importante</span>Sobre a contradição adotada na linearidade hipotética
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -344,7 +371,7 @@ g_K = \gamma_0 + \left(\gamma_r \frac{\pi}{v}+\gamma_u \right) u
 s_\pi \frac{\pi}{v} - \gamma_u \right)^2}&lt;0\]</span> A razão disso é que a simplicidade assumida gerou um efeito linear da concentração de renda sobre o investimento, mas um efeito não linear sobre o consumo, por causa do efeito acelerador. Ou seja, é uma simplicidade útil para fins didáticos, mas que causa complicações não fidedignas ao modelo de BM.</p>
 </div>
 </div>
-<p>Seguindo com nossa derivação do equilíbrio, temos de substituir o resutlado encontrado para o grau de utilização na <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a>, o que nos leva à:</p>
+<p>Seguindo com nossa derivação do equilíbrio, temos de substituir o resultado encontrado para o grau de utilização na <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a>, o que nos leva à:</p>
 <p><span id="eq-g-bm"><span class="math display">\[g^*=\gamma_0 + \gamma_{\pi}\pi +\gamma_u \left(\frac{\gamma_0+\gamma_\pi \pi}{s_\pi\frac{\pi}{v}-\gamma_u}\right) \tag{5.5}\]</span></span></p>
 <p>A principal inovação do modelo consiste em mostrar que alterações distributivas podem produzir efeitos distintos sobre a demanda agregada e sobre o crescimento. A depender do regime de demanda, poderemos determinar qual será o regime de crescimento.</p>
 <p>Para casos de regime de demanda <em>profit-led</em>, a análise fica bem simples. Pois se o último termo da equação já responder positivamente ao aumento de <span class="math inline">\(\pi\)</span>, o segundo termo só amplificará a dimensão do impacto. Assim, se tivermos um regime de demanda profit-led, o regime de crescimento também será profit-led. O que os autores chamam de Exhilarationist.</p>
@@ -449,7 +476,7 @@ Figura&nbsp;5.1: Representação gráfica do modelo.
 </section>
 <section id="paradoxo-dos-custos-e-da-parcimônia" class="level2" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="paradoxo-dos-custos-e-da-parcimônia"><span class="header-section-number">5.6</span> Paradoxo dos custos e da parcimônia</h2>
-<p>Assim como discutido na <a href="modelo_kaleckiano.html#sec-paradoxos-kal" class="quarto-xref"><span>Seção 4.7</span></a>, temos que analisar os paradoxos dos custos e da parcimônia (Thrifit) no fechamento neo-kaleckiano.</p>
+<p>Assim como discutido na <a href="modelo_kaleckiano.html#sec-paradoxos-kal" class="quarto-xref"><span>Seção 4.7</span></a>, temos que analisar os paradoxos dos custos e da parcimônia (Thrifit) no fechamento pós-kaleckiano.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -479,11 +506,11 @@ Figura&nbsp;5.1: Representação gráfica do modelo.
 </figure>
 </div>
 </div><div class="column" style="width:65%;">
-<p>O paradoxo de Thrifit segue válido no modelo neo-kaleckiano de Bhaduri e Marglin.</p>
+<p>O paradoxo de Thrifit segue válido no modelo pós-kaleckiano de Bhaduri e Marglin.</p>
 <p>Graficamente podemos constatar isso pela rotação que a mudança da propensão a poupar causa na <a href="#eq-gs-bm" class="quarto-xref">Equação&nbsp;<span>5.3</span></a>. A curva <span class="math inline">\(g_s\)</span> rotaciona para dentro e intercepta a curva <span class="math inline">\(g_K\)</span> em um novo ponto de equilíbrio, com menores taxas de crescimento e de demanda.</p>
 <p>Intuitivamente, temos que o aumento da propensão a poupar derruba o consumo e reduz a demanda efetiva o que, para um dado <em>markup</em> desejado, faz com que as firmas optem por reduzir a taxa de crescimento dos investimentos e manter sua parcela dos lucros na renda, ainda que com menor taxa de lucro.</p>
-<p><span class="math display">\[ s_\pi\downarrow \rightarrow g_s\downarrow \rightarrow u\downarrow \rightarrow g_K\downarrow \rightarrow u_n\downarrow \]</span></p>
-</div><p>Algebricamente, não precisamos derivar para notar que o aumento de <span class="math inline">\(s_\pi\)</span> na <a href="#eq-u-bm" class="quarto-xref">Equação&nbsp;<span>5.4</span></a> leva ao aumento do denominador, fato que reduz a razão. Ou seja, elevar <span class="math inline">\(s_\pi\)</span> reduz <span class="math inline">\(u^*\)</span>. Concomintantemente, pela <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a> vemos que a queda de <span class="math inline">\(u\)</span>, tudo o mais constante, leva à queda de <span class="math inline">\(g_K\)</span>.</p><p>Assim, as duas condições para que o paradoxo de Thrifit ocorra foram satisfeitas.</p><p>Já o paradoxo dos custos passa a ter um resultado ambíguo nesta versão do modelo. Graficamente, vemos dois movimentos simultâneos:</p><ul>
+<p><span class="math display">\[ s_\pi\uparrow \rightarrow g_s\downarrow \rightarrow u\downarrow \rightarrow g_K\downarrow \rightarrow u_n\downarrow \]</span></p>
+</div><p>Algebricamente, não precisamos derivar para notar que o aumento de <span class="math inline">\(s_\pi\)</span> na <a href="#eq-u-bm" class="quarto-xref">Equação&nbsp;<span>5.4</span></a> leva ao aumento do denominador, fato que reduz a razão. Ou seja, elevar <span class="math inline">\(s_\pi\)</span> reduz <span class="math inline">\(u^*\)</span>. Concomitantemente, pela <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a> vemos que a queda de <span class="math inline">\(u\)</span>, tudo o mais constante, leva à queda de <span class="math inline">\(g_K\)</span>.</p><p>Assim, as duas condições para que o paradoxo de Thrifit ocorra foram satisfeitas.</p><p>Já o paradoxo dos custos passa a ter um resultado ambíguo nesta versão do modelo. Graficamente, vemos dois movimentos simultâneos:</p><ul>
 <li><p>deslocamento da reta da taxa de investimentos <span class="math inline">\((g_K)\)</span></p></li>
 <li><p>rotação da reta da taxa de poupança <span class="math inline">\((g_s)\)</span></p></li>
 </ul><div id="fig-custos-bm" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -495,7 +522,7 @@ Figura&nbsp;5.1: Representação gráfica do modelo.
 Figura&nbsp;5.2: Parodoxo dos custos
 </figcaption>
 </figure>
-</div><p>A <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> ilustra o efeito de um aumento da parcela dos salários na renda em três casos distintos. Se lembramos da <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>, é fácil notar que para a taxa de lucro subir após o aumento dos salários (queda da parcela dos lucros), é preciso que o grau de utilização suba mais que proporcionalmente. Em outras palavras, o paradoxo dos custos só será verificado em um regime de demanda <em>wage-led</em>. A seguir, vamos estudar esta relação entre parcela dos salários na renda e grau de utilização.</p><p>Como trata-se de um gráfico bidimensional, que considera <span class="math inline">\(u\)</span> e <span class="math inline">\(g\)</span>, podemos pensar na mudança de <span class="math inline">\(\pi\)</span> na <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a> como uma mudança de intercepto da reta <span class="math inline">\(g_K\)</span>. Neste caso, o aumento dos salários é equivalente à queda da parcela dos lucros, portanto, diminuição do intercepto e, por isso, vemos um deslocamento para baixo da reta <span class="math inline">\(g_K\)</span>.</p><p>Concomitantemente, ao olhar para <a href="#eq-gs-bm" class="quarto-xref">Equação&nbsp;<span>5.3</span></a> como uma equação linear, podemos notar que o <span class="math inline">\(\pi\)</span> funciona como um coeficiente angular da reta. Ou seja, a queda do <span class="math inline">\(\pi\)</span> reduz o coeficiente angular de uma função de primeiro grau, reduzindo sua inclinação (rotacionando no sentido horário). Em outras palavras: tornado a reta do plano cartesiano mais “deitada”.</p><p>O Quadrante A mostra que após a rotação da curva <span class="math inline">\(g_S\)</span> no sentido horário e o deslocamento para baixo de <span class="math inline">\(g_K\)</span>, o novo equilíbrio se dá em um ponto compatível com maior grau de utilização e maior taxa de crescimento. Enquanto o primeiro resultado denota um regime de demanda liderado por salários, o segundo deve ser lido como um regime de crescimento liderado pelos salários.</p><p>Em uma economia totalmente <em>wage-led</em>, o conflito distributivo fica menos intenso, já que o aumento dos salários leva ao aumento do ritmo de acumulação do capital. Neste caso, o paradoxo dos custos pode ser verificado no curto e no longo-prazo.</p><div class="callout callout-style-default callout-warning callout-titled">
+</div><p>A <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> ilustra o efeito de um aumento da parcela dos salários na renda em três casos distintos. Se lembramos da <a href="contabilidade.html#eq-r" class="quarto-xref">Equação&nbsp;<span>2.2</span></a>, é fácil notar que para a taxa de lucro subir após o aumento dos salários (queda da parcela dos lucros), é preciso que o grau de utilização suba mais que proporcionalmente. Em outras palavras, o paradoxo dos custos só será verificado em um regime de demanda <em>wage-led</em>. A seguir, vamos estudar esta relação entre parcela dos salários na renda e grau de utilização.</p><p>Como trata-se de um gráfico bidimensional, que considera <span class="math inline">\(u\)</span> e <span class="math inline">\(g\)</span>, podemos pensar na mudança de <span class="math inline">\(\pi\)</span> na <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a> como uma mudança de intercepto da reta <span class="math inline">\(g_K\)</span>. Neste caso, o aumento dos salários é equivalente à queda da parcela dos lucros, portanto, diminuição do intercepto e, por isso, vemos um deslocamento para baixo da reta <span class="math inline">\(g_K\)</span>.</p><p>Concomitantemente, ao olhar para <a href="#eq-gs-bm" class="quarto-xref">Equação&nbsp;<span>5.3</span></a> como uma equação linear, podemos notar que o <span class="math inline">\(\pi\)</span> funciona como um coeficiente angular da reta. Ou seja, a queda do <span class="math inline">\(\pi\)</span> reduz o coeficiente angular de uma função de primeiro grau, reduzindo sua inclinação (rotacionando no sentido horário). Em outras palavras: tornando a reta do plano cartesiano mais “deitada”.</p><p>O Quadrante A mostra que após a rotação da curva <span class="math inline">\(g_S\)</span> no sentido horário e o deslocamento para baixo de <span class="math inline">\(g_K\)</span>, o novo equilíbrio se dá em um ponto compatível com maior grau de utilização e maior taxa de crescimento. Enquanto o primeiro resultado denota um regime de demanda liderado por salários, o segundo deve ser lido como um regime de crescimento liderado pelos salários.</p><p>Em uma economia totalmente <em>wage-led</em>, o conflito distributivo fica menos intenso, já que o aumento dos salários leva ao aumento do ritmo de acumulação do capital. Neste caso, o paradoxo dos custos pode ser verificado no curto e no longo-prazo.</p><div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -508,9 +535,9 @@ Figura&nbsp;5.2: Parodoxo dos custos
 <p>Observe que o resultado do <strong>Quadrante A</strong> depende de um deslocamento relativamente pequeno da curva <span class="math inline">\(g_K\)</span> e de uma rotação mais acentuada da curva <span class="math inline">\(g_S\)</span>.</p>
 <p>Em termos econômicos, isso significa que o aumento da participação dos salários na renda exerce apenas um efeito limitado sobre as expectativas de lucratividade dos empresários, enquanto o estímulo ao consumo e à demanda efetiva é suficientemente forte para elevar o grau de utilização da capacidade instalada. Nessas circunstâncias, o efeito acelerador sobre o investimento supera o efeito lucratividade, permitindo a ocorrência de um regime de demanda e crescimento liderado pelos salários (<em>wage-led</em>).</p>
 </div>
-</div><p>Como podemos notar pela <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a>, o tamanho do deslocamento da curva de investimentos dependerá diretamente do quão sensível o investimento é em relação à distribuição de renda (representado pelo parâmero <span class="math inline">\(\gamma_\pi\)</span>). Quanto mais sensível for, maior será o deslocamento da reta <span class="math inline">\(g_K\)</span>, aumemtando as chances de um regime de demanda profit-led (para dado <span class="math inline">\(\gamma_u\)</span>).</p><p>Em suma e simplificadamente, o efeito líquido de uma distribuição de renda em favor dos salários dependerá do efeito líquido entre o efeito lucratividade <span class="math inline">\((\gamma_\pi)\)</span> e o efeito acelerador <span class="math inline">\((\gamma_u)\)</span>. Quanto maior for o efeito acelerador em relação ao efeito lucratividade, maiores serão as chances de termos um regime de demanda e crescimento liderado pelos salários (<em>wage-led</em>).</p><p>O Quadrante B da <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> representa um modelo de demanda wage-led, mas um regime de crescimento profit-led. Isto porque, apesar de o grau de utilização crescer após o aumento da parcela dos salários, isso não é suficiente para compensar a desaceleração do investimento puxada pela consequente queda da parcela dos lucros.</p><p>Neste caso, a validade do paradoxo dos custos dependerá de o aumento do grau de utilização compensar a queda da parcela dos lucros na renda, a ponto de aumentar a taxa de lucro. Mais uma vez, menores serão as chances disso acontecer, quanto maior for o efeito lucratividade do investimento, capturado pelo parâmetro <span class="math inline">\(\gamma_\pi\)</span>. Aqui vemos como um regime de demanda liderado pelos salários é condição necessária, mas não suficiente para assegurar que o regime de crescimento também seja liderado pelos salários (como vimos na <span class="quarto-unresolved-ref">?tbl-regimes</span>).</p><p>Por fim, o Quadrante C da <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> mostra que após o aumento da parcela dos salários, o novo equilíbrio ocorre já com o grau de utilização menor do que o inicial, caracterizando o regime de demanda como liderado pelos lucros (<em>profit-led</em>). Nestas circunstância, não tem como o regime de crescimento não ser liderado pelos lucros também, já que o efeito sensibilidade do investimento se mostrou significativo ante o efeito acelerador, provocando um forte deslocamento da curva <span class="math inline">\(g_K\)</span>. O paradoxo dos custos não é válido neste contexto.</p><p>Trabalhos empíricos conduzidos por autores neokaleckianos tendem a mostrar um efeito acelerador bem alto, enquanto estimações apontam para um baixo efeito lucratividade. Isto é, o investimento parece ser mais sensível à demanda do que à lucratividade.</p><p>Intuitivamente, esta combinação de parâmetros, verificados empiricamente, aumenta o efeito expansionista causado pela distribuição de renda e minimiza o efeito contracionista causado pelo desestímulo ao investimento devido a esta mesma distribuição.</p><section id="sec-estudo" class="level2" data-number="5.7">
+</div><p>Como podemos notar pela <a href="#eq-gkbm" class="quarto-xref">Equação&nbsp;<span>5.2</span></a>, o tamanho do deslocamento da curva de investimentos dependerá diretamente do quão sensível o investimento é em relação à distribuição de renda (representado pelo parâmero <span class="math inline">\(\gamma_\pi\)</span>). Quanto mais sensível for, maior será o deslocamento da reta <span class="math inline">\(g_K\)</span>, aumentando as chances de um regime de demanda profit-led (para dado <span class="math inline">\(\gamma_u\)</span>).</p><p>Em suma e simplificadamente, o efeito líquido de uma distribuição de renda em favor dos salários dependerá do efeito líquido entre o efeito lucratividade <span class="math inline">\((\gamma_\pi)\)</span> e o efeito acelerador <span class="math inline">\((\gamma_u)\)</span>. Quanto maior for o efeito acelerador em relação ao efeito lucratividade, maiores serão as chances de termos um regime de demanda e crescimento liderado pelos salários (<em>wage-led</em>).</p><p>O Quadrante B da <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> representa um modelo de demanda wage-led, mas um regime de crescimento profit-led. Isto porque, apesar de o grau de utilização crescer após o aumento da parcela dos salários, isso não é suficiente para compensar a desaceleração do investimento puxada pela consequente queda da parcela dos lucros.</p><p>Neste caso, a validade do paradoxo dos custos dependerá de o aumento do grau de utilização compensar a queda da parcela dos lucros na renda, a ponto de aumentar a taxa de lucro. Mais uma vez, menores serão as chances disso acontecer, quanto maior for o efeito lucratividade do investimento, capturado pelo parâmetro <span class="math inline">\(\gamma_\pi\)</span>. Aqui vemos como um regime de demanda liderado pelos salários é condição necessária, mas não suficiente para assegurar que o regime de crescimento também seja liderado pelos salários (como vimos na tabela sobre os regimes).</p><p>Por fim, o Quadrante C da <a href="#fig-custos-bm" class="quarto-xref">Figura&nbsp;<span>5.2</span></a> mostra que após o aumento da parcela dos salários, o novo equilíbrio ocorre já com o grau de utilização menor do que o inicial, caracterizando o regime de demanda como liderado pelos lucros (<em>profit-led</em>). Nestas circunstância, não tem como o regime de crescimento não ser liderado pelos lucros também, já que o efeito sensibilidade do investimento se mostrou significativo ante o efeito acelerador, provocando um forte deslocamento da curva <span class="math inline">\(g_K\)</span>. O paradoxo dos custos não é válido neste contexto.</p><p>Trabalhos empíricos conduzidos por autores pós-kaleckianos tendem a mostrar um efeito acelerador bem alto, enquanto estimações apontam para um baixo efeito lucratividade. Isto é, o investimento parece ser mais sensível à demanda do que à lucratividade.</p><p>Intuitivamente, esta combinação de parâmetros, verificados empiricamente, aumenta o efeito expansionista causado pela distribuição de renda e minimiza o efeito contracionista causado pelo desestímulo ao investimento devido a esta mesma distribuição.</p><section id="sec-estudo" class="level2" data-number="5.7">
 <h2 data-number="5.7" class="anchored" data-anchor-id="sec-estudo"><span class="header-section-number">5.7</span> Seção de estudo interativo</h2>
-<p>O gráfico abaixo permite explorar, de forma interativa, os efeitos de alterações na propensão a poupar e na distribuição funcional da renda sobre o equilíbrio do modelo neokaleckiano de Bhaduri e Marglin. Utilize os controles deslizantes para modificar os parâmetros e observe como as curvas e o ponto de equilíbrio se alteram.</p>
+<p>O gráfico abaixo permite explorar, de forma interativa, os efeitos de alterações na propensão a poupar e na distribuição funcional da renda sobre o equilíbrio do modelo pós-kaleckiano de Bhaduri e Marglin. Utilize os controles deslizantes para modificar os parâmetros e observe como as curvas e o ponto de equilíbrio se alteram.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -563,7 +590,7 @@ Figura&nbsp;5.2: Parodoxo dos custos
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<iframe scrolling="no" title="Modelo Neokaleckiano wage-led" src="https://www.geogebra.org/material/iframe/id/kyjszhnv/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
+<iframe scrolling="no" title="Modelo pós-kaleckiano wage-led" src="https://www.geogebra.org/material/iframe/id/kyjszhnv/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
 </iframe>
 </div>
 </div>
@@ -592,7 +619,7 @@ Figura&nbsp;5.2: Parodoxo dos custos
 </div>
 <p>Agora, refaça o exercício anterior considerando o contexto do modelo abaixo. A diferença entre os dois modelos são apenas os parâmteros <span class="math inline">\(\gamma_\pi\)</span> e <span class="math inline">\(\gamma_u\)</span>. Na versão abaixo, o investimento se mostra muito mais sensível à mudanças da distribuição de renda e a taxa de poupança menos sensível a esta mesma variável.</p>
 <p>Repare que o regime de demanda e de crescimento não são o mesmo neste contexto. Faça o exercício e tente identificar as principais características presentes nesta representação. Explore os dois paradoxos para aplicar o conhecimento construído ao longo deste capítulo.</p>
-<iframe scrolling="no" title="Modelo Neokaleckiano profit-led" src="https://www.geogebra.org/material/iframe/id/jhabpd4r/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
+<iframe scrolling="no" title="Modelo pós-kaleckiano profit-led" src="https://www.geogebra.org/material/iframe/id/jhabpd4r/width/1499/height/835/border/ffffff/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1499%" height="835px" style="border: none !important; overflow: hidden; display: block;" frameborder="0">
 </iframe>
 </section>
 </div>
@@ -679,7 +706,8 @@ Figura&nbsp;5.2: Parodoxo dos custos
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -688,8 +716,69 @@ Figura&nbsp;5.2: Parodoxo dos custos
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -703,6 +792,7 @@ Figura&nbsp;5.2: Parodoxo dos custos
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -865,44 +955,54 @@ Figura&nbsp;5.2: Parodoxo dos custos
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1001,13 +1101,19 @@ Figura&nbsp;5.2: Parodoxo dos custos
     }
   });
   </script>
-<nav class="page-navigation">
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
   <div class="nav-page nav-page-previous">
       <a href="./modelo_kaleckiano.html" class="pagination-link" aria-label="Modelo Kaleckiano Canônico">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modelo Kaleckiano Canônico</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./modelo_super.html" class="pagination-link" aria-label="Modelo Supermultiplicador Sraffiano">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Modelo Supermultiplicador Sraffiano</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

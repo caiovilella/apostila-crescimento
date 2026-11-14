@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Caio Vilella">
+
+<title>6&nbsp; Modelo Supermultiplicador Sraffiano – Apostila de Crescimento</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./exercicios.html" rel="next">
+<link href="./modelo_bm.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6a629bff3a0aec5539adec26986c1e98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Pular para o conteúdo principal</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Barra de ferramentas">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Caminho"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./modelo_super.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Modelo Supermultiplicador Sraffiano</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Apostila de Crescimento</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Notas do autor</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contabilidade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">A Contabilidade do Crescimento e a Distribuição de Renda</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./harrod.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O Modelo de Harrod: Dinâmica, Instabilidade e Crescimento</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modelo_kaleckiano.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modelo Kaleckiano Canônico</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modelo_bm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Pós-Kaleckiano (Bhaduri e Marglin)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modelo_super.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Modelo Supermultiplicador Sraffiano</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exercicios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exercícios</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">6.1</span> Introdução</a></li>
+  <li><a href="#sec-harrod-super" id="toc-sec-harrod-super" class="nav-link" data-scroll-target="#sec-harrod-super"><span class="header-section-number">6.2</span> Crítica à instabildiade de Harrod</a></li>
+  <li><a href="#crítica-ao-mecanismo-de-ajuste-kaleckiano" id="toc-crítica-ao-mecanismo-de-ajuste-kaleckiano" class="nav-link" data-scroll-target="#crítica-ao-mecanismo-de-ajuste-kaleckiano"><span class="header-section-number">6.3</span> Crítica ao mecanismo de ajuste Kaleckiano</a></li>
+  <li><a href="#sec-inv-super" id="toc-sec-inv-super" class="nav-link" data-scroll-target="#sec-inv-super"><span class="header-section-number">6.4</span> A definição da renda a partir do investimento induzido</a></li>
+  <li><a href="#a-taxa-de-investimento" id="toc-a-taxa-de-investimento" class="nav-link" data-scroll-target="#a-taxa-de-investimento"><span class="header-section-number">6.5</span> A taxa de investimento</a></li>
+  <li><a href="#sec-ajuste-super" id="toc-sec-ajuste-super" class="nav-link" data-scroll-target="#sec-ajuste-super"><span class="header-section-number">6.6</span> Posição de ajuste total</a></li>
+  <li><a href="#analisando-o-equilíbrio-com-gráficos" id="toc-analisando-o-equilíbrio-com-gráficos" class="nav-link" data-scroll-target="#analisando-o-equilíbrio-com-gráficos"><span class="header-section-number">6.7</span> Analisando o equilíbrio com gráficos</a></li>
+  <li><a href="#sec-thrifit-super" id="toc-sec-thrifit-super" class="nav-link" data-scroll-target="#sec-thrifit-super"><span class="header-section-number">6.8</span> O paradoxo de Thrifit</a></li>
+  <li><a href="#paradoxo-dos-custos." id="toc-paradoxo-dos-custos." class="nav-link" data-scroll-target="#paradoxo-dos-custos."><span class="header-section-number">6.9</span> Paradoxo dos custos.</a></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão"><span class="header-section-number">6.10</span> Conclusão</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-modelo-super" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Modelo Supermultiplicador Sraffiano</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Caio Vilella </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introdução" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="introdução"><span class="header-section-number">6.1</span> Introdução</h2>
+<p>Nesta seção veremos a estrutura de modelo de crescimento liderado pela demanda que se situa mais na fronteira do debate sobre crescimento enquanto esta apostila está sendo escrita em (2026). Isto não quer dizer que ele seja melhor ou pior do que os demais modelos vistos até aqui, afinal o que seria um modelo melhor?! Diferentes economistas e filósofos poderiam dar diferentes respostas para esta simples questão. O que quero ressaltar é que estudaremos uma estrutura de modelos que, nos últimos anos, passou a ser incorporada por diferentes abordagens heterodoxas. Ainda que o nome deste capítulo faça referência a corrente de pensamento sraffiana, muitos economistas kaleckianos, como Rochon, Lavoie e Allain, passaram a trabalhar com esta estrutura analítica.</p>
+<p>Nesta introdução é importante ressaltar dois conceitos fundamentais para a análise que será feita adiante. O primeiro deles passa por responder a seguinte questão: O que tem de sraffiano no modelo?</p>
+<p>Esta não é uma questão fácil de responder, até porque há sraffianos críticos a esta estrutura<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Contudo, há um ponto que remete diretamente o modelo desta seção à teoria sraffiana, que é: a taxa de lucro exógena. Na teoria sraffiana, a taxa de lucro normal é exogenamnete determinada pela taxa de juros básica da economia, exógenamente determinada pelo Banco Central e fruto do conflito de classes. A ideia é que, para uma dada estrutura concorrencial, a taxa de lucro normal será a taxa de juros básica da economia acrescida de um <em>spread</em> para remunerar o risco do investimento. Taxas de lucro acima desta taxa “normal” seriam consideradas extraordináriamente altas e induziriam novos entrantes, aumentando a concorrência via preços menores e reduzindo a taxa de lucro. Alternativamente, taxas de lucro menores do que a normal não compensariam o risco da atividade empresarial, uma vez que rentabildiade equivalente poderia ser alcançada sem riscos a partir de aplicações financeiras em títulos da ddívida pública.</p>
+<p>O segundo conceito importante diz respeito à definição de gastos autônomos. Veja, nos modelos de determinação da renda, os gastos autônomos são definidos como aqueles que independem do nível de renda corrente, portanto, conseguem estimular a demanda e aumentar o nível de emprego (pelo menos nos modelos keynesianos de determinação da renda). Contudo, apenas esta definição não é o suficiente para falar de gastos autônomos em uma teoria dinâmica de longo prazo. Isto porque se o gasto autônomo aumentar a capacidade produtiva (<span class="math inline">\(Y_K\uparrow\)</span>) juntamente com a demanda (<span class="math inline">\(Y \uparrow\)</span>), a demanda efetiva não será impactada no longo prazo <span class="math inline">\(\left( u=\frac{Y \uparrow}{Y_K \uparrow} \right)\)</span>. Portanto a definição de gastos autônomos adotada neste capítulo denota os gastos que obedecem duas características:</p>
+<ul>
+<li>ser independente do nível de renda corrente e;</li>
+<li>não gerar capacidade produtiva</li>
+</ul>
+<p>Intuitivamente, podemos pensar no gasto público construindo uma empresa estatal. Este é um exemplo de gasto independente da renda, mas que gera demanda ao mesmo tempo que cria capacidade produtiva para atender esta demanda. No longo prazo, o feito líquido deste gasto sobre o crescimento produtivo será nulo, pois ele não mudará o grau efetivo de utilização do estoque de capital.</p>
+<p>Agora, podemos pensar em outras formas de gastos:</p>
+<ul>
+<li>Consumo imobiliário ou de bens duráveis financiados por crédito;</li>
+<li>Exportações</li>
+<li>Gastos públicos não geradores de capacidade</li>
+</ul>
+<p>Veja que as pessoas não compram casas ou geladeiras só porque tiveram um acréscimo marginal em sua renda. Normalmente, estes gastos estão muito mais associados com variações do acesso ao crédito e em suas condições. No caso das exportações, por exemplo, elas respondem ao nível de renda do país que compra as mercadorias e não com a do que vende. Outrossim, estes gastos representam consumo final e não geram capacidade produtiva por si só.</p>
+<p>No entanto, os formuladores de política econômica tem pouco ou nenhum controle sobre estas formas de gastos, mas tem controle quase completo sobre os gastos públicos, o que faz deste componente um fator muito importante. Um governo monetáriamente soberano não enfrenta qualquer restrição para ampliar seus gastos e, portanto, ele pode controlar a taxa de crescimento de tais gastos de forma completamente autônomoa e, como veremos ao longo deste capítulo, estes gastos têm um papel importantíssimo no crescimento econômico de longo prazo. Segundo o modelo do supermultiplicador sraffiano é a taxa de crescimento dos gastos autônomos que explicam o diferencia de renda entre os países.</p>
+<p>Por fim, a inclusão dos gastos autônomos, apesar de importante, não é fácil de ser feita nos modelos harrodiano e kaleckiano. Quando consideramos um gasto autônomo neste modelo, eles reagem de forma explosiva ou implausível como veremos nas duas primeiras seções deste capítulo ao expor as críticas sraffianas a estes modelos. Nas seções seguintes construíremos o modelo do supermultiplicador sraffiano com um <em>framework</em> substancialmente diferente do que vimos até aqui na apostila.</p>
+</section>
+<section id="sec-harrod-super" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-harrod-super"><span class="header-section-number">6.2</span> Crítica à instabildiade de Harrod</h2>
+<p>Para entender a anatomia do modelo do supermultiplicador precisamos reinterpretar o modelo de Harrod a partir da leitura do “acelerador rígido” do investimento.Podemos constatar este aspecto pela <a href="harrod.html#eq-acelerador-harrod" class="quarto-xref">Equação&nbsp;<span>3.7</span></a>, em que o investimento responde de maneira uniforme para qualquer diferença entre o grau de utilização corrente e o planejado.</p>
+<p>Primeiro podemos definir a relação capital produto como: <span class="math display">\[v= \frac{K}{Y_K}\]</span> para em seguida reajustar os termos: <span class="math display">\[\begin{aligned}K &amp;= v Y_K  \\
+\Delta K &amp;= v \Delta Y_K \end{aligned}\]</span></p>
+<p>podemos notar que o investimento <span class="math inline">\((I=\Delta K)\)</span> será o produto do acelerador e do crescimento da renda. Por conveniência, reescreveremos a equação como: <span class="math display">\[ I= v(Y_{t-1} - Y_{t-2})\]</span> Mais importante do que notar os elementos trazidos por esta equação é notar a ausência de elementos, especificamente: a sensibilidade do ajuste. Isto é, quero chamar a atenção para o fato de que esta equação está assumindo que os empresários reagem imediatamente e integralmente a variações de demanda. É como se todo e qualquer desvio de demanda impactasse imediatamente na decisão de investimento. O motivo para isso: <em>temos um acelerador rígido</em>.</p>
+<div id="nte-acel-super" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota&nbsp;6.1: Acelerador rígido vs.&nbsp;acelerador flexível
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para explicitar a hipótese assumida, imagine que a função acima estivesse especificada como <span class="math inline">\(I= \alpha v (Y_{t-1} - Y_{t-2})\)</span> em que <span class="math inline">\(\alpha\)</span> representasse a velocidade de ajuste do estoque de capital. Isto é, <span class="math inline">\(\alpha\)</span> mede em que medida o empresário considera as variações na demanda para sua decisão de investimento. Se <span class="math inline">\(\alpha &lt; 1\)</span> teremos a hipótese de um ajuste parcial, o que intuitivamente representaria uma reação do investimento de forma gradual e menor do que a variação na demanda. Nesta cisrcunstância choques não persistentes de demanda não levariam o empresário ampliar sua capacidade produtiva.</p>
+<p>Contudo, da forma como foi especificada por Harrod, está implícito que <span class="math inline">\(\alpha =1\)</span>. Nesta circunstância, temos que o investimento se mostra muito sensível à demanda.</p>
+</div>
+</div>
+<p>Agora vamos ver as implicações disso na determinação da renda. Lembremos da renda pela ótica da despesa. Asuma que <span class="math inline">\(C = cY\)</span> é o consumo macroeconômico, computado pela propensão a consumir <span class="math inline">\(c\)</span> da renda. O Investimento agregado é representado por <span class="math inline">\(I\)</span>, enquanto <span class="math inline">\(Z\)</span> denota o gasto autônomo. Substituindo a função de investimento acima na equação da renda chegamos em: <span class="math display">\[\begin{aligned}
+Y &amp;= C + I + Z \\
+Y &amp;= cY + v (Y_{t-1}-Y_{t-2}) + Z \\
+Y &amp;= \frac{v (Y_{t-1}-Y_{t-2}) + Z}{1-c}
+\end{aligned}\]</span></p>
+<p>Se no estado estacionário tivermos <span class="math inline">\(Y_{t-1}=Y_{t-2}\)</span>, podemos simplificar a equação acima como: <span class="math display">\[\boxed{Y^*= \frac{Z}{1-c}}\]</span></p>
+<p>Em que o nível de renda do estado estacionário será um múltiplo do gasto autônomo.</p>
+<p>Como a <a href="harrod.html#eq-k-har" class="quarto-xref">Equação&nbsp;<span>3.3</span></a> define o estoque de capital como produto do acelerador e da renda, podemos usar a equação acima para deduzir que: <span class="math display">\[K = \frac{vZ}{1-c}\]</span> Agora vamos imaginar que o governo cresça o gasto público (autônomo) persistentemente a uma taxa constante. A estabilidade do modelo de Harrod requer que o aumento da demanda hoje <span class="math inline">\((Z\uparrow)\)</span> não cresça a capacidade produtiva <span class="math inline">\((K\uparrow)\)</span> mais que porporcionalmente. Intuitivamente, quando os gastos sobem e aquecem a demanda efetiva, o investimento não pode subir mais do que o aumento da demanda. Caso isso aconteça, o aumento do investimento iniciará um novo ciclo expansionista, que se repetirá sucessivamente, gerarando um efeito “bola de neve”. Isto colocaria a economia em uma instabilidade infindável. Algebricamente, esta condição pode ser representada por: <span class="math display">\[\frac{v}{1-c} &lt; 1\]</span></p>
+<p>já que qualquer variação em <span class="math inline">\(Z\)</span> provocará alterações menores em <span class="math inline">\(K\)</span>, desde que multiplicado por valores menores que 1. Rearranjando os termos da desigualdade acima, podemos reescrever a condição de estabilidade como: <span class="math display">\[v+c &lt;1 \]</span></p>
+<p>O que siginifica que a propensão total a gastar da economia, somadas a propensão a investir e a consumir, deve ser menor do que a unidade. No entanto, a fragilidade deste modelo é que empiricamente o <span class="math inline">\(v\)</span> costuma ser bem superior à unidade (em torno de 2 à 4), o que inviabiliza a estabilidade do modelo.</p>
+<p>Normalmente, os autores que usam o mecanismo do acelerador rígido acabam por pressupor a existência de um teto exógenamente determinado para o crescimento (como Harrod fez com a taxa de crescimento natural). Assim, com o artíficio de considerar uma variável exógena como limitante, conseguem garantir que o ciclo de demanda crescente encontre o limite e reverta sua tendência. Contudo, ao fazerem isso acabam abrindo mão de oferecer uma explicação plausível para os determinantes do crescimento.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div id="fig-harrod-super" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-harrod-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/harrod_super.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-harrod-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.1: Representação gráfica do modelo.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Se lembrarmos da condição de estabilidade do <a href="harrod.html" class="quarto-xref"><span>Capítulo 3</span></a>, veremos que para <span class="math inline">\(g_y = g_w\)</span> temos que ter:</p>
+<p><span id="eq-suv-super"><span class="math display">\[\frac{su}{v} = \frac{s u_n}{v}  \tag{6.1}\]</span></span></p>
+</div>
+</div>
+<p>Suponha que a economia esteja no equilíbrio estável representado no ponto A da <a href="#fig-harrod-super" class="quarto-xref">Figura&nbsp;<span>6.1</span></a> e o Governo faça política fiscal expansionista, aumentando a taxa de crescimento dos gastos autônomos. Isso aumentaria o grau de utilização de <span class="math inline">\(u_n\)</span> para <span class="math inline">\(u_1\)</span>, aquecendo a demanda e fazendo os empresários incorporarem completamente esta mudança em suas decisões de investimento. Assim, em vez de estabilizar no ponto B, com o investimento reagindo ao choque inicial, seríamos levados para o ponto C, onde o grau de utilização é ainda maior do que o desejado pelos empresários <span class="math inline">\((u_2 &gt; u_1 &gt; u_n)\)</span>.</p>
+<p>Por não háver nenhum mecanismo endógeno de ajuste das variáveis <span class="math inline">\(s, u, u_n\)</span> e <span class="math inline">\(v\)</span>, o modelo tenderia a apresentar uma tendência de aceleração infinita da renda. Para Harrod isso não seria um problema, pois o autor acreditava que conforme a taxa efetiva <span class="math inline">\((g_y)\)</span> se aproximasse da taxa natural de crescimento máximo <span class="math inline">\((g_n)\)</span>, os empresários reconheceriam o fato de que a economia se aproxima da sua plena capacidade, reavaliariam suas expectativas e diminuiriam seu ímpeto a investir. Com esta redução, a economia entraria em ciclos que se alternariam entre expansão e recessão.</p>
+<p>Ainda que este artíficio analítico permita Harrod explicar ciclos econômicos e se livrar de um comportamento “explosivo” em seu modelo, sua adoção implica a não determinação do crescimento. Ou seja, se você perguntar ao modelo de Harrod a razão para existir ciclos de longo prazo na economia capitalista, talvez obtenha uma resposta satisfatória (ou não), mas você não obterá qualquer explicação se seu interesse for sobre qual fator causa o crescimento econômico no longo prazo.</p>
+</section>
+<section id="crítica-ao-mecanismo-de-ajuste-kaleckiano" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="crítica-ao-mecanismo-de-ajuste-kaleckiano"><span class="header-section-number">6.3</span> Crítica ao mecanismo de ajuste Kaleckiano</h2>
+<p>Os modelos Kaleckianos tratados nos capítulos passados conseguem prover uma explicação plausível para o crescimento a partir de mecanismos estabilizadores próprios, como o grau de utilização. Contudo, um ponto fortemente criticado pelos sraffianos em relação aos modelos de crescimento liderados pela demanda expostos até aqui reside na falta de tratamento adequado para o crescimento dos gastos autônomos. A forma como estes modelos lidam com um crescimento constante dos gastos fiscais, por exemplo, não é considerada satisfatória para alguns autores sraffianos e mesmo alguns kaleckianos. Para os modelos Kaleckianos toda a dinâmica dos gastos é induzida pela renda, o grau de utilização, por meio de ajustes na taxa de lucro, passa a se tornar responsável por estabilizar a economia (conforme <a href="modelo_kaleckiano.html#eq-equilibrio-passo1" class="quarto-xref">Equação&nbsp;<span>4.10</span></a>).</p>
+<p>Revisitando a <a href="modelo_kaleckiano.html#eq-u-estrela" class="quarto-xref">Equação&nbsp;<span>4.11</span></a>, vemos que o aumento do gasto autônomo (<span class="math inline">\(\gamma_0 \uparrow\)</span>) eleva o grau de utilização do estado estacionário. Isto acontece pois o modelo considera a distribuição de renda dada, portanto, o aumento do gasto autônomo, por meio de uma política fiscal expansionista, por exemplo, deslocaria apenas a reta do investimento (<span class="math inline">\(g_K\)</span>), aumentando o grau de utilização corrente e o desejado. Na prática, é como se o capitalista fosse obrigado a rever o seu grau desejado conforme erra suas expectativas.</p>
+<p>Considerando uma função de investimento genérica como: <span class="math display">\[ g_k = \gamma_0 + \gamma_u (u - u_n)\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div id="fig-kalecki-super" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kalecki-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/kalecki_super.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kalecki-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.2: Representação gráfica do modelo.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Não é difícil notar que, diante um aumento dos gastos autônomos que amplie o grau de utilização efeitvo <span class="math inline">\((u^* \rightarrow u^*_1)\)</span>, não ajustar seu grau desejado seria análogo a se deparar, persistentemente, com uma demanda maior que a esperada. Assim, a solução à instabilidade do modelo de Harrod, após a introdução de um chqoue de demanda, seria fazer o ajuste via o grau desejado pelos empresários. Nesta tradição se os gastos autônomos aumentarem persistentemente o <span class="math inline">\(u\)</span>, a igualdade da <a href="#eq-suv-super" class="quarto-xref">Equação&nbsp;<span>6.1</span></a> é mantida via ajustes no <span class="math inline">\(u_n\)</span>.</p>
+</div>
+</div>
+<p>A crítica de Serrano (1995) e Allain (2015), portanto, vai no sentido de incorporar uma taxa de crescimento dos gastos autônomos e se perguntar até que ponto seria o grau de utilização normal que deveria se ajustar ao efetivo ou o contrário. Na leitura destes autores críticos, na hipótese de um gasto autônomo crescendo mais, o grau de utilização efetivo cresceria e induziria novas decisões de investimentos no curto/médio prazo. Mas, diferente da história contada até aqui pelos modelos kaleckianos, Franklin Serrano entende que uma vez maturado, o investimento realizado se torna capacidade produtiva, reduzindo o grau de utilização no longo prazo de volta para o seu grau desejado. Ao final desta história, os empresários conseguiriam convergir o seu grau efetivo exatamente para o desejado no longo prazo, sem espaço para erros sistemáticos.</p>
+<p>Para garantir tal ajuste é preciso considerar que o princípio da demanda efetiva seja válido no curto e no longo prazo. Segundo este princípio, todo e qualquer gasto efetivado sempre gerará uma poupança bruta de igual valor, independentemente do nível de preços e de juros. Portanto, se existe uma taxa de crescimento do gasto induzido pela propensão a consumir e uma taxa de crescimento do gasto autônomo, há de ter, equivalentemente, uma taxa de poupança induzida conforme a propensão a poupar e uma taxa de poupança autônoma.</p>
+<p>Partindo da definição de poupança como uma parcela da renda, como os gastos autônomos <span class="math inline">\((Z)\)</span>, por não dependerem da renda prévia, irão drenar o montante poupado:</p>
+<p><span class="math display">\[ S = s_r Y - Z\]</span></p>
+<p>Dividindo os dois lados por <span class="math inline">\(K\)</span>, chegamos em:</p>
+<p><span class="math display">\[ \frac{S}{K}=s_r \frac{Y}{K} - \frac{Z}{K} \]</span></p>
+<p>Agora, multiplicando o primeiro termo do lado direito por <span class="math inline">\(\frac{Y_K}{Y_K}\)</span>, chegamos em:</p>
+<p><span class="math display">\[g_s = s_r \frac{Y}{K} \frac{Y_K}{Y_K}- \frac{Z}{K} \]</span></p>
+<p>Finalmente, temos a taxa de crescimento da poupança após feito o ajuste sraffiano: <span id="eq-gs-super"><span class="math display">\[ g_s = s_r \frac{u}{v} - \frac{Z}{K}  \tag{6.2}\]</span></span></p>
+<p>Alternativamente, se quisermos manter a representação Kaleckiana para fins comparativos, podemos assumir toda a poupança induzida como oriunda dos lucros para reescrever a equação acima como:</p>
+<p><span class="math display">\[g_s = s_r \frac{ \pi u}{v} - \frac{Z}{K} \]</span>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>A nova taxa de poupança
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Uma observação importante neste momento é distinguir a propensão marginal a poupar <span class="math inline">\((s_r)\)</span> da taxa média de poupança <span class="math inline">\((s)\)</span>. Podemos obter a média da poupança dividindo seu estoque pela renda:</p>
+<p><span class="math display">\[\begin{aligned}
+\frac{S}{Y} &amp;= \frac{s_r Y}{Y} - \frac{Z}{Y} \\
+s &amp;= s_r - z
+\end{aligned}\]</span></p>
+<p>Em que <span class="math inline">\(z = \frac{Z}{Y}\)</span>.</p>
+<p>Consequentemente, temos que para qualquer nível positivo de gastos autônomos, a taxa média de poupança da economia será inferior à propensão marginal a poupar. Neste modelo, a propensão marginal a poupar determina apenas um limite para a taxa de poupança e não, necessariamente, seu patamar. O que parece uma conclusão trivial se considerarmos que todo gasto gera sua própria poupança, mesmo que no longo prazo.</p>
+</div>
+</div>
+<p>A equação acima me diz que quanto maior for a razão de gastos autônomos sobre a renda, menor será a taxa de poupança da economia. Intuitivamente, talvez fique mais fácil entender esta diferença se definirmos a taxa de crescimento da poupança como: <span class="math display">\[ g_s= s r u\]</span></p>
+<p>e resolvermos para <span class="math inline">\(s\)</span>, tal como: <span class="math display">\[s = \frac{g}{ru}\]</span> Repare que se o crescimento dos gastos autônomos conseguir afetar o <span class="math inline">\(g\)</span> no longo prazo, ele aumentará a taxa média de poupança da economia, ainda que a propensão a poupar dos lucros permaneça constante. Assim, apesar de o <span class="math inline">\(s\)</span> se ajustar à taxa de crescimento, aqui estamos nos referindo à taxa média de poupança da economia e não à propensão marginal a poupar, como nos modelos de Robinson e Kaldor.</p>
+<p>Estas críticas (feitas principalmente por Franklin Serrano) serviram de insumo para a construção de um novo modelo de crescimento. Neste novo modelo, além de considerar o crescimento dos gastos autônomos em um mundo em que a demanda efetiva vale no curto e no longo prazo, a estabilidade do modelo vem da flexibilidade do acelerador e não do ajuste no grau de utilização desejado. Assim, o modelo não requer que capitalistas sejam convencidos a mudar de opinião (grau de utilização desejado) sempre que se depararem com choques de demanda. Nesta versão construída por sraffianos (Serrano, 1995) e kaleckianos (Alain, 2015), dado o crescimento dos gastos autônomos, a taxa média de poupança garante que o grau de utilização efetivo convirja para o grau desejado pelos empresários, evitando que estes incorram em erros persistentes e nem alterem suas expectativas a cada período de investimento.</p>
+<p>Nas próximas seções veremos como o princípio do ajsute do estoque de capital [representado por <span class="math inline">\((u-u_n)\)</span>] reflete na propensão a investir dos empresários (representada por <span class="math inline">\(h\)</span>) e, consequentemente, na taxa média de poupança (<span class="math inline">\(s\)</span>). Dentro dos termos discutidos nesta seção, o modelo do supermultiplicador garante o ajuste da <a href="#eq-suv-super" class="quarto-xref">Equação&nbsp;<span>6.1</span></a> por meio de variações em <span class="math inline">\(s\)</span>, ainda que a propensão marginal a poupar da sociedade não se altere. Lembremos, que o <span class="math inline">\(s\)</span> aqui representa a taxa média de poupança (<span class="math inline">\(S/Y\)</span>), que é apenas uma fração da propensão a poupar da sociedade. Intuitivamente, estamos lidando com um modelo de acelerador flexível, em que o aquecimento da demanda (<span class="math inline">\(Y\uparrow\)</span>) aumenta o efeito acelerador e garante o ajustamento da capacidade produtiva (<span class="math inline">\(Y_K \uparrow\)</span>) de forma proporcional à demanda <span class="math inline">\(\left(u_n=u=\frac{Y\uparrow}{Y_K \uparrow}\right)\)</span>. Veremos como isto ocorre nas próximas seções.</p>
+</section>
+<section id="sec-inv-super" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="sec-inv-super"><span class="header-section-number">6.4</span> A definição da renda a partir do investimento induzido</h2>
+<p>Dada a crítica aos modelos de “Oxbridge”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, precisamos retornar ao modelo de Harrod estudar a taxa de crescimento efetivo considerando os gastos autônomos e o príncipio da demanda efetiva valendo no curto e no longo prazo.</p>
+<p>Primeiro vamos começar com duas equações comportamentais. A primeira define a função consumo como uma propensão a consumir <span class="math inline">\((c)\)</span> da renda, em que <span class="math inline">\(0&lt;c&lt;1\)</span>. A segunda equação determina a função de investimento da forma mais simples possível, em que o investimento agregado será uma parcela da renda, que pode ser lida como a propensão <span class="math inline">\((h)\)</span> a investir da renda: <span class="math display">\[ \begin{aligned}C&amp;= cY \\ I&amp;=hY \end{aligned}\]</span></p>
+<p>Colocando estas equações comportamentais em uma equação contábil: <span class="math display">\[\begin{aligned}
+&amp;Y = C+I+Z \\
+&amp;Y = cY + hY + Z \\
+&amp;Y - cY - hY = Z \\
+&amp;Y (1-c-h) = Z \\
+\end{aligned}\]</span></p>
+<p><span id="eq-y-super"><span class="math display">\[ Y= \frac{Z}{1-c-h} \tag{6.3}\]</span></span></p>
+<p>Tirando o diferencial dos dois lados da equação, temos que:</p>
+<p><span class="math display">\[\Delta Y = \frac{1}{1-c-h} \Delta Z\]</span></p>
+<p>Dividindo os dois lados da equação por <span class="math inline">\(Y\)</span>, e fazendo uma manipulação algébrica, chegamos em: <span class="math display">\[\begin{aligned}
+\frac{\Delta Y}{Y} &amp;= \frac{1}{1-c-h} \frac{\Delta Z}{Y} \\
+\frac{\Delta Y}{Y} &amp;= \frac{1}{1-c-h} \frac{\Delta Z}{Y} \frac{Z}{Z} \\
+\frac{\Delta Y}{Y} &amp;= \frac{1}{1-c-h} \frac{\Delta Z}{Z} \frac{Z}{Y} \end{aligned}\]</span></p>
+<p>Vamos definir <span class="math inline">\(g_y = \frac{\Delta Y}{Y}\)</span> como o crescimento efetivo da renda e <span class="math inline">\(g_Z = \frac{\Delta Z}{Z}\)</span> como a taxa de crescimento dos gastos autônomos e, por fim, <span class="math inline">\(z=\frac{Z}{Y}\)</span> como proporção dos gastos autônomos na renda. Então podemos escrever a equação acima como:</p>
+<p><span id="eq-gy-super"><span class="math display">\[ \boxed{g_y = \frac{1}{1-c-h} g_Z z }  \tag{6.4}\]</span></span></p>
+<p>O último termo desta equação é muito iportante, pois nos permite concluir um dos resultados mais originais desta apostila. Repare que esta equação traz duas variáveis de interesse: a taxa de crescimento efetiva da renda e taxa de crescimento dos gastos autônomos. Resta saber qual delas determinará a outra.</p>
+<p>Sempre que a taxa de crescimento da renda superar a taxa de crescimento dos gastos autônos <span class="math inline">\((g_y &gt; g_Z),\)</span> a parcela deste último na renda estará se reduzindo <span class="math inline">\((z\downarrow)\)</span>. Pela <a href="#eq-gy-super" class="quarto-xref">Equação&nbsp;<span>6.4</span></a> temos que a queda de <span class="math inline">\(z\)</span> reduzirá a taxa de crescimento efetiva da renda. Intuitivamente, enquanto a renda crescer mais rápido que os gastos autônomos, a capacidade produtiva da economia crescerá relativamente mais do que a demanda agregada, já que um componente importante dela (o gasto autônomo) não estará crescendo no mesmo ritmo. Com isso, o grau ociosidade amentará com o tempo e desaquecerá a economia.</p>
+<p>Caso contário, sempre que a taxa de crescimento dos gastos autônomos for maior do que a taxa de crescimento da renda efetiva <span class="math inline">\((g_Z&gt;g_y)\)</span> teremos que a parcela numerador de <span class="math inline">\(z\)</span> crescerá mais do que o denominador, aumentando a razão. Como demonstrando pela <a href="#eq-gy-super" class="quarto-xref">Equação&nbsp;<span>6.4</span></a>, o aumento de <span class="math inline">\(z\)</span> levará, tudo o mais constante, ao aumento da taxa de crescimento efetiva da renda. Intuitivamente, enquanto <span class="math inline">\(g_Z\)</span> superar <span class="math inline">\(g_y\)</span>, a demanda agregada estará crescendo mais do que a capacidade produtiva, aumentando o grau de utilização e induzindo uma maior parcela de investimentos na renda. Com o grau de utilização subindo, o ajuste ocorre no sentido correto, isto é, aumentando <span class="math inline">\(g_y\)</span> até igualar ao <span class="math inline">\(g_z\)</span>.</p>
+<p>Portanto, a igualdade entre <span class="math inline">\(g_Z\)</span> e <span class="math inline">\(g_y\)</span> estará garantida por meio do princípio de ajuste do estoque de capital garantindo que a taxa de crescimento da renda convirja para a taxa de crescimento dos gastos autônomos. Finalmente podemos concluir que é a taxa de crescimento dos gastos autônomos que causa a taxa de crescimento da renda.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A taxa de <strong>crescimento da renda</strong> converge, por meio de ajustes no grau de utilização, para a t<strong>axa de crescimento dos gastos autônomos</strong>.</p>
+</div>
+</div>
+<p>Algebricamente, podemos notar que o a taxa de crescimento da renda converge para taxa de crescimento dos gastos autônomos, se lembrarmos da <a href="#eq-y-super" class="quarto-xref">Equação&nbsp;<span>6.3</span></a>. Ao manipulá-la, podemos escrever <span class="math inline">\(\frac{Z}{Y}=s-h\)</span><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Agora, retornando na <a href="#eq-gy-super" class="quarto-xref">Equação&nbsp;<span>6.4</span></a> e substituindo <span class="math inline">\(z\)</span> por <span class="math inline">\(s-h\)</span>, temos que:</p>
+<p><span class="math display">\[ \begin{aligned}
+g_y &amp;= \frac{g_Z (s-h)}{s-h} \\
+g_y &amp;=g_Z \end{aligned}\]</span></p>
+</section>
+<section id="a-taxa-de-investimento" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="a-taxa-de-investimento"><span class="header-section-number">6.5</span> A taxa de investimento</h2>
+<p>Serrano afirma que o modelo do supermultiplicador sraffiano, na verdade, seria compatível com diferentes funções de investimentos kaleckianas. No entanto, para manter a formulação o mais simples possível, podemos representar o investimento simpleste como induzido pela renda. Sendo assim, o investimento será uma propensão <span class="math inline">\(h\)</span> a investir da renda.</p>
+<p><span class="math display">\[I=hY\]</span> Onde podemos ober a taxa de crescimento do estoque de capital por:</p>
+<p><span class="math display">\[\begin{aligned}
+\frac{I}{K} &amp;=\frac{hY}{K} \\
+g_K &amp;= h \frac{Y}{K} \end{aligned}\]</span></p>
+<p>Multiplicando o lado direito da equação por <span class="math inline">\(\frac{Y_K}{Y_K}\)</span> podemos obter:</p>
+<p><span class="math display">\[\begin{aligned} g_K = h \frac{Y}{K} \frac{Y_K}{Y_K} \\
+g_K = h \frac{Y}{Y_K} \frac{Y_K}{K} \end{aligned} \]</span></p>
+<p><span id="eq-gk-super"><span class="math display">\[g_K = h \frac{u}{v} \tag{6.5}\]</span></span></p>
+<p>O diferencial do modelo do supermultiplicador não está exatamente na sua função de investimento, mas no princípio do acelerador flexível, em que a propensão marginal a investir é que passa a ser a variável ajustada pelo grau de utilização. Assim, podemos estabelecer a equação dinâmica do modelo como:</p>
+<p><span id="eq-h-super"><span class="math display">\[\frac{\Delta h}{h} = \gamma_u (u-u_n) \tag{6.6}\]</span></span></p>
+<p>Ou, alternativamente: <span class="math display">\[ \Delta h = h \gamma_u (u - u_n)\]</span> Repare que o acelerador agora se torna flexível, pois há um termo de ponderação que se altera com mudanças na demanda efetiva.</p>
+<p>Com isso, sempre que o grau de utilização ficar acima do desejado, os empresários ampliarão sua propensão a investir para recompor seu grau desejado de ociosidade. A medida em que os investimentos maturam e viram capacidade produtiva, o grau de utilização efetivo cai e coverge para o planejado, de forma a estabilizar a propensão a investir dos empresários.</p>
+<p>Aqui reside a importância na definição do gasto autônomo como não criador de capacidade produtiva. Pois se o gasto, além de ser autônomo da renda, acabasse por ampliar a capacidade da produtiva <span class="math inline">\((Y_K)\)</span> junto com a demanda efetiva <span class="math inline">\((Y)\)</span>, o grau de utilização efetico poderia não se alterar o mecanismo de ajuste ficaria inoperante.</p>
+<p>A princípio, para qualquer valor de <span class="math inline">\(h\)</span> menor do que a unidade teríamos a impossibilidade de a variação do investimento superar ou igualar a variação na demanda (como ocorre no modelo de Harrod). No entanto, ainda que o <span class="math inline">\(h\)</span> seja maior do que um, isso faria com que a capacidade produtiva subisse mais rápido do que a demanda efetiva <span class="math inline">\(\downarrow u = \frac{Y\uparrow}{Y_K \uparrow \uparrow}\)</span>. Assim, suponha uma situação inicial em que <span class="math inline">\(h&gt;1\)</span> e, portanto, <span class="math inline">\(g_K &gt; g_y\)</span>. Isso automaticamente levaria a uma situação em que <span class="math inline">\(u&lt;u_n\)</span>, pelo fato de a capacidade produtiva estar subindo mais rápido do que a demanda, reduzindo a propensão empresarial a investir <span class="math inline">\((\frac{\Delta h}{h} &lt; 0)\)</span>.</p>
+<p>Contudo, o caso de maior interesse para nossa análise reside na hipótese de <span class="math inline">\(h&lt;1\)</span>. Neste caso, podemos partir de um ponto em que <span class="math inline">\(g_K &lt; g_y\)</span>, onde a demanda efetiva estará crescendo acima da taxa de acumulação de capital, gerando um grau de utilização efetivo superior ao desejado <span class="math inline">\((u &gt; u_n)\)</span> e, consequentemente, um crescimento da propensão a investir dos empresários. Pela <a href="#eq-gk-super" class="quarto-xref">Equação&nbsp;<span>6.5</span></a> podemos ver que <span class="math inline">\(\Delta h &gt;0\)</span> conduz ao aumento da taxa de acumulação do estoque de capital até fazer com que esta se iguale à taxa de crescimento da demanda efetiva.</p>
+<p>A estabilidade da taxa de investimento só ocorre quando <span class="math inline">\(g_K=g_y\)</span> e, portanto, <span class="math inline">\(u=u_n\)</span>. Neste caso, a propensão a investir dos capitalistas estará constante e estabilizará <span class="math inline">\(g_K\)</span> no mesmo nível da <span class="math inline">\(g_y\)</span>.</p>
+<p>Contudo, conforme discutido na <a href="#sec-inv-super" class="quarto-xref"><span>Seção 6.4</span></a>, a taxa de crescimento da renda converge para a taxa de crescimento dos gastos autônomos, o que nos permite dizer que se <span class="math inline">\(g_Z=g_y\)</span>, então: <span class="math inline">\(g_Z = g_K\)</span>. Resumidamente, vimos até agora que a taxa de crescimento do estoque de capital tende para a taxa de crescimento da renda, que por sua vez converge para a taxa de crescimento dos gastos autônomos. Em outras palavras, quando os gastos autônomos crescem, estimulam a demanda efetiva e a taxa de crescimento da renda, levando o grau de utilização para patamares acima do desejado pelos empresários. Caso esta taxa superior de <span class="math inline">\(g_Z\)</span> seja mantida, a propensão a investir sobe e aumenta também a taxa de investimento até que a maior capacidade produtiva se reflita em queda do grau de utilização efetivo, que retorna ao patamar desejado.</p>
+</section>
+<section id="sec-ajuste-super" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="sec-ajuste-super"><span class="header-section-number">6.6</span> Posição de ajuste total</h2>
+<p>Até aqui construímos uma sequência argumentativa de nexos causais que nos levam a: <span class="math inline">\(g_Z \uparrow \rightarrow g_y \uparrow \rightarrow g_K \uparrow\)</span>. Resta-nos perguntar se esta é uma posição de equilíbrio macroeconômico ou trata-se apenas de uma posição transitória para um novo equilíbrio. Como sabemos, a posição de equilíbrio macroeconômico ocorre quando temos <span class="math inline">\(I=S\)</span>, ou, em termos dinâmicos <span class="math inline">\(g_K=g_s\)</span>.</p>
+<p>Pelo que foi discutido até aqui, é fácil ver que: <span class="math display">\[ I = hY = S\]</span> portanto, a renda que está multiplicando passa para o outro lado dividindo e chegamos em: <span id="eq-sy-super"><span class="math display">\[\frac{S}{Y} = h \tag{6.7}\]</span></span> A propensão média a poupar da renda será móvel e apresentará variações proporcionais à <a href="#eq-h-super" class="quarto-xref">Equação&nbsp;<span>6.6</span></a>. Assim, quando o grau de utilização efetivo convergir ao grau normal, a variação de <span class="math inline">\(h\)</span> cessa, assim como a propensão média a poupar. Repare que isso acontece mesmo que a propensão marginal a poupar não se altere. No fundo, o mecanismo se assemelha muito ao modelo de Robinson e Kaldor, mas com duas diferenças fundamentais: - Aqui estamos nos referindo ao ajuste pela propensão média a poupar, para dadas distribuição da renda e propensão marginal a consumir. - Em última análise, o ajuste ocorre pela propensão a investir que, pelo princípio da demanda efetiva, acaba alterando a poupança.</p>
+<p>Lavoie (2022) simplificadamente representa este ajuste pela <a href="#eq-gs-super" class="quarto-xref">Equação&nbsp;<span>6.2</span></a>. Repare que <span class="math inline">\(g_s\)</span> será estável uma vez que <span class="math inline">\(g_Z = g_K\)</span>, como demonstrando na <a href="#sec-inv-super" class="quarto-xref"><span>Seção 6.4</span></a>. No entanto, o patamar de <span class="math inline">\(g_s\)</span> será tão menor quanto maior for a proporção dos gastos autônomos em relação ao estoque de capital. Veja que um aumento dos gastos autônomos elevará a demanda agregada, levando o grau de utilização, temporariamente, acima do grau desejado e provocando o aumento de <span class="math inline">\(h\)</span> e, consequentemente, da propensão média a poupar da economia. Com o aumento da propensão média a poupar e a maturação dos investimentos, o grau de utilização retorna ao patamar desejado, sem que os empresários precisem mudar sistematicamente de opinião.</p>
+<p>Assim completamos o ciclo causal em que a taxa de crescimento dos gastos autônomos determina a taxa de crescimento da renda efetiva que, por sua vez, via propensão a investir, determina a taxa de crescimento do estoque de capital. Por fim, a taxa de crescimento do investimento produz uma taxa de crescimento da poupança equivalente:</p>
+<p><span class="math display">\[ g_Z \uparrow \rightarrow g_y \uparrow \rightarrow g_K \uparrow \rightarrow g_s \uparrow \]</span></p>
+<p>No final, temos que a taxa de crescimento dos gastos autônomos é a determinante da taxa de crescimento da economia no Longo Prazo.</p>
+</section>
+<section id="analisando-o-equilíbrio-com-gráficos" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="analisando-o-equilíbrio-com-gráficos"><span class="header-section-number">6.7</span> Analisando o equilíbrio com gráficos</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div id="fig-eqsuper" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eqsuper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/equilibrio_super.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eqsuper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.3: Representação gráfica do modelo.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:65%;">
+<p>A representação gráfica deste modelo pode ser vista na figura ao lado. Nela, temos o quadrante superior mostrando que a taxa de crescimento dos gastos autônomos determinará o ponto de equilíbrio do modelo justamente no intercepto entre as curvas de poupança e investimento, garantindo que <span class="math inline">\(g_z = g_K = g_s\)</span>.</p>
+<p>No quadrante inferior, temos a dinâmica do ajuste. Repare que taxa da propensão a investir será positiva sempre que <span class="math inline">\(u&gt;u_n\)</span>. Este mecanismo garante que, em um contexto de demanda efetiva aquecida, a propensão a investir cresça e cause um impacto positivo proporcional na taxa de poupança (ver <a href="#eq-sy-super" class="quarto-xref">Equação&nbsp;<span>6.7</span></a>), mesmo que a distribuição de renda e a propensão marginal a poupar permaneçam inalteradas.</p>
+</div>
+</div>
+<p>Intuitivamente, o que temos aqui é que o empresário, ao se deparar com a demanda aquecida <span class="math inline">\((u&gt;u_n)\)</span> aumentará sua propensão a investir visando retornar ao grau de utilização planejado. Esta decisão comportamental implicará maior capacidade produtiva no futuro, fruto da maturação deste investimento. Quando isso acontecer, o grau de utilização retorna ao nível que dono da fábrica deseja. Este mecanismo refelete diretamente a crítica sraffiana a respeito dos erros sistêmicos de expectativas. Neste caso, os donos das fábricas conseguem manter o nível de utilização de seus maquinários, tendendo para o patamar que planejam.</p>
+<p>Caso o empresário note que está com muita capacidade ociosa (<span class="math inline">\(u&lt;u_n\)</span>, por conta de <span class="math inline">\(Y\downarrow\)</span>), ele reduzirá seu impeto a investir <span class="math inline">\((\frac{\Delta h}{h})\)</span>. Consequentemente, a capacidade produtiva do futuro cairá <span class="math inline">\((Y_K \downarrow)\)</span> até que o grau de utilização <span class="math inline">\((u=\frac{Y \downarrow}{Y_K \downarrow})\)</span> retorne ao nível de ociosidade planejado incialmente, sem que o empresário tenha de alterar seus planejamentos.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Exemplo numérico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Imagine um empresário que deseja manter o grau de utilização de seu maquinário em 80%, deixando os outros 20% de capacidade instalada como margem de segurança para absorver eventuais choques de demanda ou permitir a manutenção de equipamentos. Inicialmente, sua fábrica possui capacidade produtiva para gerar 1.000 unidades, enquanto a demanda efetiva é de 800 unidades. Portanto:</p>
+<p><span class="math display">\[u = \frac{Y}{Y_K} = \frac{800}{1.000} = 0{,}80\]</span></p>
+<p>Suponha agora que a demanda aumente para 900 unidades. Como a capacidade produtiva permanece inicialmente em 1.000 unidades, o grau de utilização sobe para 90%, ultrapassando o nível planejado pelo empresário:</p>
+<p><span class="math display">\[u = \frac{900}{1.000} = 0{,}90 &gt; u_n\]</span></p>
+<p>Diante dessa situação, o empresário interpreta que precisa ampliar sua capacidade produtiva e aumenta sua propensão a investir. Após a maturação dos novos investimentos, a capacidade produtiva aumenta para 1.125 unidades. Assim, mesmo mantendo a demanda em 900 unidades, o grau de utilização retorna aos 80% inicialmente planejados:</p>
+<p><span class="math display">\[u = \frac{900}{1.125} = 0{,}80\]</span></p>
+<p>O movimento inverso também ocorre. Suponha que, partindo da situação inicial, a demanda caia de 800 para 700 unidades. Nesse caso, o grau de utilização recua para 70%, ficando abaixo do nível desejado pelo empresário:</p>
+<p><span class="math display">\[u = \frac{700}{1.000} = 0{,}70 &lt; u_n\]</span></p>
+<p>Diante do excesso de capacidade ociosa, o empresário reduz sua propensão a investir. Com o passar do tempo, a menor realização de investimentos líquidos, juntamente com a depreciação do capital existente, reduz a capacidade produtiva para 875 unidades. Desse modo, mesmo com a demanda permanecendo em 700 unidades, o grau de utilização retorna ao patamar planejado:</p>
+<p><span class="math display">\[u = \frac{700}{875} = 0{,}80\]</span></p>
+<p>O exemplo ilustra que, nesse mecanismo de ajustamento, é a capacidade produtiva que se adapta às condições de demanda, permitindo que o grau de utilização efetivo convirja para o nível planejado pelo empresário. Portanto, não é necessário supor que os empresários alterem sistematicamente suas expectativas ou revisem o grau de utilização que consideram desejável: o próprio comportamento do investimento promove o ajustamento entre demanda e capacidade produtiva.</p>
+</div>
+</div>
+<p>Para completar a nossa análise, agora imagine que a taxa de crescimento dos gastos autônomos aumente para <span class="math inline">\(g'_Z\)</span> (tal que <span class="math inline">\(g'_k &gt; g_k\)</span>). Tal como nos modelos Kaleckianos anteriores, temos o deslocamento da curva de investimento para cima, interceptando a taxa de poupança em um patamar superior (veja o quadrante esquerdo da <a href="#fig-z-super" class="quarto-xref">Figura&nbsp;<span>6.4</span></a>), mas agora este não é o fim da história. Dizemos que este seja o resultado de médio/prazo do modelo, ou seja, o resultado antes a posição de ajuste final.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div id="fig-z-super" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-z-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/z_super.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-z-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.4: Impacto do aumento da taxa de crescimento dos gastos autônomos.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img src="figuras/z1_super.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+<p>Enquanto o grau de utilização ficar acima do planejado, a propensão a investir seguirá crescendo, assim como a propensão média a poupar. Pela <a href="#eq-gs-super" class="quarto-xref">Equação&nbsp;<span>6.2</span></a> podemos notar que o quadrante da esquerda sugere que <span class="math inline">\(g'_Z &gt; g_K\)</span>, portanto o último termo da equação estará subindo, fato que reduz a taxa de poupança. Como estamos falando de uma maior taxa de poupança média, podemos representar este movimento por uma rotação da <span class="math inline">\(g_s\)</span>, de modo a deixá-la mais inclinada (como no quadrante da direita na <a href="#fig-z-super" class="quarto-xref">Figura&nbsp;<span>6.4</span></a>).</p>
+<p>Agora temos um ajustamento de longo prazo estável e que suporta uma taxa de crescimento dos gastos autônomos. Conseguimos isso ainda que os empresários mantenham seus planos de ociosidade para suas indústrias. Isso não quer dizer os empresários não podem rever seus planos, mas que tal revisão não é condição necessária para estabilizar um modelo analítico. Lembrando da <a href="#eq-suv-super" class="quarto-xref">Equação&nbsp;<span>6.1</span></a> e da <a href="#eq-sy-super" class="quarto-xref">Equação&nbsp;<span>6.7</span></a>, podemos ver que a estabilidade da primeira é garantida por ajustes na segunda, para qualquer grau de utilização desejado.</p>
+<p>Como resultado desta abordagem, temos que o único determinante da tendênica de crescimento no longo prazo é a taxa de crescimento dos gastos autônomos. O próximo passo, então, é se perguntar os efeitos da distribuição de renda e da propensão marginal a poupar. Isto é, vamos estudar os paradoxos do custo e da poupança.</p>
+</section>
+<section id="sec-thrifit-super" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="sec-thrifit-super"><span class="header-section-number">6.8</span> O paradoxo de Thrifit</h2>
+<p>Para entender a dinâmica do modelo que acabamos de construir, vamos fazer alguns exercícios analíticos. O primeiro deles será entender como a economia se comportará após uma udança na propensão a poupar da sociedade. Isto é, se a média da sociedade decidir poupar uma parcela maior da renda, o que acontecerá com a poupança macroeconômica?</p>
+<p>Para responder esta questão temos que olhar para a <a href="#eq-gs-super" class="quarto-xref">Equação&nbsp;<span>6.2</span></a> e se perguntar o que aconteceria após a queda de <span class="math inline">\(s_r\)</span>. Bom, em um primeiro momento podemos manter a análise feita nos modelos kaleckianos, em que a queda da propensão a poupar aciona o efeito multiplicador (ver <a href="modelo_kaleckiano.html#eq-multrenda" class="quarto-xref">Equação&nbsp;<span>4.3</span></a>) e aumenta o crescimento da renda. Em termos de representação gráfica teríamos a rotação da curva <span class="math inline">\(g_s\)</span> devido a mudança do seu coeficiente angular (<span class="math inline">\(s_r\)</span>), rotacionando-a da reta contínua vermelha para a reta contínua mais escura. O ponto de equilíbrio de médio prazo saíoria de A para B. Mas agora este nào é mais o final da história.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div id="fig-thrifit-super" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-thrifit-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/thrifit_super.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thrifit-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.5: Paradoxo da poupança.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Com a queda da propensão marginal a poupar e seu impacto sobre o multiplicador, o grau de utilização supera o desejado e o efeito acelerador é acionado <span class="math inline">\(\left(\frac{\Delta h}{h} &gt;0 \right)\)</span>. Agora, os empresários aumentarão seu ímpeto a investir buscando aumentar o estoque de capital para retornar ao grau de utilização planejado. Com o aumento de <span class="math inline">\(h\)</span>, a taxa de crescimento do estoque de capital aumenta de <span class="math inline">\(g^*\)</span> para <span class="math inline">\(g_1\)</span> e supera a taxa de crescimento dos gastos autônomos (<span class="math inline">\(g_Z\)</span>), mantido constante por hipótese. Repare que pela <a href="#eq-gs-super" class="quarto-xref">Equação&nbsp;<span>6.2</span></a>, o último termo terá o numerador da razão crescendo menos do que o denominador, fazendo com que a razão se reduza. Como esta fração está sendo subtraída, a sua queda implica aumento de <span class="math inline">\(g_s\)</span>, representado por deslocamentos que levam a reta contínua escura para a reta tracejada. Ao final do ajuste deste mecânismo, teremos que o grau normal de utilização retorna ao patamar desejado no ponto A do gráfico.</p>
+</div>
+</div>
+<p>Como visto na <a href="#sec-ajuste-super" class="quarto-xref"><span>Seção 6.6</span></a>, na posição de ajuste total temos que <span class="math inline">\(g_K = g_Z\)</span>, fato que garante que o <span class="math inline">\(g_s\)</span> não cairá para sempre e se estabilizará quando a taxa de crescimento convergir de volta para a taxa de crescimento dos gastos autônomos.</p>
+<p>O resultado da análise, então, indica que a queda da propensão marginal a poupar leva a um aquecimento temporário da economia, aumentando a taxa de crescimento por alguns períodos, mas não é capaz de sustentar uma taxa de crescimento maior para sempre. Com o passar do tempo, o ajuste da capacidade produtiva ocorre e o patamar do grau de utilização retorna ao seu nível desejado, compatível com a taxa de crescimento dos gastos autônomos. Assim, o paradoxo da poupança é válido por certo tempo, mas não é válido no ponto de estado estacionário no longo prazo.</p>
+<p>Por fim, é importante chamar atenção para a diferença entre a taxa de crescimento do estado estacionário e a taxa de crescimento média do período. Para isso, vamos supor que estamos falando de três períodos. O período <span class="math inline">\(t\)</span> representa o estado inicial da economia, sobre o qual o choque será aplicado, supondo a queda da propensão marginal a poupar. O período <span class="math inline">\(t+1\)</span> representará o período intermediário, no qual a economia estará em processo de ajustamento até atingir o estado estacionário no período <span class="math inline">\(t+2\)</span>.</p>
+<p>O resultado do modelo do supermultiplicador sraffiano sugere que a taxa de crescimento em <span class="math inline">\(t+2\)</span>, será igual à taxa de crescimento em <span class="math inline">\(t\)</span> e idêntica a taxa de crescimento em <span class="math inline">\(t+i\)</span> para todo <span class="math inline">\(i&gt;2\)</span>. Fato que sugere que a economia seguirá crescendo à taxa que vinha crescendo antes do choque sobre a propensão marginal a poupar. No entanto, isto não quer dizer que o choque não teve efeitos materiais sobre aquela economia. Durante o período de ajuste <span class="math inline">\(t+1\)</span> a economia cresceu mais e o nível de renda aumentou permanentemente. Por mais que a <em>taxa</em> tenha retornado ao patamar inicial, a porcentagem será aplicada sobre um nível maior e isso tem efeitos práticos para a economia real. Dito de outra maneira, ainda que a taxa de crescimento em <span class="math inline">\(t+2\)</span> seja igual à taxa em <span class="math inline">\(t\)</span>, se calcularmos a média de crescimento em <span class="math inline">\(t, t+1\)</span> e <span class="math inline">\(t+2\)</span>, ela será maior devido a queda da propensão a poupar.</p>
+<p>Vamos supor, só por mero exercício da imaginação, que cada período deste corresponda à 20 anos. Temos que num período histórico de 20 anos, esta economia registrou uma taxa de crescimento superior ao que vinha registrando antes e ao que computará adiante. Note que isso não é pouca coisa, mas para fins analíticos, o modelo conclui que o paradoxo da poupança não vale no longuíssimo prazo.</p>
+</section>
+<section id="paradoxo-dos-custos." class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="paradoxo-dos-custos."><span class="header-section-number">6.9</span> Paradoxo dos custos.</h2>
+<p>O segundo exercício analítico consiste em uma mudança exógena na distribuição da renda. Para os sraffianos, a taxa de juros básica da economia, exógenamente determinada pelo Banco Central, estabelcerá um piso mínimo para a rentabilidade do capital. Atividades produtivas ou financeiras que rentabilizem menos do que esta taxa básica acrescida de um <em>spread</em> recompensador de riscos serão preteridas a aplicações em títulos da dívida pública que pagam esta taxa básica e são livres de risco. Desta forma, para dado nível concorrencial, a taxa de <em>mark-up</em> das firmas e, portanto, a distribuição da renda será influenciada, no longo prazo, pela taxa de juros básica da economia. Neste sentido, a taxa de lucro que os sraffianos chamam de “normal” será exógena e compatível com a taxa de juros básica mais um <em>spread</em> de risco.</p>
+<p>Suponha então que os salários se alterem devido a uma variação do poder de barganha dos trabalhadores. Neste caso, vamos supor o aumento salarial conquistado pelos movimentos trabalhistas e que, venham a se refletir em uma distribuição de renda favorável a esta classe. Como trabalhado nos capítulos anterior: vamos supor um aumento da parcela salarial na renda.</p>
+<p>Bom, pelo efeito acelerador da <a href="modelo_kaleckiano.html#eq-multrenda" class="quarto-xref">Equação&nbsp;<span>4.3</span></a> é fácil ver que a queda da parcela dos lucros na renda (compatível com o aumento salarial suposto neste exercício) implicará maior nível de demanda efetiva. Com a demanda efetiva aquecida, os empresários aumentarão sua propensão a investir <span class="math inline">\((\Delta h &gt; 0)\)</span>, fazendo com que o estoque de capital cresça mais do que vinha crescendo antes. Esta racionalidade se explica pelo desejo destes empresários em atender à demanda que cresceu por conta dos salários e ainda assim repor o maquinário que está sendo utilizado, mas ele desejaria que ficasse ocioso. Nos termos discutidos nesta seção: o empresário aumenta sua propensão a investir para repor seu estoque de capital mais que proporcinalmente à demanda, visando trazer o grau de utilização de sua indústria para o nível desejado por ele.</p>
+<p>Contudo, este ajuste maior da capacidade não perdurará para sempre. Tão logo o empresário note que está próximo do grau de utilização desejado, ele reduzirá gradualmente sua propensão a investir e quando este nível for atingido, ele manterá os investimentos líquidos crescendo a uma taxa constante para não criar excesso e nem escassez (em relação ao desejado) de capacidade ociosa.</p>
+<p>Portanto, ao longo do processo de ajuste, a taxa de crescimento da economia será impulsionada pelos investimentos induzidos pelo aumento da demanda efetiva oriundo da distribuição de renda em favor do trabalho. No entanto, conforme os investimentos forem maturando e ampliando a capacidade produtiva da economia, o grau de utilização vai reduzindo até voltar ao grau normal, compátivel com a taxa de crescimento dos gastos autônomos.</p>
+<div id="fig-custos-super" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-custos-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figuras/custos_super.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-custos-super-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.6: Paradoxo dos custos
+</figcaption>
+</figure>
+</div>
+<p>Para entender a dinâmica do paradoxo dos custos vamos partir do equilíbrio no ponto A no quadrante superior esquerdo do gráfico acima, onde <span class="math inline">\(u=u_n\)</span>. Suponha, então, que a parcela dos lucros na renda caia (<span class="math inline">\(\pi \downarrow\)</span>). Neste momento, a distribuição de renda afetará a curva <span class="math inline">\(g_s\)</span>, pelo fato de trabalhadores ter uma propensão marginal a consumir maior do que capitalistas. Logo, reduzir a parcela da renda de quem tem maior propensão a consumir, aumentando a parcela de quem tem a maior propensão, garante um aumento do gasto induzido pelo multiplicador da renda, representado por uma rotação na curva <span class="math inline">\(g_s\)</span> para <span class="math inline">\(g'_s\)</span> (reta vermelha mais clara).</p>
+<p>Com a demanda efetiva subindo, o grau de utilização se aquece (quadrante esquerdo inferior) e aciona o ajuste da propensão a investir. Neste momento, estamos no ponto B, em um ponto transitório, com a taxa de crescimento do estoque de capital elevando a taxa de crescimento da renda acima da taxa de crescimento dos gastos autônomos <span class="math inline">\((g_K = g_y &gt; g_Z)\)</span>. No quadrante direito superior, podemos ver este momento transitório a partir da reta pontilhada vertical da cor verde, sinalizada pela queda da parcela dos lucros na renda <span class="math inline">\((\pi \downarrow)\)</span>. No quadrante inferior da direita, vemos o trecho azul mostrando o nível do produto mais inclinado, denotando esta taxa de crescimento maior.</p>
+<p>Contudo, este momento transitório vai gradualmente retornando de B para A a medida que aumentos na propensão a investir também elevam a taxa média de poupança, trazendo a curva <span class="math inline">\(g'_s\)</span> de volta para <span class="math inline">\(g''_s\)</span> (reta clara e tracejada). Com o crescimento do estoque de capital superando o crescimento dos gastos autônomos, o último termo da <a href="#eq-gs-super" class="quarto-xref">Equação&nbsp;<span>6.2</span></a> aumenta a taxa de poupança da economia e desloca <span class="math inline">\(g'_s\)</span> para cima até <span class="math inline">\(g''_s\)</span>, representando a máxima do PDE: a poupança sempre se ajusta aos gastos. Conforme a taxa de crescimento da propensão a investir reduz gradualmente, o grau de utilização retorna ao seu patamar desejado pelos empresários até que variações em <span class="math inline">\(h\)</span> cessem e o equilíbrio seja novamente alcançado em sua posição de ajuste. Nesta posição final, a taxa de crescimento do estoque de capital converge para a taxa de crescimento dos gastos autônomos, mesmo patamar da taxa de crescimento da renda e da poupança.</p>
+<p>Podemos ver o resultado sobre a taxa de lucro lembrando da equação: <span class="math inline">\(r = g / s\)</span>. Primeiro é importante reparar que o numerador da razão não se altera pelo fato de tender sempre à taxa de crescimento dos gastos autônomos. Além disso, lembre-se que <span class="math inline">\(s = s_r - Z/Y\)</span> para analisar três fatores:</p>
+<ul>
+<li><span class="math inline">\(s_r\)</span> cairá por conta da distribuição de renda em favor dos trabalhadores, cuja propensão a poupar é menor do que a dos capitalistsas;</li>
+<li><span class="math inline">\(Z\)</span> permanecerá crescendo a uma taxa constante uma vez que a distribuição de renda não altera sua taxa;</li>
+<li><span class="math inline">\(Y\)</span> crescerá mais do que <span class="math inline">\(Z\)</span> durante o período de ajuste do modelo (enquanto o <span class="math inline">\(s_r\)</span> estiver caindo), levando o denominador do último termo da equação a cair e compensar a queda de <span class="math inline">\(s_r\)</span>.</li>
+</ul>
+<p>Portanto, a taxa de lucro não se alterará quando o ajsute de longo prazo estiver completo. Assim, temos que o <strong>paradoxo dos custos não se sustenta no longo prazo</strong>. Isso significa que este modelo não pode ser classificado como do tipo liderado pelos salários (<em>wage-led</em>) ou liderado pelos lucros (<em>profit-led</em>). Na verdade, a nomenclatura mais adequada para este modelo é um regime de crescimento <strong>liderado pela demanda</strong>.</p>
+<p>Isso é compatível com a teoria sraffiana, em que a taxa de lucro normal (de longo prazo) é exogenamente determinada com base em um diferencial da taxa básica de juros. Dessa forma, apesar do recurso didático usado nos parágrafos acima, o mais adequado seria representar a equação do parágrafo anterior como <span class="math inline">\(s= g / r\)</span> em vez de <span class="math inline">\(r= g / s\)</span>, como feito anteriomente. Isto porquê a variável de ajuste no modelo é a taxa média de poupança.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Curiosidade
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pariboni (2016) acrescentou o componente autônomo a um modelo com a estrutura proposta por Badhuri e Marglin (discutido no <a href="modelo_bm.html" class="quarto-xref"><span>Capítulo 5</span></a>) e observou que o resultado de um regime de demanda <em>profit-led</em> já não seria mais possível.</p>
+</div>
+</div>
+<p>Retornando à análise da <a href="#fig-custos-super" class="quarto-xref">Figura&nbsp;<span>6.6</span></a>, podemos notar, pelo quadrante superior da direita, que com o passar do tempo, a taxa de crescimento da economia retorna ao ponto incial, mesmo após o impacto da distribuição de renda. Contudo, o quadrante inferior da direita nos dá uma dimensão melhor do resultado. Repare que durante o período de ajuste (trecho em azul), o produto da economia deu um salto que não teria ocorrido sem a distribuição de renda. Assim, apesar de o resultado do estado estacionário não ser afetado, uma análsie dinâmica até o ponto de equilíbrio demonstra efeitos materiais importantes oriundos da distribuição de renda. Assim como no paradoxo da poupança, apesar da taxa de equilíbrio não mudar, a taxa de crescimento média do período foi superior do que seria sem o efeito da distribuição de renda.</p>
+<p>Aproveitando esta seção para analisar mais uma variável importante do modelo: vamos estudar o efeito da propensão marginal a investir neste modelo. Caso <span class="math inline">\(h\)</span> aumente por algum motivo exógeno, como um otimismo espontâneo dos empresários, o investimento induzido se elvará, já que <span class="math inline">\(I=h Y\)</span>. No curto/médio prazo, a demanda ficará aquecida e o grau de utilização ficará acima do grau desejado pelos empresários. Contudo, uma vez que estes investimentos maturem, eles implicarão aumento da capacidade produtiva e trarão o grau de utilização de volta ao planejado. Isto é, o mesmo fator que faz com que o grau de utilização difira do grau desejado no curto prazo é responsável por acionar o mecanismo de ajuste do estoque de capital do modelo, que, por sua vez, tará o grau de utilização de volta ao patamar desejado pelos empresários.</p>
+<p>Em suma, o que nós descrevemos nestas últimas seções foram mudanças em variáveis exógenas ao modelo (<span class="math inline">\(s_r, \pi\)</span> e <span class="math inline">\(h\)</span>), que não alteram seu resultado. Dito de outra forma, todas estas alterações possuem efeito em <strong>nível</strong>, mas não em <strong>taxa</strong>. A única variável capaz de impactar a taxa de crescimento de longo prazo é, de fato, a taxa de crescimento dos gastos autônomos.</p>
+</section>
+<section id="conclusão" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="conclusão"><span class="header-section-number">6.10</span> Conclusão</h2>
+<p>O modelo de crescimento do supermultiplicador Sraffiano foi o primeiro modelo de crescimento liderado pela demanda a conseguir solucionar a instabildiade do modelo de Harrod e ainda incorporar os gastos autônomos. O meio pelo qual o a estabildiade é garantida foi a engonenização da propensão a investir dos empresários a partir do princípio de ajuste do estoque de capital.</p>
+<p>Alguns outros modelos de crescimento liderado pela demanda também tinham o princípio de ajsute do estoque de capital, ams o incorporavam na função de investimento. Ao fazer isso, terminavam com um acelerador rígido e precisavam recorrer a efeitos exógenos para estabilizar o modelo. No modelos neo-keynesianos, a distribuição de renda ajustava a propensão marginal a consumir, enquanto nos modelos do tipo Kalecki-Steindl era o grau de utilização que alterava até que a taxa de crescimento efetiva se igualasse à taxa desejada. No fundo, a principal contribuição do modelo sraffiano foi levar a análsie do Princípio da Demanda Efetiva também para o longo prazo, uma agenda de pesquisa muito cara a Garegnani, Serrano e outros sraffianos.</p>
+<p>Ainda que não temos paradoxos de custos e de thrifit no longo-prazo, este modelo chama atenção para o maior nível de capital e de renda. Mesmo que a taxa de crescimento retorne para o nível anterior, o seu maior patamar transitório, eleva o nível de renda (e de capital) permanentemente, produzindo melhoras materiais na economia. O modelo do supermultiplicador, portanto, nos convida a prestar mais atenção na dinâmica do modelo do que na estática compartiva dos estados estacionários. Isto é, ele nos mostra que a média importa tanto para análise quanto o estado estacionário. Mesmo que uma distribuição de renda em favor dos salários não tenha efeito permanente sobre a taxa de crescimento, o seu resultado é um nível de renda permanentemente superior.</p>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Como, por exemplo, Man-Seop Park, Antonella Palumbo and Attilio Trezzini<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Serrano se refere aos modelos de Harrod e Kaleckianos como de Oxbridge, pelo fato de reunirem contribuições de pesquisadores oriundos de Oxford e Cambrisge.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Para facilitar a notação podemos definir <span class="math inline">\(1-c=s\)</span><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Código deslocável","output":"Saída deslocável"};
+  </script>
+<nav class="page-navigation" aria-label="Página">
+  <div class="nav-page nav-page-previous">
+      <a href="./modelo_bm.html" class="pagination-link" aria-label="Modelo Pós-Kaleckiano (Bhaduri e Marglin)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modelo Pós-Kaleckiano (Bhaduri e Marglin)</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./exercicios.html" class="pagination-link" aria-label="Exercícios">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exercícios</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
